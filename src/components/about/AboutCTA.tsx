@@ -1,0 +1,112 @@
+'use client';
+
+import { motion } from 'framer-motion';
+import { useInView } from 'framer-motion';
+import { useRef } from 'react';
+import Link from 'next/link';
+import { ArrowRight, Phone, Mail, MessageCircle } from 'lucide-react';
+
+const AboutCTA = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+  return (
+    <section ref={ref} className="py-20 bg-gradient-to-br from-blue-900 via-cyan-800 to-blue-900 relative overflow-hidden">
+      {/* Background Elements */}
+      <div className="absolute inset-0">
+        <div className="absolute top-10 left-10 w-40 h-40 bg-cyan-500/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-10 right-10 w-60 h-60 bg-blue-500/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-purple-500/5 rounded-full blur-3xl"></div>
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8 }}
+          className="text-center mb-12"
+        >
+          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-white mb-6">
+            Rejoignez nos Clients
+            <span className="block bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+              Satisfaits
+            </span>
+          </h2>
+          <p className="text-xl text-blue-100 max-w-3xl mx-auto mb-8">
+            Faites confiance à notre expertise pour transformer votre espace 
+            en environnement intelligent et connecté. Votre satisfaction est notre priorité.
+          </p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="grid md:grid-cols-3 gap-6 mb-12"
+        >
+          <motion.a
+            href="tel:+212808551720"
+            whileHover={{ scale: 1.02 }}
+            className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 text-center hover:bg-white/15 transition-all duration-300 group"
+          >
+            <div className="bg-gradient-to-r from-green-500 to-emerald-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+              <Phone className="h-8 w-8 text-white" />
+            </div>
+            <h3 className="text-xl font-bold text-white mb-2">Appelez-nous</h3>
+            <p className="text-blue-100 text-sm mb-3">Consultation gratuite immédiate</p>
+            <span className="text-cyan-300 font-semibold">+212 808 551 720</span>
+          </motion.a>
+
+          <motion.a
+            href="https://wa.me/212697342443"
+            whileHover={{ scale: 1.02 }}
+            className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 text-center hover:bg-white/15 transition-all duration-300 group"
+          >
+            <div className="bg-gradient-to-r from-green-600 to-green-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+              <MessageCircle className="h-8 w-8 text-white" />
+            </div>
+            <h3 className="text-xl font-bold text-white mb-2">WhatsApp</h3>
+            <p className="text-blue-100 text-sm mb-3">Réponse rapide garantie</p>
+            <span className="text-cyan-300 font-semibold">Chat maintenant</span>
+          </motion.a>
+
+          <motion.a
+            href="mailto:contact@soustech.ma"
+            whileHover={{ scale: 1.02 }}
+            className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 text-center hover:bg-white/15 transition-all duration-300 group"
+          >
+            <div className="bg-gradient-to-r from-blue-500 to-cyan-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+              <Mail className="h-8 w-8 text-white" />
+            </div>
+            <h3 className="text-xl font-bold text-white mb-2">Email</h3>
+            <p className="text-blue-100 text-sm mb-3">Devis détaillé par email</p>
+            <span className="text-cyan-300 font-semibold">contact@soustech.ma</span>
+          </motion.a>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 0.4 }}
+          className="text-center"
+        >
+          <Link
+            href="/contact"
+            className="inline-flex items-center bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-10 py-5 rounded-full font-bold text-xl hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-cyan-500/25 group"
+          >
+            Demander un Devis Gratuit
+            <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-2 transition-transform" />
+          </Link>
+          
+          <div className="mt-8 text-center">
+            <p className="text-blue-200 text-sm">
+              ✓ Devis gratuit en 24h • ✓ Installation professionnelle • ✓ Garantie satisfaction
+            </p>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+export default AboutCTA;
