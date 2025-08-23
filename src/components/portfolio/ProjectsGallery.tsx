@@ -8,7 +8,7 @@ import { MapPin, Calendar, Users, Zap, Home, Shield, Network, Eye, ExternalLink 
 const ProjectsGallery = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
-  const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedProject, setSelectedProject] = useState<any>(null);
 
   const projects = [
     {
@@ -125,10 +125,6 @@ const ProjectsGallery = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut",
-      },
     },
   };
 
@@ -282,7 +278,7 @@ const ProjectsGallery = () => {
               <div className="mb-6">
                 <h4 className="font-bold text-gray-900 mb-3">Caractéristiques techniques :</h4>
                 <div className="grid grid-cols-1 gap-2">
-                  {selectedProject.features.map((feature, index) => (
+                  {selectedProject.features.map((feature: string, index: number) => (
                     <div key={index} className="flex items-center">
                       <div className={`w-2 h-2 bg-gradient-to-r ${selectedProject.color} rounded-full mr-3`}></div>
                       <span className="text-gray-700">{feature}</span>

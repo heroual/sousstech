@@ -79,10 +79,6 @@ const ServicesSection = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut",
-      },
     },
   };
 
@@ -90,10 +86,6 @@ const ServicesSection = () => {
     hover: {
       scale: 1.1,
       rotate: 5,
-      transition: {
-        duration: 0.3,
-        ease: "easeInOut",
-      },
     },
   };
 
