@@ -91,7 +91,7 @@ const ContactHero = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 max-w-2xl mx-auto"
         >
-          <div className="flex items-center justify-center mb-4">
+          <div className="flex items-center justify-center mb-6">
             <Clock className="h-6 w-6 text-blue-500 mr-3" />
             <h3 className="text-xl font-bold text-center text-white">Disponibilité</h3>
           </div>
