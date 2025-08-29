@@ -97,15 +97,15 @@ const FAQSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center section-title-spacing"
         >
-          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6">
             Questions
             <span className="block text-blue-500">
               Fréquentes
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto text-center">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Trouvez rapidement les réponses à vos questions les plus courantes. 
             Notre équipe reste disponible pour toute question spécifique.
           </p>
@@ -116,7 +116,7 @@ const FAQSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="grid lg:grid-cols-2 gap-8"
+          className="grid lg:grid-cols-2 gap-8 section-spacing"
         >
           {faqCategories.map((category, categoryIndex) => (
             <div key={categoryIndex} className="bg-gray-50 rounded-3xl p-6">

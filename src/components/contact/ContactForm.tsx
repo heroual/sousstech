@@ -94,15 +94,15 @@ const ContactForm = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center section-title-spacing"
         >
-          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6">
             Demande de
             <span className="block text-blue-500">
               Devis Gratuit
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto text-center">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Décrivez-nous votre projet et recevez un devis personnalisé sous 24h. 
             Consultation et étude de faisabilité gratuites.
           </p>

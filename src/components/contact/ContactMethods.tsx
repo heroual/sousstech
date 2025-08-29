@@ -65,14 +65,14 @@ const ContactMethods = () => {
   };
 
   return (
-    <section ref={ref} className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section ref={ref} className="section-padding bg-white">
+      <div className="container-padding max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center section-title-spacing"
         >
           <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6">
             Plusieurs Moyens
@@ -91,7 +91,7 @@ const ContactMethods = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16"
+          className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 section-spacing"
         >
           {contactOptions.map((option, index) => (
             <motion.a
