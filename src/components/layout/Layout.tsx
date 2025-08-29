@@ -21,7 +21,6 @@ const Layout = ({ children }: LayoutProps) => {
       <Header />
       <main className="flex-grow pt-16">
         {children}
-        <div className="h-24"></div> {/* Added extra space */}
       </main>
       <Footer />
     </div>
