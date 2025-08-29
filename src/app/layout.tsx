@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
+import type { Viewport } from "next";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -17,6 +18,16 @@ export const metadata: Metadata = {
   title: "SoussTech - Solutions Technologiques Intelligentes",
   description: "Spécialiste en FTTR, Smart Home, Caméras de surveillance, Réseaux & IT. Transformez votre espace en environnement connecté et sécurisé.",
   keywords: "FTTR, Smart Home, Caméras surveillance, Réseaux IT, Domotique, Fibre optique, IoT",
+  icons: {
+    icon: "/favicon.ico",
+  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 };
 
 export default function RootLayout({
