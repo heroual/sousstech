@@ -68,11 +68,11 @@ const CTASection = () => {
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="text-center mb-16"
+          className="text-center section-title-spacing"
         >
           <motion.h2
             variants={itemVariants}
-            className="text-4xl md:text-6xl font-bold font-poppins text-white mb-6 text-center"
+            className="text-4xl md:text-6xl font-bold font-poppins text-white mb-6"
           >
             Prêt à Transformer
             <span className="block gradient-text">
@@ -81,7 +81,7 @@ const CTASection = () => {
           </motion.h2>
           <motion.p
             variants={itemVariants}
-            className="text-xl text-blue-100 max-w-3xl mx-auto mb-12 text-center"
+            className="text-xl text-blue-100 max-w-3xl mx-auto mb-12"
           >
             Obtenez un devis gratuit et personnalisé pour vos projets de 
             technologies intelligentes. Nos experts vous accompagnent de A à Z.
@@ -93,7 +93,7 @@ const CTASection = () => {
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16"
+          className="grid grid-cols-2 md:grid-cols-4 gap-4 section-spacing"
         >
           {[
             {
@@ -136,7 +136,7 @@ const CTASection = () => {
           variants={itemVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="text-center mb-16"
+          className="text-center section-spacing"
         >
           <Link
             href="/contact"

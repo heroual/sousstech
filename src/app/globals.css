@@ -166,6 +166,15 @@ img {
   padding-right: var(--spacing-sm);
 }
 
+/* Standardized section spacing */
+.section-spacing {
+  margin-bottom: var(--spacing-2xl);
+}
+
+.section-title-spacing {
+  margin-bottom: var(--spacing-xl);
+}
+
 /* Consistent text alignment classes */
 .text-left {
   text-align: left;
@@ -210,12 +219,19 @@ img {
   .md\:text-right {
     text-align: right;
   }
-}
-
-@media (min-width: 640px) {
+  
   .container-padding {
     padding-left: var(--spacing-md);
     padding-right: var(--spacing-md);
+  }
+  
+  /* Standardized section spacing for medium screens */
+  .md\:section-spacing {
+    margin-bottom: var(--spacing-2xl);
+  }
+  
+  .md\:section-title-spacing {
+    margin-bottom: var(--spacing-xl);
   }
 }
 
@@ -223,6 +239,15 @@ img {
   .container-padding {
     padding-left: var(--spacing-lg);
     padding-right: var(--spacing-lg);
+  }
+  
+  /* Standardized section spacing for large screens */
+  .lg\:section-spacing {
+    margin-bottom: var(--spacing-2xl);
+  }
+  
+  .lg\:section-title-spacing {
+    margin-bottom: var(--spacing-xl);
   }
 }
 

@@ -99,11 +99,11 @@ const ServicesSection = () => {
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="text-center mb-16 lg:mb-20"
+          className="text-center section-title-spacing"
         >
           <motion.h2
             variants={itemVariants}
-            className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 font-poppins text-center"
+            className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 font-poppins"
           >
             Nos Solutions
             <span className="block gradient-text">
@@ -112,7 +112,7 @@ const ServicesSection = () => {
           </motion.h2>
           <motion.p
             variants={itemVariants}
-            className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed text-center"
+            className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
           >
             Découvrez notre gamme complète de services pour transformer 
             votre espace en environnement intelligent, sécurisé et connecté.
@@ -123,7 +123,7 @@ const ServicesSection = () => {
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 section-spacing"
         >
           {services.map((service, index) => (
             <motion.div

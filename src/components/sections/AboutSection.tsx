@@ -43,11 +43,11 @@ const AboutSection = () => {
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="text-center mb-16"
+          className="text-center section-title-spacing"
         >
           <motion.h2
             variants={itemVariants}
-            className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-10"
+            className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6"
           >
             Votre Partenaire en
             <span className="block gradient-text">
@@ -68,8 +68,9 @@ const AboutSection = () => {
         <motion.div
           variants={containerVariants}
           initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
-          className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 mb-16 sm:mb-20"
+          animate={isInView ? "visible" : "hidden"
+}
+          className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 section-spacing"
         >
           {stats.map((stat, index) => (
             <motion.div

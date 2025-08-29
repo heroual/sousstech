@@ -41,13 +41,13 @@ const HeroSection = () => {
               </span>
             </h1>
 
-            <p className="text-base sm:text-lg text-gray-600 mb-8 leading-relaxed max-w-2xl text-center lg:text-left">
+            <p className="text-base sm:text-lg text-gray-600 mb-8 leading-relaxed max-w-2xl text-left">
               Solutions professionnelles FTTR, Smart Home et sécurité intelligente pour 
               particuliers et entreprises. Installation rapide, design invisible.
             </p>
 
             {/* Features */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8 section-spacing">
               {[
                 'Installation sans perçage',
                 'Garantie 5 ans',
