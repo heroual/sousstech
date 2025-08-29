@@ -10,7 +10,7 @@ const ContactHero = () => {
       title: 'Appel Direct',
       description: 'Conseil immédiat',
       action: 'tel:+212808551720',
-      color: 'from-blue-500 to-blue-400'
+      color: 'from-blue-600 to-blue-500'
     },
     {
       icon: MessageCircle,
@@ -24,12 +24,12 @@ const ContactHero = () => {
       title: 'Email',
       description: 'Devis détaillé',
       action: 'mailto:contact@soustech.ma',
-      color: 'from-blue-500 to-blue-400'
+      color: 'from-blue-600 to-blue-500'
     }
   ];
 
   return (
-    <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800">
+    <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800 pt-20">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
@@ -45,7 +45,7 @@ const ContactHero = () => {
         >
           <h1 className="text-4xl md:text-5xl font-bold font-poppins mb-6 text-center">
             Contactez
-            <span className="block text-blue-400">
+            <span className="block gradient-text">
               Nos Experts
             </span>
           </h1>
@@ -78,7 +78,7 @@ const ContactHero = () => {
               <div className={`bg-gradient-to-r ${action.color} w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
                 <action.icon className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-2 text-center">{action.title}</h3>
+            <h3 className="text-xl font-bold text-center text-white">{action.title}</h3>
               <p className="text-gray-300 text-sm text-center">{action.description}</p>
             </motion.a>
           ))}
@@ -92,17 +92,17 @@ const ContactHero = () => {
           className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 max-w-2xl mx-auto"
         >
           <div className="flex items-center justify-center mb-4">
-            <Clock className="h-6 w-6 text-blue-300 mr-3" />
-            <h3 className="text-xl font-bold text-center">Disponibilité</h3>
+            <Clock className="h-6 w-6 text-blue-500 mr-3" />
+            <h3 className="text-xl font-bold text-center text-white">Disponibilité</h3>
           </div>
           <div className="grid md:grid-cols-2 gap-4 text-sm">
             <div className="text-center">
-              <h4 className="font-semibold text-blue-300 mb-2">Horaires Bureau</h4>
+              <h4 className="font-semibold text-blue-500 mb-2">Horaires Bureau</h4>
               <p className="text-gray-300">Lun - Ven : 9h - 18h</p>
               <p className="text-gray-300">Sam : 9h - 12h</p>
             </div>
             <div className="text-center">
-              <h4 className="font-semibold text-blue-300 mb-2">Support Urgence</h4>
+              <h4 className="font-semibold text-blue-500 mb-2">Support Urgence</h4>
               <p className="text-gray-300">7j/7 - 24h/24</p>
               <p className="text-gray-300">WhatsApp privilégié</p>
             </div>
