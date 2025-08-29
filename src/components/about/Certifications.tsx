@@ -14,28 +14,28 @@ const Certifications = () => {
       name: "Certification ISO 27001",
       description: "Système de management de la sécurité de l'information",
       icon: Shield,
-      color: "from-green-500 to-emerald-500",
+      color: "from-blue-500 to-blue-400",
       year: "2023"
     },
     {
       name: "Certification FTTR",
       description: "Spécialiste agréé Fiber to The Room",
       icon: Award,
-      color: "from-blue-500 to-cyan-500",
+      color: "from-blue-500 to-blue-400",
       year: "2022"
     },
     {
       name: "Installateur Agréé",
       description: "Certification professionnelle domotique",
       icon: CheckCircle,
-      color: "from-purple-500 to-violet-500",
+      color: "from-blue-600 to-blue-500",
       year: "2021"
     },
     {
       name: "Label Qualité",
       description: "Service après-vente de qualité certifié",
       icon: Star,
-      color: "from-yellow-500 to-orange-500",
+      color: "from-blue-700 to-blue-600",
       year: "2023"
     }
   ];
@@ -136,7 +136,7 @@ const Certifications = () => {
             className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6"
           >
             Certifications
-            <span className="block gradient-text">
+            <span className="block text-blue-500">
               & Partenariats
             </span>
           </motion.h2>
@@ -208,13 +208,13 @@ const Certifications = () => {
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="bg-gradient-to-r from-blue-500 to-cyan-500 rounded-3xl p-8 md:p-12 text-white"
+          className="bg-gradient-to-r from-blue-500 to-blue-500 rounded-3xl p-8 md:p-12 text-white"
         >
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold mb-4 font-poppins">
               Garantie Qualité & Excellence
             </h3>
-            <p className="text-blue-100 max-w-3xl mx-auto">
+            <p className="text-gray-300 max-w-3xl mx-auto">
               Des standards de qualité élevés et un engagement constant 
               vers l'amélioration de nos services.
             </p>
@@ -229,7 +229,7 @@ const Certifications = () => {
               >
                 <div className="text-4xl font-bold mb-2">{item.stat}</div>
                 <h4 className="text-xl font-semibold mb-2">{item.title}</h4>
-                <p className="text-blue-100 text-sm">{item.description}</p>
+                <p className="text-gray-300 text-sm">{item.description}</p>
               </motion.div>
             ))}
           </div>

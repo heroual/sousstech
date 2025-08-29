@@ -3,52 +3,59 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { Menu, X, Zap } from 'lucide-react';
+import Image from 'next/image';
+import { Menu, X } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
     { href: '/', label: 'Accueil' },
-    { href: '/services', label: 'Nos Services' },
-    { href: '/about', label: 'Pourquoi Nous' },
-    { href: '/portfolio', label: 'Réalisations' },
+    { href: '/services', label: 'Services' },
+    { href: '/about', label: 'À Propos' },
+    { href: '/portfolio', label: 'Portfolio' },
     { href: '/contact', label: 'Contact' },
   ];
 
   return (
-    <header className="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 border-b border-blue-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+    <header className="fixed top-0 w-full glass-effect z-50 border-b border-gray-100 shadow-soft">
+      <div className="container-padding max-w-7xl mx-auto">
+        <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2 flex-shrink-0">
-            <div className="bg-gradient-to-r from-blue-600 to-cyan-500 p-2 rounded-lg">
-              <Zap className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
+          <Link href="/" className="flex items-center space-x-3 flex-shrink-0 group">
+            <div className="relative w-12 h-12 rounded-xl overflow-hidden group-hover:shadow-primary transition-all duration-300">
+              <Image
+                src="/images/logo.png"
+                alt="SoussTech Logo"
+                width={48}
+                height={48}
+                className="w-full h-full object-contain"
+              />
             </div>
-            <span className="text-lg sm:text-xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
+            <span className="text-2xl font-bold text-gray-900 font-poppins text-left">
               SoussTech
             </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
+          <nav className="hidden lg:flex items-center space-x-8">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group text-sm lg:text-base"
+                className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300 relative group py-2 px-1 text-center"
               >
                 {link.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-cyan-500 group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-300"></span>
               </Link>
             ))}
           </nav>
 
           {/* CTA Button */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden lg:flex items-center">
             <Link
               href="/contact"
-              className="bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-4 lg:px-6 py-2 rounded-full font-medium hover:shadow-lg hover:scale-105 transition-all duration-200 text-sm lg:text-base min-h-[40px] flex items-center"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 shadow-primary hover:-translate-y-0.5 text-center"
             >
               Devis Gratuit
             </Link>
@@ -56,7 +63,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200"
+            className="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -74,23 +81,23 @@ const Header = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="md:hidden py-4 border-t border-gray-200 bg-white/95 backdrop-blur-md"
+            className="lg:hidden py-6 border-t border-gray-100 bg-white"
           >
-            <nav className="flex flex-col space-y-1">
+            <nav className="flex flex-col space-y-2">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-gray-700 hover:text-blue-600 hover:bg-blue-50 font-medium py-3 px-4 rounded-lg transition-all duration-200 min-h-[48px] flex items-center"
+                  className="text-gray-700 hover:text-blue-600 hover:bg-gray-50 font-medium py-4 px-4 rounded-lg transition-all duration-200 text-center"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.label}
                 </Link>
               ))}
-              <div className="pt-2">
+              <div className="pt-4">
                 <Link
                   href="/contact"
-                  className="bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-6 py-3 rounded-full font-medium text-center w-full block hover:shadow-lg transition-all duration-200 min-h-[48px] flex items-center justify-center"
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-4 rounded-lg font-semibold text-center w-full block transition-all duration-300"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Devis Gratuit

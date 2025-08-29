@@ -14,7 +14,7 @@ const FAQSection = () => {
     {
       title: "Questions Générales",
       icon: HelpCircle,
-      color: "from-blue-500 to-cyan-500",
+      color: "from-blue-500 to-blue-400",
       faqs: [
         {
           question: "Quels sont vos délais d'intervention ?",
@@ -33,7 +33,7 @@ const FAQSection = () => {
     {
       title: "Installation & Technique",
       icon: Wrench,
-      color: "from-purple-500 to-violet-500",
+      color: "from-blue-600 to-blue-500",
       faqs: [
         {
           question: "L'installation FTTR nécessite-t-elle des perçages ?",
@@ -52,7 +52,7 @@ const FAQSection = () => {
     {
       title: "Tarifs & Paiement",
       icon: CreditCard,
-      color: "from-green-500 to-emerald-500",
+      color: "from-blue-700 to-blue-600",
       faqs: [
         {
           question: "Quels sont vos moyens de paiement ?",
@@ -71,7 +71,7 @@ const FAQSection = () => {
     {
       title: "Garanties & Support",
       icon: Shield,
-      color: "from-yellow-500 to-orange-500",
+      color: "from-blue-800 to-blue-700",
       faqs: [
         {
           question: "Quelle garantie offrez-vous ?",
@@ -90,8 +90,8 @@ const FAQSection = () => {
   ];
 
   return (
-    <section ref={ref} className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section ref={ref} className="section-padding bg-white">
+      <div className="container-padding max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -99,13 +99,13 @@ const FAQSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6 text-center">
             Questions
-            <span className="block gradient-text">
+            <span className="block text-blue-500">
               Fréquentes
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto text-center">
             Trouvez rapidement les réponses à vos questions les plus courantes. 
             Notre équipe reste disponible pour toute question spécifique.
           </p>
@@ -146,7 +146,7 @@ const FAQSection = () => {
                         onClick={() => setOpenFAQ(isOpen ? null : globalIndex)}
                         className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
                       >
-                        <span className="font-semibold text-gray-900 pr-4">{faq.question}</span>
+                        <span className="font-semibold text-gray-900 pr-4 text-center">{faq.question}</span>
                         {isOpen ? (
                           <ChevronUp className="h-5 w-5 text-gray-500 flex-shrink-0" />
                         ) : (
@@ -162,7 +162,7 @@ const FAQSection = () => {
                           transition={{ duration: 0.3 }}
                           className="px-6 pb-4"
                         >
-                          <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+                          <p className="text-gray-600 leading-relaxed text-center">{faq.answer}</p>
                         </motion.div>
                       )}
                     </motion.div>
@@ -180,27 +180,27 @@ const FAQSection = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-center mt-16"
         >
-          <div className="bg-gradient-to-r from-blue-500 to-cyan-500 rounded-3xl p-8 text-white">
-            <h3 className="text-2xl font-bold mb-4">Vous avez d'autres questions ?</h3>
-            <p className="text-blue-100 mb-6">
+          <div className="bg-gradient-to-r from-blue-500 to-blue-400 rounded-3xl p-8 text-white">
+            <h3 className="text-2xl font-bold mb-4 text-center">Vous avez d'autres questions ?</h3>
+            <p className="text-gray-300 mb-6 text-center">
               Notre équipe d'experts est là pour répondre à toutes vos interrogations spécifiques.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="tel:+212808551720"
-                className="bg-white/20 hover:bg-white/30 px-6 py-3 rounded-full font-semibold transition-colors duration-300"
+                className="bg-white/20 hover:bg-white/30 px-6 py-3 rounded-full font-semibold transition-colors duration-300 text-center"
               >
                 📞 Appelez-nous
               </a>
               <a
                 href="https://wa.me/212697342443"
-                className="bg-white/20 hover:bg-white/30 px-6 py-3 rounded-full font-semibold transition-colors duration-300"
+                className="bg-white/20 hover:bg-white/30 px-6 py-3 rounded-full font-semibold transition-colors duration-300 text-center"
               >
                 💬 WhatsApp
               </a>
               <a
                 href="mailto:contact@soustech.ma"
-                className="bg-white/20 hover:bg-white/30 px-6 py-3 rounded-full font-semibold transition-colors duration-300"
+                className="bg-white/20 hover:bg-white/30 px-6 py-3 rounded-full font-semibold transition-colors duration-300 text-center"
               >
                 ✉️ Email
               </a>

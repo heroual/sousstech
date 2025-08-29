@@ -21,11 +21,11 @@ const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const services = [
-    { id: 'fttr', name: 'FTTR - Fiber to The Room', icon: Zap, color: 'text-yellow-500' },
+    { id: 'fttr', name: 'FTTR - Fiber to The Room', icon: Zap, color: 'text-blue-500' },
     { id: 'smart-home', name: 'Smart Home & Domotique', icon: Home, color: 'text-blue-500' },
-    { id: 'security', name: 'Caméras & Sécurité', icon: Shield, color: 'text-green-500' },
-    { id: 'network', name: 'Réseaux & IT', icon: Network, color: 'text-purple-500' },
-    { id: 'multiple', name: 'Projet Multiple', icon: CheckCircle, color: 'text-gray-500' }
+    { id: 'security', name: 'Caméras & Sécurité', icon: Shield, color: 'text-blue-500' },
+    { id: 'network', name: 'Réseaux & IT', icon: Network, color: 'text-blue-500' },
+    { id: 'multiple', name: 'Projet Multiple', icon: CheckCircle, color: 'text-blue-500' }
   ];
 
   const projectTypes = [
@@ -87,8 +87,8 @@ const ContactForm = () => {
   };
 
   return (
-    <section ref={ref} className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section ref={ref} className="section-padding bg-gray-50">
+      <div className="container-padding max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -96,13 +96,13 @@ const ContactForm = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6 text-center">
             Demande de
-            <span className="block gradient-text">
+            <span className="block text-blue-500">
               Devis Gratuit
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto text-center">
             Décrivez-nous votre projet et recevez un devis personnalisé sous 24h. 
             Consultation et étude de faisabilité gratuites.
           </p>
@@ -120,7 +120,7 @@ const ContactForm = () => {
               {/* Personal Information */}
               <div className="grid md:grid-cols-2 gap-4">
                 <motion.div variants={itemVariants}>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label className="block text-sm font-semibold text-gray-700 mb-2 text-center">
                     <User className="inline h-4 w-4 mr-2" />
                     Nom complet *
                   </label>
@@ -136,7 +136,7 @@ const ContactForm = () => {
                 </motion.div>
 
                 <motion.div variants={itemVariants}>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label className="block text-sm font-semibold text-gray-700 mb-2 text-center">
                     <Mail className="inline h-4 w-4 mr-2" />
                     Email *
                   </label>
@@ -154,7 +154,7 @@ const ContactForm = () => {
 
               <div className="grid md:grid-cols-2 gap-4">
                 <motion.div variants={itemVariants}>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label className="block text-sm font-semibold text-gray-700 mb-2 text-center">
                     <Phone className="inline h-4 w-4 mr-2" />
                     Téléphone *
                   </label>
@@ -170,7 +170,7 @@ const ContactForm = () => {
                 </motion.div>
 
                 <motion.div variants={itemVariants}>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label className="block text-sm font-semibold text-gray-700 mb-2 text-center">
                     <MapPin className="inline h-4 w-4 mr-2" />
                     Ville/Code postal *
                   </label>
@@ -188,7 +188,7 @@ const ContactForm = () => {
 
               {/* Service Selection */}
               <motion.div variants={itemVariants}>
-                <label className="block text-sm font-semibold text-gray-700 mb-4">
+                <label className="block text-sm font-semibold text-gray-700 mb-4 text-center">
                   Service souhaité *
                 </label>
                 <div className="grid md:grid-cols-2 gap-3">
@@ -273,7 +273,7 @@ const ContactForm = () => {
                 variants={itemVariants}
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-blue-500/25 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
+                className="w-full bg-gradient-to-r from-blue-600 to-blue-500 text-white px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-blue-500/25 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
               >
                 {isSubmitting ? (
                   <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-white"></div>
@@ -295,7 +295,7 @@ const ContactForm = () => {
             className="space-y-8"
           >
             {/* Process */}
-            <div className="bg-gradient-to-r from-blue-500 to-cyan-500 rounded-3xl p-8 text-white">
+            <div className="bg-gradient-to-r from-blue-500 to-blue-500 rounded-3xl p-8 text-white">
               <h3 className="text-2xl font-bold mb-6">Notre Processus</h3>
               <div className="space-y-4">
                 {[
@@ -310,7 +310,7 @@ const ContactForm = () => {
                     </div>
                     <div className="flex-1">
                       <span className="font-semibold">{item.text}</span>
-                      <div className="text-cyan-200 text-sm">{item.time}</div>
+                      <div className="text-blue-200 text-sm">{item.time}</div>
                     </div>
                   </div>
                 ))}
@@ -330,7 +330,7 @@ const ContactForm = () => {
                   "Garantie satisfaction client"
                 ].map((guarantee, index) => (
                   <div key={index} className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
+                    <CheckCircle className="h-5 w-5 text-blue-500 mr-3" />
                     <span className="text-gray-700">{guarantee}</span>
                   </div>
                 ))}

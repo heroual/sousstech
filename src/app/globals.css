@@ -4,14 +4,35 @@
   --font-inter: 'Inter', sans-serif;
   --font-poppins: 'Poppins', sans-serif;
   
-  /* Custom colors */
-  --color-primary: #2563eb; /* Blue-600 */
-  --color-secondary: #06b6d4; /* Cyan-500 */
-  --color-accent: #10b981; /* Emerald-500 */
-  --color-neon: #00ff88;
+  /* Simplified color palette - Only 3 main colors */
+  --color-primary: #2563eb; /* Blue - Main accent */
+  --color-white: #ffffff;
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
   
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Consistent spacing system */
+  --spacing-xs: 0.5rem;    /* 8px */
+  --spacing-sm: 1rem;      /* 16px */
+  --spacing-md: 1.5rem;    /* 24px */
+  --spacing-lg: 2rem;      /* 32px */
+  --spacing-xl: 3rem;      /* 48px */
+  --spacing-2xl: 4rem;     /* 64px */
+  --spacing-3xl: 6rem;     /* 96px */
+  
+  /* Consistent border radius */
+  --radius-sm: 0.5rem;     /* 8px */
+  --radius-md: 0.75rem;    /* 12px */
+  --radius-lg: 1rem;       /* 16px */
+  --radius-xl: 1.5rem;     /* 24px */
+  
+  --background: var(--color-white);
+  --foreground: var(--color-gray-900);
 }
 
 @theme inline {
@@ -67,30 +88,142 @@ img {
 .font-poppins {
   font-family: var(--font-poppins), sans-serif;
 }
-
+/* Consistent utility classes */
 .gradient-text {
-  background: linear-gradient(to right, #2563eb, #06b6d4);
+  background: linear-gradient(to right, var(--color-primary), var(--color-primary));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .gradient-bg {
-  background: linear-gradient(to right, #2563eb, #06b6d4);
+  background: var(--color-primary);
 }
 
 .glass-effect {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--color-gray-200);
 }
 
-.shadow-glow {
-  box-shadow: 0 0 20px rgba(37, 99, 235, 0.3);
+/* Standardized shadows */
+.shadow-soft {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 
-.shadow-neon {
-  box-shadow: 0 0 30px rgba(0, 255, 136, 0.5);
+.shadow-medium {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.shadow-large {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.shadow-primary {
+  box-shadow: 0 4px 14px 0 rgba(37, 99, 235, 0.15);
+}
+
+/* Consistent image sizing */
+.image-hero {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.image-service {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.image-gallery {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.image-about {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+/* Consistent spacing classes */
+.section-padding {
+  padding: var(--spacing-3xl) 0;
+}
+
+.section-padding-top {
+  padding-top: var(--spacing-3xl);
+}
+
+.section-padding-bottom {
+  padding-bottom: var(--spacing-3xl);
+}
+
+.container-padding {
+  padding-left: var(--spacing-sm);
+  padding-right: var(--spacing-sm);
+}
+
+/* Consistent text alignment classes */
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+/* Responsive text alignment */
+@media (min-width: 1024px) {
+  .lg\:text-left {
+    text-align: left;
+  }
+  
+  .lg\:text-center {
+    text-align: center;
+  }
+  
+  .lg\:text-right {
+    text-align: right;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:text-left {
+    text-align: left;
+  }
+  
+  .md\:text-center {
+    text-align: center;
+  }
+  
+  .md\:text-right {
+    text-align: right;
+  }
+}
+
+@media (min-width: 640px) {
+  .container-padding {
+    padding-left: var(--spacing-md);
+    padding-right: var(--spacing-md);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-padding {
+    padding-left: var(--spacing-lg);
+    padding-right: var(--spacing-lg);
+  }
 }
 
 .text-balance {

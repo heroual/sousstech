@@ -17,7 +17,7 @@ const ContactMethods = () => {
       contact: "+212 808 551 720",
       action: "tel:+212808551720",
       description: "Appelez-nous pour un conseil technique immédiat ou une urgence",
-      color: "from-green-500 to-emerald-500",
+      color: "from-blue-500 to-blue-400",
       available: "Lun-Ven 9h-18h, Sam 9h-12h"
     },
     {
@@ -27,7 +27,7 @@ const ContactMethods = () => {
       contact: "+212 697 342 443",
       action: "https://wa.me/212697342443",
       description: "Réponse rapide via WhatsApp, envoi de photos et documents",
-      color: "from-green-600 to-green-500",
+      color: "from-blue-600 to-blue-500",
       available: "7j/7 - Réponse < 5min"
     },
     {
@@ -37,7 +37,7 @@ const ContactMethods = () => {
       contact: "contact@soustech.ma",
       action: "mailto:contact@soustech.ma",
       description: "Envoyez-nous votre demande détaillée pour un devis complet",
-      color: "from-blue-500 to-cyan-500",
+      color: "from-blue-500 to-blue-400",
       available: "Réponse sous 24h"
     },
     {
@@ -47,7 +47,7 @@ const ContactMethods = () => {
       contact: "+212 808 551 720",
       action: "tel:+212808551720",
       description: "Support technique pour clients existants et urgences",
-      color: "from-purple-500 to-violet-500",
+      color: "from-blue-700 to-blue-600",
       available: "24h/24 - 7j/7"
     }
   ];
@@ -76,7 +76,7 @@ const ContactMethods = () => {
         >
           <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6">
             Plusieurs Moyens
-            <span className="block gradient-text">
+            <span className="block text-blue-500">
               de nous Contacter
             </span>
           </h2>
@@ -126,7 +126,7 @@ const ContactMethods = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="bg-gradient-to-r from-gray-900 to-blue-900 rounded-3xl p-8 md:p-12 text-white"
+          className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-3xl p-8 md:p-12 text-white"
         >
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
@@ -135,14 +135,14 @@ const ContactMethods = () => {
               </h3>
               <div className="space-y-4">
                 <div className="flex items-start">
-                  <MapPin className="h-5 w-5 text-cyan-300 mr-3 mt-1 flex-shrink-0" />
+                  <MapPin className="h-5 w-5 text-blue-300 mr-3 mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-semibold">{officeInfo.address}</p>
-                    <p className="text-blue-200">{officeInfo.city}</p>
+                    <p className="text-gray-300">{officeInfo.city}</p>
                   </div>
                 </div>
                 
-                <div className="text-blue-100 text-sm">
+                <div className="text-gray-300 text-sm">
                   <p>🌍 {officeInfo.region}</p>
                   <p>🅿️ {officeInfo.parking}</p>
                 </div>
@@ -151,24 +151,24 @@ const ContactMethods = () => {
             
             <div>
               <h4 className="text-xl font-bold mb-4">Horaires d'Ouverture</h4>
-              <div className="space-y-2 text-blue-100">
+              <div className="space-y-2 text-gray-300">
                 <div className="flex items-center">
-                  <Clock className="h-4 w-4 mr-2 text-cyan-300" />
+                  <Clock className="h-4 w-4 mr-2 text-blue-300" />
                   <span className="text-sm">{officeInfo.hours.weekdays}</span>
                 </div>
                 <div className="flex items-center">
-                  <Clock className="h-4 w-4 mr-2 text-cyan-300" />
+                  <Clock className="h-4 w-4 mr-2 text-blue-300" />
                   <span className="text-sm">{officeInfo.hours.saturday}</span>
                 </div>
                 <div className="flex items-center">
-                  <Clock className="h-4 w-4 mr-2 text-cyan-300" />
+                  <Clock className="h-4 w-4 mr-2 text-blue-300" />
                   <span className="text-sm">{officeInfo.hours.sunday}</span>
                 </div>
               </div>
               
               <div className="mt-6 p-4 bg-white/10 rounded-xl">
                 <h5 className="font-semibold mb-2">💡 Conseil</h5>
-                <p className="text-sm text-blue-200">
+                <p className="text-sm text-gray-300">
                   Pour les visites sur site, nous nous déplaçons dans toute la région Souss-Massa. 
                   Contactez-nous pour planifier un rendez-vous.
                 </p>

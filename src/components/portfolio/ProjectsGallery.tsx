@@ -22,7 +22,7 @@ const ProjectsGallery = () => {
       description: "Installation complète de domotique dans une villa de 250m² avec gestion éclairage, chauffage, volets et sécurité.",
       features: ["50 points lumineux automatisés", "Thermostat intelligent", "15 volets motorisés", "Système sécurité intégré"],
       image: "🏠",
-      color: "from-blue-500 to-cyan-500",
+      color: "from-blue-500 to-blue-400",
       icon: Home,
       results: "30% d'économie d'énergie",
       satisfaction: "5/5"
@@ -38,7 +38,7 @@ const ProjectsGallery = () => {
       description: "Déploiement FTTR et infrastructure réseau pour 200 postes de travail avec Wi-Fi 6E professionnel.",
       features: ["FTTR 10 Gbit/s", "50 points d'accès Wi-Fi 6E", "Réseau sécurisé VLAN", "Monitoring temps réel"],
       image: "🏢",
-      color: "from-yellow-500 to-orange-500",
+      color: "from-blue-600 to-blue-500",
       icon: Zap,
       results: "10x plus rapide",
       satisfaction: "5/5"
@@ -54,7 +54,7 @@ const ProjectsGallery = () => {
       description: "Installation système de surveillance intelligent avec 12 caméras 4K et détection IA pour sécuriser l'établissement.",
       features: ["12 caméras 4K", "Détection de mouvement IA", "Accès mobile", "Stockage cloud sécurisé"],
       image: "🍽️",
-      color: "from-green-500 to-emerald-500",
+      color: "from-blue-700 to-blue-600",
       icon: Shield,
       results: "0 incident depuis",
       satisfaction: "5/5"
@@ -70,7 +70,7 @@ const ProjectsGallery = () => {
       description: "Installation FTTR invisible dans appartement haussmannien sans perçage, préservant l'esthétique.",
       features: ["Installation sans perçage", "Câblage invisible", "12 prises FTTR", "Débit symétrique 1 Gbit/s"],
       image: "🏛️",
-      color: "from-purple-500 to-violet-500",
+      color: "from-blue-800 to-blue-700",
       icon: Zap,
       results: "100% invisible",
       satisfaction: "5/5"
@@ -86,7 +86,7 @@ const ProjectsGallery = () => {
       description: "Transformation en café connecté avec Wi-Fi clients, système de commande tactile et gestion IoT.",
       features: ["Wi-Fi public sécurisé", "Bornes de commande", "Capteurs IoT", "Gestion énergétique"],
       image: "☕",
-      color: "from-indigo-500 to-purple-500",
+      color: "from-blue-900 to-blue-800",
       icon: Network,
       results: "+40% satisfaction client",
       satisfaction: "5/5"
@@ -102,7 +102,7 @@ const ProjectsGallery = () => {
       description: "Écosystème domotique complet avec FTTR, Smart Home, sécurité et gestion énergétique intelligente.",
       features: ["FTTR + Domotique", "20 caméras intelligentes", "Panneaux solaires connectés", "App mobile unifiée"],
       image: "🌟",
-      color: "from-pink-500 to-rose-500",
+      color: "from-blue-950 to-blue-900",
       icon: Home,
       results: "Maison 100% autonome",
       satisfaction: "5/5"
@@ -140,7 +140,7 @@ const ProjectsGallery = () => {
         >
           <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6">
             Projets Récents
-            <span className="block gradient-text">
+            <span className="block text-blue-500">
               & Réalisations
             </span>
           </h2>

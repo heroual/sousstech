@@ -17,7 +17,7 @@ const TeamSection = () => {
       experience: "12 ans",
       description: "Expert en infrastructures réseau et spécialiste FTTR. Ancien ingénieur chez Orange Business.",
       avatar: "AD",
-      color: "from-blue-500 to-cyan-500"
+      color: "from-blue-500 to-blue-400"
     },
     {
       name: "Sarah Martin",
@@ -26,7 +26,7 @@ const TeamSection = () => {
       experience: "8 ans",
       description: "Spécialiste en solutions domotiques et objets connectés. Certifiée KNX et Z-Wave.",
       avatar: "SM",
-      color: "from-purple-500 to-violet-500"
+      color: "from-blue-600 to-blue-500"
     },
     {
       name: "Thomas Laurent",
@@ -35,7 +35,7 @@ const TeamSection = () => {
       experience: "10 ans",
       description: "Expert en systèmes de surveillance intelligente. Formation sécurité électronique CNPP.",
       avatar: "TL",
-      color: "from-green-500 to-emerald-500"
+      color: "from-blue-700 to-blue-600"
     },
     {
       name: "Julie Chen",
@@ -44,7 +44,7 @@ const TeamSection = () => {
       experience: "6 ans",
       description: "Coordination des équipes et gestion de projets complexes. Certification PMP.",
       avatar: "JC",
-      color: "from-yellow-500 to-orange-500"
+      color: "from-blue-800 to-blue-700"
     }
   ];
 
@@ -128,7 +128,7 @@ const TeamSection = () => {
             className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6"
           >
             Notre Équipe
-            <span className="block gradient-text">
+            <span className="block text-blue-500">
               d'Experts
             </span>
           </motion.h2>
@@ -154,7 +154,7 @@ const TeamSection = () => {
               variants={itemVariants}
               className="bg-gray-50 rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300 group"
             >
-              <div className="bg-gradient-to-r from-blue-500 to-cyan-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+              <div className="bg-gradient-to-r from-blue-500 to-blue-400 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                 <stat.icon className="h-8 w-8 text-white" />
               </div>
               <div className="text-3xl font-bold text-gray-900 mb-2">{stat.stat}</div>
@@ -200,13 +200,13 @@ const TeamSection = () => {
           variants={itemVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="bg-gradient-to-r from-gray-900 to-blue-900 rounded-3xl p-8 md:p-12 text-white"
+          className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-3xl p-8 md:p-12 text-white"
         >
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold mb-4 font-poppins">
               Nos Valeurs d'Équipe
             </h3>
-            <p className="text-blue-100 max-w-3xl mx-auto">
+            <p className="text-gray-300 max-w-3xl mx-auto">
               Ce qui unit notre équipe et guide notre approche professionnelle 
               au quotidien.
             </p>
@@ -216,7 +216,7 @@ const TeamSection = () => {
             {values.map((value, index) => (
               <div key={index} className="text-center">
                 <h4 className="text-xl font-semibold mb-3">{value.title}</h4>
-                <p className="text-blue-100 text-sm">{value.description}</p>
+                <p className="text-gray-300 text-sm">{value.description}</p>
               </div>
             ))}
           </div>

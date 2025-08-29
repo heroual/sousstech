@@ -23,28 +23,28 @@ const ProjectCategories = () => {
       name: 'FTTR',
       icon: Zap,
       count: 150,
-      color: 'from-yellow-500 to-orange-500'
+      color: 'from-blue-600 to-blue-500'
     },
     {
       id: 'smart-home',
       name: 'Smart Home',
       icon: Home,
       count: 200,
-      color: 'from-blue-500 to-cyan-500'
+      color: 'from-blue-500 to-blue-400'
     },
     {
       id: 'security',
       name: 'Sécurité',
       icon: Shield,
       count: 100,
-      color: 'from-green-500 to-emerald-500'
+      color: 'from-blue-700 to-blue-600'
     },
     {
       id: 'network',
       name: 'Réseaux IT',
       icon: Network,
       count: 75,
-      color: 'from-purple-500 to-violet-500'
+      color: 'from-blue-800 to-blue-700'
     }
   ];
 
@@ -79,7 +79,7 @@ const ProjectCategories = () => {
         >
           <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6">
             Explorez Nos
-            <span className="block gradient-text">
+            <span className="block text-blue-500">
               Domaines d'Expertise
             </span>
           </h2>
@@ -151,9 +151,9 @@ const ProjectCategories = () => {
           className="text-center"
         >
           {activeFilter === 'all' ? (
-            <div className="bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl p-8 text-white">
+            <div className="bg-gradient-to-r from-blue-500 to-blue-500 rounded-2xl p-8 text-white">
               <h3 className="text-2xl font-bold mb-4">Tous nos Projets</h3>
-              <p className="text-blue-100 max-w-3xl mx-auto">
+              <p className="text-gray-300 max-w-3xl mx-auto">
                 Découvrez l'ensemble de nos réalisations across tous nos domaines d'expertise : 
                 FTTR, Smart Home, Sécurité et Réseaux IT.
               </p>

@@ -52,25 +52,25 @@ const NetworkSection = () => {
       icon: Zap,
       title: "Gestion Énergétique",
       description: "Monitoring et optimisation de la consommation énergétique",
-      color: "from-yellow-500 to-orange-500"
+      color: "from-blue-400 to-blue-300"
     },
     {
       icon: Shield,
       title: "Sécurité Connectée",
       description: "Intégration de capteurs de sécurité intelligents",
-      color: "from-red-500 to-pink-500"
+      color: "from-blue-600 to-blue-500"
     },
     {
       icon: Settings,
       title: "Automatisation",
       description: "Automatisation des processus et équipements",
-      color: "from-blue-500 to-cyan-500"
+      color: "from-blue-500 to-blue-400"
     },
     {
       icon: Network,
       title: "Connectivité",
       description: "Infrastructure réseau pour objets connectés",
-      color: "from-purple-500 to-violet-500"
+      color: "from-blue-700 to-blue-600"
     }
   ];
 
@@ -102,8 +102,8 @@ const NetworkSection = () => {
   ];
 
   return (
-    <section id="network" ref={ref} className="py-20 bg-gradient-to-b from-green-50 to-purple-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="network" ref={ref} className="section-padding bg-gray-50">
+      <div className="container-padding max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -112,14 +112,14 @@ const NetworkSection = () => {
           className="text-center mb-16"
         >
           <div className="flex justify-center mb-6">
-            <div className="bg-gradient-to-r from-purple-500 to-violet-500 p-4 rounded-2xl">
+            <div className="bg-blue-500 p-4 rounded-2xl">
               <Network className="h-12 w-12 text-white" />
             </div>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6 text-center">
             Réseaux & IT Services
           </h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed text-center">
             Conception, optimisation et maintenance de votre infrastructure réseau. 
             Solutions IoT et domotique avec support technique professionnel.
           </p>
@@ -134,15 +134,15 @@ const NetworkSection = () => {
         >
           {networkServices.map((service, index) => (
             <div key={index} className="bg-white rounded-2xl p-4 sm:p-6 shadow-lg hover:shadow-xl transition-all duration-300 group">
-              <div className="bg-gradient-to-r from-purple-500 to-violet-500 w-12 h-12 sm:w-16 sm:h-16 rounded-xl flex items-center justify-center mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">
+              <div className="bg-blue-500 w-12 h-12 sm:w-16 sm:h-16 rounded-xl flex items-center justify-center mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">
                 <service.icon className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
               </div>
-              <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">{service.title}</h3>
-              <p className="text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base">{service.description}</p>
+              <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 text-center">{service.title}</h3>
+              <p className="text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base text-center">{service.description}</p>
               <ul className="space-y-1 sm:space-y-2">
                 {service.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-start text-xs sm:text-sm text-gray-600">
-                    <CheckCircle className="h-3 w-3 sm:h-4 sm:w-4 text-purple-500 mr-2 mt-0.5 flex-shrink-0" />
+                  <li key={featureIndex} className="flex items-start text-xs sm:text-sm text-gray-600 text-center">
+                    <CheckCircle className="h-3 w-3 sm:h-4 sm:w-4 text-blue-500 mr-2 mt-0.5 flex-shrink-0" />
                     <span>{feature}</span>
                   </li>
                 ))}
@@ -167,8 +167,8 @@ const NetworkSection = () => {
                 <div className={`bg-gradient-to-r ${solution.color} w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300`}>
                   <solution.icon className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
                 </div>
-                <h4 className="text-base sm:text-lg font-bold text-gray-900 mb-2">{solution.title}</h4>
-                <p className="text-gray-600 text-xs sm:text-sm">{solution.description}</p>
+                <h4 className="text-base sm:text-lg font-bold text-gray-900 mb-2 text-center">{solution.title}</h4>
+                <p className="text-gray-600 text-xs sm:text-sm text-center">{solution.description}</p>
               </div>
             ))}
           </div>
@@ -183,12 +183,12 @@ const NetworkSection = () => {
         >
           {supportFeatures.map((feature, index) => (
             <div key={index} className="bg-white rounded-2xl p-4 sm:p-6 shadow-lg hover:shadow-xl transition-all duration-300 text-center group">
-              <div className="bg-gradient-to-r from-purple-500 to-violet-500 w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">
+              <div className="bg-blue-500 w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">
                 <feature.icon className="h-6 w-6 sm:h-8 sm:w-8 text-white" />
               </div>
               <div className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">{feature.stat}</div>
-              <h4 className="text-base sm:text-lg font-semibold text-gray-900 mb-2">{feature.title}</h4>
-              <p className="text-gray-600 text-xs sm:text-sm">{feature.description}</p>
+              <h4 className="text-base sm:text-lg font-semibold text-gray-900 mb-2 text-center">{feature.title}</h4>
+              <p className="text-gray-600 text-xs sm:text-sm text-center">{feature.description}</p>
             </div>
           ))}
         </motion.div>
@@ -198,25 +198,25 @@ const NetworkSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="bg-gradient-to-r from-purple-500 to-violet-500 rounded-3xl p-6 sm:p-8 md:p-12 text-white text-center"
+          className="bg-blue-500 rounded-3xl p-6 sm:p-8 md:p-12 text-white text-center"
         >
           <h3 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 font-poppins">
             Optimisez Votre Infrastructure IT
           </h3>
-          <p className="text-purple-100 mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed text-sm sm:text-base">
+          <p className="text-blue-100 mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed text-sm sm:text-base">
             Faites confiance à nos experts pour concevoir, déployer et maintenir 
             votre infrastructure réseau. Solutions sur-mesure et support technique de qualité.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md sm:max-w-none mx-auto">
             <Link
               href="/contact"
-              className="bg-white text-purple-600 px-6 sm:px-8 py-3 rounded-full font-semibold hover:bg-purple-50 transition-colors duration-300 min-h-[48px] flex items-center justify-center text-sm sm:text-base"
+              className="bg-white text-blue-600 px-6 sm:px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors duration-300 min-h-[48px] flex items-center justify-center text-sm sm:text-base text-center"
             >
               Audit Gratuit
             </Link>
             <Link
               href="/portfolio"
-              className="border-2 border-white text-white px-6 sm:px-8 py-3 rounded-full font-semibold hover:bg-white/10 transition-colors duration-300 min-h-[48px] flex items-center justify-center text-sm sm:text-base"
+              className="border-2 border-white text-white px-6 sm:px-8 py-3 rounded-full font-semibold hover:bg-white/10 transition-colors duration-300 min-h-[48px] flex items-center justify-center text-sm sm:text-base text-center"
             >
               Nos Références
             </Link>

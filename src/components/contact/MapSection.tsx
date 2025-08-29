@@ -34,12 +34,12 @@ const MapSection = () => {
         >
           {/* Interactive Map Placeholder */}
           <div className="bg-white rounded-3xl shadow-lg overflow-hidden">
-            <div className="h-96 bg-gradient-to-br from-blue-400 to-cyan-400 relative flex items-center justify-center">
+            <div className="h-96 bg-gradient-to-br from-blue-500 to-blue-400 relative flex items-center justify-center">
               <div className="text-center text-white">
                 <MapPin className="h-16 w-16 mx-auto mb-4" />
                 <h3 className="text-2xl font-bold mb-2">Carte Interactive</h3>
-                <p className="text-blue-100">157 Mhaita</p>
-                <p className="text-blue-100">Taroudant 83000, Morocco</p>
+                <p className="text-gray-300">157 Mhaita</p>
+                <p className="text-gray-300">Taroudant 83000, Morocco</p>
                 <a 
                   href="https://maps.google.com/maps?q=157+Mhaita,+Taroudant+83000,+Morocco" 
                   target="_blank" 
@@ -70,14 +70,14 @@ const MapSection = () => {
 
             <div className="bg-white rounded-2xl p-6 shadow-lg">
               <div className="flex items-center mb-4">
-                <Clock className="h-6 w-6 text-green-500 mr-3" />
+                <Clock className="h-6 w-6 text-blue-500 mr-3" />
                 <h3 className="text-xl font-bold text-gray-900">Horaires</h3>
               </div>
               <div className="space-y-2 text-gray-700">
                 <p><strong>Lundi - Vendredi :</strong> 9h00 - 18h00</p>
                 <p><strong>Samedi :</strong> 9h00 - 12h00</p>
                 <p><strong>Dimanche :</strong> Fermé</p>
-                <p className="text-sm text-green-600 mt-3">
+                <p className="text-sm text-blue-600 mt-3">
                   ⚡ Support d'urgence disponible 24h/24
                 </p>
               </div>
@@ -85,7 +85,7 @@ const MapSection = () => {
 
             <div className="bg-white rounded-2xl p-6 shadow-lg">
               <div className="flex items-center mb-4">
-                <Navigation className="h-6 w-6 text-purple-500 mr-3" />
+                <Navigation className="h-6 w-6 text-blue-500 mr-3" />
                 <h3 className="text-xl font-bold text-gray-900">Zone d'Intervention</h3>
               </div>
               <div className="text-gray-700">

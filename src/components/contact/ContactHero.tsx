@@ -10,42 +10,42 @@ const ContactHero = () => {
       title: 'Appel Direct',
       description: 'Conseil immédiat',
       action: 'tel:+212808551720',
-      color: 'from-green-500 to-emerald-500'
+      color: 'from-blue-500 to-blue-400'
     },
     {
       icon: MessageCircle,
       title: 'WhatsApp',
       description: 'Chat en direct',
       action: 'https://wa.me/212697342443',
-      color: 'from-green-600 to-green-500'
+      color: 'from-blue-600 to-blue-500'
     },
     {
       icon: Mail,
       title: 'Email',
       description: 'Devis détaillé',
       action: 'mailto:contact@soustech.ma',
-      color: 'from-blue-500 to-cyan-500'
+      color: 'from-blue-500 to-blue-400'
     }
   ];
 
   return (
-    <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900">
+    <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800">
       {/* Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-20 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl animate-pulse delay-500"></div>
+        <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-20 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl animate-pulse delay-500"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+      <div className="relative z-10 container-padding max-w-7xl mx-auto text-center text-white">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-5xl md:text-6xl font-bold font-poppins mb-6">
+          <h1 className="text-5xl md:text-6xl font-bold font-poppins mb-6 text-center">
             Contactez
-            <span className="block bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+            <span className="block text-blue-400">
               Nos Experts
             </span>
           </h1>
@@ -55,7 +55,7 @@ const ContactHero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-xl md:text-2xl text-blue-100 mb-12 max-w-4xl mx-auto leading-relaxed"
+          className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed text-center"
         >
           Parlons de votre projet ! Nos experts sont à votre disposition pour vous 
           conseiller et établir un devis personnalisé gratuit.
@@ -78,8 +78,8 @@ const ContactHero = () => {
               <div className={`bg-gradient-to-r ${action.color} w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
                 <action.icon className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold mb-2">{action.title}</h3>
-              <p className="text-blue-200 text-sm">{action.description}</p>
+              <h3 className="text-xl font-bold mb-2 text-center">{action.title}</h3>
+              <p className="text-gray-300 text-sm text-center">{action.description}</p>
             </motion.a>
           ))}
         </motion.div>
@@ -92,19 +92,19 @@ const ContactHero = () => {
           className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 max-w-2xl mx-auto"
         >
           <div className="flex items-center justify-center mb-4">
-            <Clock className="h-6 w-6 text-cyan-300 mr-3" />
-            <h3 className="text-xl font-bold">Disponibilité</h3>
+            <Clock className="h-6 w-6 text-blue-300 mr-3" />
+            <h3 className="text-xl font-bold text-center">Disponibilité</h3>
           </div>
           <div className="grid md:grid-cols-2 gap-4 text-sm">
-            <div>
-              <h4 className="font-semibold text-cyan-300 mb-2">Horaires Bureau</h4>
-              <p className="text-blue-200">Lun - Ven : 9h - 18h</p>
-              <p className="text-blue-200">Sam : 9h - 12h</p>
+            <div className="text-center">
+              <h4 className="font-semibold text-blue-300 mb-2">Horaires Bureau</h4>
+              <p className="text-gray-300">Lun - Ven : 9h - 18h</p>
+              <p className="text-gray-300">Sam : 9h - 12h</p>
             </div>
-            <div>
-              <h4 className="font-semibold text-cyan-300 mb-2">Support Urgence</h4>
-              <p className="text-blue-200">7j/7 - 24h/24</p>
-              <p className="text-blue-200">WhatsApp privilégié</p>
+            <div className="text-center">
+              <h4 className="font-semibold text-blue-300 mb-2">Support Urgence</h4>
+              <p className="text-gray-300">7j/7 - 24h/24</p>
+              <p className="text-gray-300">WhatsApp privilégié</p>
             </div>
           </div>
         </motion.div>

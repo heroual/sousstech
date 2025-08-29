@@ -51,31 +51,31 @@ const SmartHomeSection = () => {
       name: "Réveil Matin",
       icon: Clock,
       description: "Réveil progressif avec lumière, musique douce et température optimale",
-      color: "from-orange-400 to-yellow-400"
+      color: "from-blue-400 to-blue-300"
     },
     {
       name: "Mode Absence",
       icon: Shield,
       description: "Simulation de présence, activation sécurité et économies d'énergie",
-      color: "from-red-400 to-pink-400"
+      color: "from-blue-500 to-blue-400"
     },
     {
       name: "Soirée Cinéma",
       icon: Home,
       description: "Éclairage tamisé, fermeture volets et ambiance parfaite",
-      color: "from-purple-400 to-blue-400"
+      color: "from-blue-600 to-blue-500"
     },
     {
       name: "Mode Nuit",
       icon: Lightbulb,
       description: "Extinction progressive, verrouillage et activation alarme",
-      color: "from-blue-400 to-cyan-400"
+      color: "from-blue-300 to-blue-200"
     }
   ];
 
   return (
-    <section id="smart-home" ref={ref} className="py-20 bg-gradient-to-b from-white to-blue-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="smart-home" ref={ref} className="section-padding bg-gray-50">
+      <div className="container-padding max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -84,14 +84,14 @@ const SmartHomeSection = () => {
           className="text-center mb-16"
         >
           <div className="flex justify-center mb-6">
-            <div className="bg-gradient-to-r from-blue-500 to-cyan-500 p-4 rounded-2xl">
+            <div className="bg-blue-500 p-4 rounded-2xl">
               <Home className="h-12 w-12 text-white" />
             </div>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6 text-center">
             Smart Home - Maison Intelligente
           </h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed text-center">
             Transformez votre maison en espace intelligent avec notre solution domotique complète. 
             Contrôlez lumières, chauffage, sécurité et bien plus depuis votre smartphone.
           </p>
@@ -106,15 +106,15 @@ const SmartHomeSection = () => {
         >
           {smartFeatures.map((feature, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 group">
-              <div className="bg-gradient-to-r from-blue-500 to-cyan-500 w-16 h-16 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+              <div className="bg-blue-500 w-16 h-16 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                 <feature.icon className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">{feature.title}</h3>
-              <p className="text-gray-600 mb-4 text-sm">{feature.description}</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-2 text-center">{feature.title}</h3>
+              <p className="text-gray-600 mb-4 text-sm text-center">{feature.description}</p>
               <ul className="space-y-2">
                 {feature.features.map((item, itemIndex) => (
-                  <li key={itemIndex} className="flex items-center text-sm text-gray-600">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2 flex-shrink-0" />
+                  <li key={itemIndex} className="flex items-center text-sm text-gray-600 text-center">
+                    <CheckCircle className="h-4 w-4 text-blue-500 mr-2 flex-shrink-0" />
                     {item}
                   </li>
                 ))}
@@ -139,8 +139,8 @@ const SmartHomeSection = () => {
                 <div className={`bg-gradient-to-r ${scenario.color} w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
                   <scenario.icon className="h-8 w-8 text-white" />
                 </div>
-                <h4 className="text-lg font-bold text-gray-900 mb-2">{scenario.name}</h4>
-                <p className="text-gray-600 text-sm">{scenario.description}</p>
+                <h4 className="text-lg font-bold text-gray-900 mb-2 text-center">{scenario.name}</h4>
+                <p className="text-gray-600 text-sm text-center">{scenario.description}</p>
               </div>
             ))}
           </div>
@@ -151,12 +151,12 @@ const SmartHomeSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="bg-gradient-to-r from-blue-500 to-cyan-500 rounded-3xl p-8 md:p-12 text-white text-center"
+          className="bg-blue-500 rounded-3xl p-8 md:p-12 text-white text-center"
         >
-          <h3 className="text-3xl font-bold mb-6 font-poppins">
+          <h3 className="text-3xl font-bold mb-6 font-poppins text-center">
             Prêt pour une Maison Intelligente ?
           </h3>
-          <p className="text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed text-center">
             Nos experts vous accompagnent dans la conception et l'installation 
             de votre solution domotique sur-mesure. Installation professionnelle 
             et formation incluses.
@@ -164,13 +164,13 @@ const SmartHomeSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors duration-300"
+              className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors duration-300 text-center"
             >
               Demander un Devis
             </Link>
             <Link
               href="/portfolio"
-              className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white/10 transition-colors duration-300"
+              className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white/10 transition-colors duration-300 text-center"
             >
               Voir nos Réalisations
             </Link>

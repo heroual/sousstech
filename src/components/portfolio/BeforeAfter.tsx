@@ -23,7 +23,7 @@ const BeforeAfter = () => {
           "Perçages dans les murs historiques",
           "Installation complexe et salissante"
         ],
-        color: "from-red-500 to-red-600"
+        color: "from-gray-500 to-gray-600"
       },
       after: {
         title: "Après : Solution FTTR",
@@ -34,7 +34,7 @@ const BeforeAfter = () => {
           "Aucun perçage nécessaire",
           "Installation propre en 1 journée"
         ],
-        color: "from-green-500 to-green-600"
+        color: "from-blue-500 to-blue-600"
       },
       results: {
         speed: "10x plus rapide",
@@ -54,7 +54,7 @@ const BeforeAfter = () => {
           "Pas de programmation possible",
           "Contrôle difficile à distance"
         ],
-        color: "from-red-500 to-red-600"
+        color: "from-gray-500 to-gray-600"
       },
       after: {
         title: "Après : Maison Intelligente",
@@ -65,7 +65,7 @@ const BeforeAfter = () => {
           "Programmation par scénarios",
           "Contrôle mobile complet"
         ],
-        color: "from-green-500 to-green-600"
+        color: "from-blue-500 to-blue-600"
       },
       results: {
         savings: "30% d'économie",
@@ -85,7 +85,7 @@ const BeforeAfter = () => {
           "Pas d'accès distant",
           "Nombreuses fausses alertes"
         ],
-        color: "from-red-500 to-red-600"
+        color: "from-gray-500 to-gray-600"
       },
       after: {
         title: "Après : Surveillance IA",
@@ -96,7 +96,7 @@ const BeforeAfter = () => {
           "Accès mobile temps réel",
           "IA anti-fausses alertes"
         ],
-        color: "from-green-500 to-green-600"
+        color: "from-blue-500 to-blue-600"
       },
       results: {
         coverage: "100% du restaurant",
@@ -140,7 +140,7 @@ const BeforeAfter = () => {
             className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6"
           >
             Avant / Après
-            <span className="block gradient-text">
+            <span className="block text-blue-500">
               Transformations
             </span>
           </motion.h2>
@@ -166,7 +166,7 @@ const BeforeAfter = () => {
               onClick={() => setActiveComparison(index)}
               className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 ${
                 activeComparison === index
-                  ? 'bg-gradient-to-r from-blue-500 to-cyan-500 text-white shadow-lg'
+                  ? 'bg-gradient-to-r from-blue-500 to-blue-500 text-white shadow-lg'
                   : 'bg-white text-gray-700 hover:bg-gray-100 shadow-md'
               }`}
             >
@@ -184,7 +184,7 @@ const BeforeAfter = () => {
           className="bg-white rounded-3xl shadow-xl overflow-hidden"
         >
           {/* Title */}
-          <div className="bg-gradient-to-r from-gray-900 to-blue-900 text-white p-6 text-center">
+          <div className="bg-gradient-to-r from-gray-900 to-gray-800 text-white p-6 text-center">
             <h3 className="text-2xl font-bold mb-2">
               {comparisons[activeComparison].title}
             </h3>
@@ -209,7 +209,7 @@ const BeforeAfter = () => {
               <div className="space-y-3">
                 {comparisons[activeComparison].before.problems.map((problem, index) => (
                   <div key={index} className="flex items-center">
-                    <X className="h-5 w-5 text-red-500 mr-3 flex-shrink-0" />
+                    <X className="h-5 w-5 text-gray-500 mr-3 flex-shrink-0" />
                     <span className="text-gray-700">{problem}</span>
                   </div>
                 ))}
@@ -230,7 +230,7 @@ const BeforeAfter = () => {
               <div className="space-y-3">
                 {comparisons[activeComparison].after.benefits.map((benefit, index) => (
                   <div key={index} className="flex items-center">
-                    <Check className="h-5 w-5 text-green-500 mr-3 flex-shrink-0" />
+                    <Check className="h-5 w-5 text-blue-500 mr-3 flex-shrink-0" />
                     <span className="text-gray-700">{benefit}</span>
                   </div>
                 ))}
@@ -239,13 +239,13 @@ const BeforeAfter = () => {
           </div>
 
           {/* Results */}
-          <div className="bg-gradient-to-r from-blue-500 to-cyan-500 p-6 text-white">
+          <div className="bg-gradient-to-r from-blue-500 to-blue-500 p-6 text-white">
             <h4 className="text-xl font-bold text-center mb-6">Résultats Obtenus</h4>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
               {Object.entries(comparisons[activeComparison].results).map(([key, value], index) => (
                 <div key={index}>
                   <div className="text-2xl font-bold mb-1">{value}</div>
-                  <div className="text-blue-100 text-sm capitalize">{key.replace(/([A-Z])/g, ' $1')}</div>
+                  <div className="text-gray-300 text-sm capitalize">{key.replace(/([A-Z])/g, ' $1')}</div>
                 </div>
               ))}
             </div>

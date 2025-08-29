@@ -52,25 +52,25 @@ const SecuritySection = () => {
       icon: Users,
       title: "Résidentiel",
       description: "Protection complète de votre domicile et de votre famille",
-      color: "from-blue-500 to-cyan-500"
+      color: "from-blue-500 to-blue-400"
     },
     {
       icon: Camera,
       title: "Cafés & Restaurants",
       description: "Surveillance des espaces de service et zones de stockage",
-      color: "from-green-500 to-emerald-500"
+      color: "from-blue-500 to-blue-400"
     },
     {
       icon: Lock,
       title: "Entreprises",
       description: "Sécurisation des locaux et contrôle d'accès",
-      color: "from-purple-500 to-violet-500"
+      color: "from-blue-600 to-blue-500"
     },
     {
       icon: Shield,
       title: "Espaces Publics",
       description: "Surveillance de zones sensibles et espaces communs",
-      color: "from-red-500 to-orange-500"
+      color: "from-blue-700 to-blue-600"
     }
   ];
 
@@ -86,8 +86,8 @@ const SecuritySection = () => {
   ];
 
   return (
-    <section id="security" ref={ref} className="py-20 bg-gradient-to-b from-blue-50 to-green-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="security" ref={ref} className="section-padding bg-gray-50">
+      <div className="container-padding max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -96,14 +96,14 @@ const SecuritySection = () => {
           className="text-center mb-16"
         >
           <div className="flex justify-center mb-6">
-            <div className="bg-gradient-to-r from-green-500 to-emerald-500 p-4 rounded-2xl">
+            <div className="bg-blue-500 p-4 rounded-2xl">
               <Shield className="h-12 w-12 text-white" />
             </div>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6 text-center">
             Caméras de Surveillance & Sécurité
           </h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed text-center">
             Protégez vos biens avec nos solutions de surveillance intelligente. 
             Caméras haute définition, détection IA et accès distant pour une sécurité optimale.
           </p>
@@ -118,15 +118,15 @@ const SecuritySection = () => {
         >
           {securitySolutions.map((solution, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 group">
-              <div className="bg-gradient-to-r from-green-500 to-emerald-500 w-16 h-16 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+              <div className="bg-blue-500 w-16 h-16 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                 <solution.icon className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-2">{solution.title}</h3>
-              <p className="text-gray-600 mb-4 text-sm">{solution.description}</p>
+              <h3 className="text-xl font-bold text-gray-900 mb-2 text-center">{solution.title}</h3>
+              <p className="text-gray-600 mb-4 text-sm text-center">{solution.description}</p>
               <ul className="space-y-2">
                 {solution.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-center text-sm text-gray-600">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2 flex-shrink-0" />
+                  <li key={featureIndex} className="flex items-center text-sm text-gray-600 text-center">
+                    <CheckCircle className="h-4 w-4 text-blue-500 mr-2 flex-shrink-0" />
                     {feature}
                   </li>
                 ))}
@@ -151,8 +151,8 @@ const SecuritySection = () => {
                 <div className={`bg-gradient-to-r ${app.color} w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
                   <app.icon className="h-8 w-8 text-white" />
                 </div>
-                <h4 className="text-lg font-bold text-gray-900 mb-2">{app.title}</h4>
-                <p className="text-gray-600 text-sm">{app.description}</p>
+                <h4 className="text-lg font-bold text-gray-900 mb-2 text-center">{app.title}</h4>
+                <p className="text-gray-600 text-sm text-center">{app.description}</p>
               </div>
             ))}
           </div>
@@ -163,27 +163,27 @@ const SecuritySection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="bg-gradient-to-r from-green-500 to-emerald-500 rounded-3xl p-8 md:p-12 text-white"
+          className="bg-gradient-to-r from-blue-500 to-blue-400 rounded-3xl p-8 md:p-12 text-white"
         >
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-3xl font-bold mb-6 font-poppins">
+              <h3 className="text-3xl font-bold mb-6 font-poppins text-center">
                 Sécurité Professionnelle
               </h3>
-              <p className="text-green-100 mb-6 leading-relaxed">
+              <p className="text-blue-100 mb-6 leading-relaxed text-center">
                 Nos solutions de surveillance combinent haute technologie et facilité d'utilisation. 
                 Installation professionnelle et support technique inclus.
               </p>
-              <div className="flex gap-4">
+              <div className="flex gap-4 justify-center">
                 <Link
                   href="/contact"
-                  className="bg-white text-green-600 px-6 py-3 rounded-full font-semibold hover:bg-green-50 transition-colors duration-300"
+                  className="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors duration-300 text-center"
                 >
                   Devis Gratuit
                 </Link>
                 <Link
                   href="/portfolio"
-                  className="border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white/10 transition-colors duration-300"
+                  className="border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white/10 transition-colors duration-300 text-center"
                 >
                   Voir Projets
                 </Link>
@@ -192,8 +192,8 @@ const SecuritySection = () => {
             <div className="grid grid-cols-1 gap-3">
               {features.map((feature, index) => (
                 <div key={index} className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-green-200 mr-3 flex-shrink-0" />
-                  <span className="text-green-100 text-sm">{feature}</span>
+                  <CheckCircle className="h-5 w-5 text-blue-200 mr-3 flex-shrink-0" />
+                  <span className="text-blue-100 text-sm">{feature}</span>
                 </div>
               ))}
             </div>

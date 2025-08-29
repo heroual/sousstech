@@ -15,28 +15,28 @@ const ClientResults = () => {
       title: "Amélioration Performance",
       value: "950%",
       description: "Augmentation moyenne de débit",
-      color: "from-green-500 to-emerald-500"
+      color: "from-blue-500 to-blue-400"
     },
     {
       icon: Clock,
       title: "Temps d'Installation",
       value: "24h",
       description: "Délai moyen de réalisation",
-      color: "from-blue-500 to-cyan-500"
+      color: "from-blue-600 to-blue-500"
     },
     {
       icon: Star,
       title: "Satisfaction Client",
       value: "98%",
       description: "Taux de recommandation",
-      color: "from-yellow-500 to-orange-500"
+      color: "from-blue-700 to-blue-600"
     },
     {
       icon: Award,
       title: "Projets Réussis",
       value: "500+",
       description: "Installations sans incident",
-      color: "from-purple-500 to-violet-500"
+      color: "from-blue-800 to-blue-700"
     }
   ];
 
@@ -46,7 +46,7 @@ const ClientResults = () => {
       result: "30% d'économie d'énergie",
       detail: "Réduction facture électrique mensuelle",
       icon: "⚡",
-      color: "bg-yellow-100 text-yellow-800"
+      color: "bg-blue-100 text-blue-800"
     },
     {
       client: "Bureau FTTR",
@@ -60,28 +60,28 @@ const ClientResults = () => {
       result: "0 incident",
       detail: "Depuis l'installation",
       icon: "🛡️",
-      color: "bg-green-100 text-green-800"
+      color: "bg-blue-100 text-blue-800"
     },
     {
       client: "Café Connecté",
       result: "+40% satisfaction",
       detail: "Amélioration expérience client",
       icon: "😊",
-      color: "bg-purple-100 text-purple-800"
+      color: "bg-blue-100 text-blue-800"
     },
     {
       client: "Appartement FTTR",
       result: "100% invisible",
       detail: "Installation sans perçage",
       icon: "👁️",
-      color: "bg-indigo-100 text-indigo-800"
+      color: "bg-blue-100 text-blue-800"
     },
     {
       client: "Maison Complète",
       result: "Autonomie totale",
       detail: "Gestion énergétique optimisée",
       icon: "🌟",
-      color: "bg-pink-100 text-pink-800"
+      color: "bg-blue-100 text-blue-800"
     }
   ];
 
@@ -145,7 +145,7 @@ const ClientResults = () => {
             className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6"
           >
             Résultats Clients
-            <span className="block gradient-text">
+            <span className="block text-blue-500">
               & Impact Mesurable
             </span>
           </motion.h2>
@@ -214,13 +214,13 @@ const ClientResults = () => {
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="bg-gradient-to-r from-gray-900 to-blue-900 rounded-3xl p-8 md:p-12 text-white"
+          className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-3xl p-8 md:p-12 text-white"
         >
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold mb-4 font-poppins">
               Pourquoi nos Clients Nous Choisissent
             </h3>
-            <p className="text-blue-100 max-w-3xl mx-auto">
+            <p className="text-gray-300 max-w-3xl mx-auto">
               Des résultats concrets et durables qui font la différence au quotidien.
             </p>
           </div>
@@ -233,15 +233,15 @@ const ClientResults = () => {
                 className="text-center"
               >
                 <div className="bg-white/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <benefit.icon className="h-8 w-8 text-cyan-300" />
+                  <benefit.icon className="h-8 w-8 text-blue-300" />
                 </div>
                 <h4 className="text-xl font-bold mb-3">{benefit.title}</h4>
-                <p className="text-blue-100 mb-4 text-sm">{benefit.description}</p>
+                <p className="text-gray-300 mb-4 text-sm">{benefit.description}</p>
                 <div className="space-y-2">
                   {benefit.examples.map((example, exIndex) => (
                     <div key={exIndex} className="flex items-center text-sm">
-                      <CheckCircle className="h-4 w-4 text-green-300 mr-2 flex-shrink-0" />
-                      <span className="text-blue-200">{example}</span>
+                      <CheckCircle className="h-4 w-4 text-blue-300 mr-2 flex-shrink-0" />
+                      <span className="text-gray-300">{example}</span>
                     </div>
                   ))}
                 </div>

@@ -100,7 +100,7 @@ const Testimonials = () => {
             className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6"
           >
             Témoignages
-            <span className="block gradient-text">
+            <span className="block text-blue-500">
               de nos Clients
             </span>
           </motion.h2>
@@ -118,7 +118,7 @@ const Testimonials = () => {
           variants={itemVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="relative bg-gradient-to-r from-blue-500 to-cyan-500 rounded-3xl p-8 md:p-12 text-white mb-12"
+          className="relative bg-gradient-to-r from-blue-500 to-blue-500 rounded-3xl p-8 md:p-12 text-white mb-12"
         >
           {/* Background Pattern */}
           <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full transform translate-x-16 -translate-y-16"></div>
@@ -126,7 +126,7 @@ const Testimonials = () => {
           
           <div className="relative z-10">
             {/* Quote Icon */}
-            <Quote className="h-12 w-12 text-cyan-200 mb-6" />
+            <Quote className="h-12 w-12 text-blue-200 mb-6" />
             
             {/* Testimonial Content */}
             <motion.div
@@ -145,7 +145,7 @@ const Testimonials = () => {
                 {/* Rating */}
                 <div className="flex items-center mb-4">
                   {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 text-yellow-300 fill-current" />
+                    <Star key={i} className="h-5 w-5 text-blue-300 fill-current" />
                   ))}
                 </div>
                 
@@ -166,10 +166,10 @@ const Testimonials = () => {
                 <h4 className="text-xl font-bold mb-1">
                   {testimonials[currentTestimonial].name}
                 </h4>
-                <p className="text-cyan-100 mb-1">
+                <p className="text-blue-100 mb-1">
                   {testimonials[currentTestimonial].role}
                 </p>
-                <p className="text-cyan-200 text-sm">
+                <p className="text-blue-200 text-sm">
                   {testimonials[currentTestimonial].location}
                 </p>
               </div>
@@ -221,7 +221,7 @@ const Testimonials = () => {
               className="bg-gray-50 rounded-2xl p-6 hover:shadow-lg transition-all duration-300"
             >
               <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mr-4">
+                <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-500 rounded-full flex items-center justify-center mr-4">
                   <span className="text-white font-bold">{testimonial.avatar}</span>
                 </div>
                 <div>
@@ -232,7 +232,7 @@ const Testimonials = () => {
               
               <div className="flex items-center mb-3">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
+                  <Star key={i} className="h-4 w-4 text-blue-400 fill-current" />
                 ))}
               </div>
               
