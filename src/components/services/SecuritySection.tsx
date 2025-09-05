@@ -15,6 +15,7 @@ import {
   CheckCircle
 } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const SecuritySection = () => {
   const ref = useRef(null);
@@ -109,6 +110,14 @@ const SecuritySection = () => {
           </p>
         </motion.div>
 
+        <Image
+          src="/images/jiji/camer-security.jpg"
+          alt="Camera Security"
+          width={1200}
+          height={675}
+          className="rounded-xl shadow-lg mb-16 w-full h-[400px] object-cover"
+        />
+
         {/* Security Solutions Grid */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -156,6 +165,30 @@ const SecuritySection = () => {
               </div>
             ))}
           </div>
+        </motion.div>
+
+        {/* Security Image Gallery */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16"
+        >
+          {[ 
+            { src: '/images/jiji/install-camera-outdoor.jpg', alt: 'Outdoor Camera Installation' },
+            { src: '/images/jiji/installation-camera-de-surveillance.jpg', alt: 'Surveillance Camera Installation' },
+            { src: '/images/jiji/installation-camera.jpg', alt: 'Camera Installation' },
+          ].map((img, index) => (
+            <div key={index} className="rounded-xl overflow-hidden shadow-lg">
+              <Image
+                src={img.src}
+                alt={img.alt}
+                width={400}
+                height={250}
+                className="w-full h-64 object-cover"
+              />
+            </div>
+          ))}
         </motion.div>
 
         {/* Key Features */}

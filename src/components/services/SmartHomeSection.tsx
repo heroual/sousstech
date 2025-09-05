@@ -14,6 +14,7 @@ import {
   Clock
 } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const SmartHomeSection = () => {
   const ref = useRef(null);
@@ -97,6 +98,14 @@ const SmartHomeSection = () => {
           </p>
         </motion.div>
 
+        <Image
+          src="/images/jiji/smart-home-tech.jpg"
+          alt="Smart Home Technology"
+          width={1200}
+          height={675}
+          className="rounded-xl shadow-lg mb-16 w-full h-[400px] object-cover"
+        />
+
         {/* Smart Features Grid */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -144,6 +153,31 @@ const SmartHomeSection = () => {
               </div>
             ))}
           </div>
+        </motion.div>
+
+        {/* Smart Home Gallery */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16"
+        >
+          {[ 
+            { src: '/images/jiji/smart-home-device.jpg', alt: 'Smart Home Device' },
+            { src: '/images/jiji/smart-home-gadget.jpg', alt: 'Smart Home Gadget' },
+            { src: '/images/jiji/smart-home-phone.jpg', alt: 'Smart Home Phone' },
+            { src: '/images/jiji/smart-home-tab.jpg', alt: 'Smart Home Tablet' },
+          ].map((img, index) => (
+            <div key={index} className="rounded-xl overflow-hidden shadow-lg">
+              <Image
+                src={img.src}
+                alt={img.alt}
+                width={300}
+                height={200}
+                className="w-full h-48 object-cover"
+              />
+            </div>
+          ))}
         </motion.div>
 
         {/* CTA Section */}

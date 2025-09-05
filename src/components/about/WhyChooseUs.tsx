@@ -13,6 +13,7 @@ import {
   Star,
   Award
 } from 'lucide-react';
+import Image from 'next/image';
 
 const WhyChooseUs = () => {
   const ref = useRef(null);
@@ -122,6 +123,14 @@ const WhyChooseUs = () => {
             l'innovation et la satisfaction de nos clients.
           </motion.p>
         </motion.div>
+
+        <Image
+          src="/images/jiji/jeune-femme-utilisant-la-technologie-domestique.jpg"
+          alt="Young woman using smart home technology"
+          width={1200}
+          height={675}
+          className="rounded-xl shadow-lg mb-16 w-full h-[400px] object-cover"
+        />
 
         {/* Main Features Grid */}
         <motion.div

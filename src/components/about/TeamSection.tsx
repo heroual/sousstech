@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
+import Image from 'next/image';
 import { Users, Award, Zap, Settings } from 'lucide-react';
 
 const TeamSection = () => {
@@ -165,6 +166,14 @@ const TeamSection = () => {
         </motion.div>
 
         {/* Team Members */}
+        <Image
+          src="/images/jiji/our-team.jpg"
+          alt="Our Team"
+          width={1200}
+          height={675}
+          className="rounded-xl shadow-lg mb-16 w-full h-[400px] object-cover"
+          priority
+        />
         <motion.div
           variants={containerVariants}
           initial="hidden"

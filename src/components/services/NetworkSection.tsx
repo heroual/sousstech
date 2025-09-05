@@ -15,6 +15,7 @@ import {
   Headphones
 } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const NetworkSection = () => {
   const ref = useRef(null);
@@ -124,6 +125,14 @@ const NetworkSection = () => {
             Solutions IoT et domotique avec support technique professionnel.
           </p>
         </motion.div>
+
+        <Image
+          src="/images/jiji/networking-switch.jpg"
+          alt="Networking Switch"
+          width={1200}
+          height={675}
+          className="rounded-xl shadow-lg mb-16 w-full h-[400px] object-cover"
+        />
 
         {/* Network Services Grid */}
         <motion.div
