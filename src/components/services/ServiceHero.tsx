@@ -21,6 +21,7 @@ const ServiceHero = () => {
         layout="fill"
         objectFit="cover"
         className="absolute inset-0 opacity-30 h-full w-full"
+        priority
       />
       {/* Background Elements */}
       <div className="absolute inset-0">

@@ -15,6 +15,7 @@ const HeroSection = () => {
         layout="fill"
         objectFit="cover"
         className="absolute inset-0 opacity-30 h-full w-full"
+        priority
       />
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/60"></div>
