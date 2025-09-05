@@ -11,7 +11,7 @@ const PortfolioCTA = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section ref={ref} className="py-20 bg-gradient-to-br from-gray-900 to-gray-800 relative overflow-hidden">
+    <section ref={ref} className="py-20 bg-gradient-to-br from-gray-900 to-black relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-10 left-10 w-40 h-40 bg-blue-500/10 rounded-full blur-3xl"></div>
@@ -68,7 +68,7 @@ const PortfolioCTA = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="/contact"
-                className="inline-flex items-center bg-blue-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-blue-500/25 group"
+                className="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-blue-500/25 group"
               >
                 Demander un Devis
                 <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-2 transition-transform" />
@@ -76,7 +76,7 @@ const PortfolioCTA = () => {
               
               <button className="inline-flex items-center bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-full font-semibold hover:bg-white/20 transition-all duration-300">
                 <Download className="mr-2 h-5 w-5" />
-                Portfolio PDF
+                <span className="btn font-poppins text-base">Portfolio PDF</span>
               </button>
             </div>
           </div>
@@ -93,7 +93,7 @@ const PortfolioCTA = () => {
               </div>
               <div>
                 <h4 className="text-white font-semibold">Conseil Immédiat</h4>
-                <p className="text-gray-300 text-sm">+212 808 551 720</p>
+                <p className="text-gray-400 text-sm">+212 808 551 720</p>
               </div>
             </motion.a>
 
@@ -107,7 +107,7 @@ const PortfolioCTA = () => {
               </div>
               <div>
                 <h4 className="text-white font-semibold">WhatsApp Business</h4>
-                <p className="text-gray-300 text-sm">Réponse en 5 minutes</p>
+                <p className="text-gray-400 text-sm">Réponse en 5 minutes</p>
               </div>
             </motion.a>
 
@@ -121,7 +121,7 @@ const PortfolioCTA = () => {
               </div>
               <div>
                 <h4 className="text-white font-semibold">Devis Détaillé</h4>
-                <p className="text-gray-300 text-sm">contact@soustech.ma</p>
+                <p className="text-gray-400 text-sm">contact@soustech.ma</p>
               </div>
             </motion.a>
           </div>
@@ -141,7 +141,7 @@ const PortfolioCTA = () => {
               "✓ Support technique inclus",
               "✓ Satisfaction client 98%"
             ].map((benefit, index) => (
-              <div key={index} className="text-gray-300 text-sm font-medium">
+              <div key={index} className="text-gray-400 text-sm font-medium">
                 {benefit}
               </div>
             ))}

@@ -103,16 +103,16 @@ const ServicesSection = () => {
         >
           <motion.h2
             variants={itemVariants}
-            className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 font-poppins"
+            className="text-4xl lg:text-5xl font-bold text-gray-900 mb-8 font-poppins"
           >
             Nos Solutions
-            <span className="block gradient-text">
+            <span className="block gradient-text-enhanced text-5xl lg:text-6xl mt-2" data-text="Technologiques">
               Technologiques
             </span>
           </motion.h2>
           <motion.p
             variants={itemVariants}
-            className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
+            className="text-xl text-gray-800 max-w-3xl mx-auto leading-relaxed font-medium"
           >
             Découvrez notre gamme complète de services pour transformer 
             votre espace en environnement intelligent, sécurisé et connecté.
@@ -130,10 +130,12 @@ const ServicesSection = () => {
               key={service.id}
               variants={itemVariants}
               whileHover={{ y: -8 }}
-              className="bg-gray-50 border border-gray-100 rounded-2xl p-8 lg:p-10 hover:shadow-large transition-all duration-500 group relative overflow-hidden"
+              className="bg-gradient-to-br from-gray-50 to-primary/5 rounded-2xl p-8 lg:p-10 hover:shadow-xl transition-all duration-500 group relative overflow-hidden card-hover-effect border border-gray-100"
             >
               {/* Background decoration */}
-              <div className="absolute top-0 right-0 w-32 h-32 bg-white/50 rounded-full transform translate-x-16 -translate-y-16 group-hover:scale-110 transition-transform duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-tr from-white/80 via-white/60 to-transparent z-0"></div>
+              <div className="absolute -right-16 -top-16 w-32 h-32 bg-primary/10 rounded-full blur-xl animate-pulse-glow"></div>
+              <div className="absolute inset-0 bg-[url('/images/circuit-pattern.png')] bg-cover opacity-5 mix-blend-overlay"></div>
               
               <div className="relative z-10">
                 {/* Standardized Service Image */}
@@ -148,27 +150,32 @@ const ServicesSection = () => {
                   <div className="absolute top-4 left-4">
                     <motion.div
                       whileHover={{ scale: 1.05, rotate: 5 }}
-                      className="bg-blue-600 w-12 h-12 rounded-lg flex items-center justify-center shadow-medium"
+                      className="bg-gradient-to-br from-primary to-primary-light w-12 h-12 rounded-lg flex items-center justify-center shadow-medium shadow-primary/20 group-hover:scale-110 transition-all duration-300"
                     >
                       <service.icon className="h-6 w-6 text-white" />
                     </motion.div>
                   </div>
                 </div>
 
-                <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4 font-poppins text-center">
+                <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4 font-poppins text-center relative group-hover:text-primary transition-colors duration-300 text-high-contrast" data-text={service.title}>
                   {service.title}
+                  <div className="h-1 w-12 bg-gradient-to-r from-primary to-primary-light rounded-full mt-2 mx-auto group-hover:w-24 transition-all duration-500 opacity-80"></div>
                 </h3>
                 
-                <p className="text-gray-600 mb-6 leading-relaxed text-lg text-center">
+                <p className="text-gray-800 mb-6 leading-relaxed text-lg text-center font-medium text-contrast-high">
                   {service.description}
                 </p>
 
                 {/* Features */}
                 <div className="space-y-3 mb-8">
                   {service.features.map((feature, featureIndex) => (
-                    <div key={featureIndex} className="flex items-center space-x-3 text-center">
-                      <CheckCircle className="h-5 w-5 text-blue-600 flex-shrink-0" />
-                      <span className="text-gray-700 font-medium">{feature}</span>
+                    <div key={featureIndex} className="flex items-center space-x-3 text-center group-hover:translate-x-1 transition-all duration-300 animate-text-pulse" style={{transitionDelay: `${featureIndex * 50}ms`}}>
+                      <span className="text-primary flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                          <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                        </svg>
+                      </span>
+                      <span className="text-gray-900 font-medium text-base text-contrast-high">{feature}</span>
                     </div>
                   ))}
                 </div>
@@ -176,10 +183,9 @@ const ServicesSection = () => {
                 <div className="text-center">
                   <Link
                     href={`/services#${service.id}`}
-                    className="inline-flex items-center bg-gray-900 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-3300 shadow-medium hover:-translate-y-1 group"
+                    className="btn-futuristic"
                   >
                     En savoir plus
-                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Link>
                 </div>
               </div>
@@ -192,30 +198,37 @@ const ServicesSection = () => {
           variants={itemVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="text-center mt-16 lg:mt-20 bg-gradient-to-r from-blue-50 to-gray-50 rounded-2xl p-8 lg:p-12"
+          className="text-center mt-16 lg:mt-20 bg-gradient-to-br from-gray-900 to-black rounded-2xl overflow-hidden shadow-2xl relative border border-white/10 group card-hover-effect"
         >
-          <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4 font-poppins text-center">
-            Prêt à transformer votre espace ?
-          </h3>
-          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto text-center">
-            Nos experts vous accompagnent de la conception à l'installation. 
-            Demandez votre devis gratuit et personnalisé.
-          </p>
+          <div className="absolute inset-0 bg-gradient-to-tr from-black/40 via-black/20 to-transparent z-0"></div>
+          <div className="absolute -right-16 -top-16 w-32 h-32 bg-blue-500/20 rounded-full blur-xl animate-pulse-glow"></div>
+          <div className="absolute -left-16 -bottom-16 w-32 h-32 bg-blue-400/20 rounded-full blur-xl animate-pulse-glow delay-700"></div>
+          <div className="absolute inset-0 bg-[url('/images/circuit-pattern.png')] bg-cover opacity-10 mix-blend-overlay"></div>
+          
+          <div className="relative z-10 p-8 lg:p-12">
+            <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4 font-poppins text-center drop-shadow-md">
+              Prêt à transformer votre espace ?
+              <div className="h-1 w-24 bg-gradient-to-r from-blue-500 to-blue-400 rounded-full mt-4 mx-auto group-hover:w-48 transition-all duration-500 opacity-80"></div>
+            </h3>
+            <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto text-center font-medium drop-shadow-sm">
+              Nos experts vous accompagnent de la conception à l'installation. 
+              Demandez votre devis gratuit et personnalisé.
+            </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 shadow-primary hover:-translate-y-1 flex items-center justify-center"
+              className="btn-futuristic-primary"
             >
               Demander un devis gratuit
-              <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
             <Link
               href="/services"
-              className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 flex items-center justify-center"
+              className="btn-futuristic-secondary"
             >
               Voir tous nos services
             </Link>
           </div>
+        </div>
         </motion.div>
       </div>
     </section>

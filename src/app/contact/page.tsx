@@ -10,11 +10,13 @@ import FAQSection from '@/components/contact/FAQSection';
 export default function ContactPage() {
   return (
     <Layout>
-      <ContactHero />
-      <ContactForm />
-      <ContactMethods />
-      <MapSection />
-      <FAQSection />
+      <div className="mt-20">
+        <ContactHero />
+        <ContactForm />
+        <ContactMethods />
+        <MapSection />
+        <FAQSection />
+      </div>
     </Layout>
   );
 }

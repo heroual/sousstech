@@ -1,10 +1,12 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-gray-800 text-white">
       <div className="container-padding max-w-7xl mx-auto section-padding">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Company Info */}
@@ -21,28 +23,28 @@ const Footer = () => {
               </div>
               <span className="text-2xl font-bold font-poppins text-left">SoussTech</span>
             </div>
-            <p className="text-gray-400 text-lg leading-relaxed max-w-md text-left">
+            <p className="text-gray-300 text-lg leading-relaxed max-w-md text-left">
               Votre partenaire en solutions technologiques intelligentes. 
               Nous transformons votre espace en environnement connecté, sécurisé et optimisé.
             </p>
             <div className="flex space-x-4">
               <a 
                 href="#" 
-                className="bg-gray-800 hover:bg-blue-600 text-gray-400 hover:text-white transition-all duration-300 p-3 rounded-lg text-center"
+                className="bg-gray-700 hover:bg-primary-light text-gray-400 hover:text-white transition-all duration-300 p-3 rounded-lg text-center"
                 aria-label="Facebook"
               >
                 <Facebook className="h-5 w-5" />
               </a>
               <a 
                 href="#" 
-                className="bg-gray-800 hover:bg-blue-600 text-gray-400 hover:text-white transition-all duration-300 p-3 rounded-lg text-center"
+                className="bg-gray-700 hover:bg-primary-light text-gray-400 hover:text-white transition-all duration-300 p-3 rounded-lg text-center"
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5" />
               </a>
               <a 
                 href="#" 
-                className="bg-gray-800 hover:bg-blue-600 text-gray-400 hover:text-white transition-all duration-300 p-3 rounded-lg text-center"
+                className="bg-gray-700 hover:bg-primary-light text-gray-400 hover:text-white transition-all duration-300 p-3 rounded-lg text-center"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-5 w-5" />
@@ -55,22 +57,22 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-6 font-poppins text-left">Nos Services</h3>
             <ul className="space-y-4">
               <li>
-                <Link href="/services#fttr" className="text-gray-400 hover:text-white transition-colors duration-300 text-lg text-left">
+                <Link href="/services#fttr" className="text-gray-300 hover:text-primary-light transition-colors duration-300 text-lg text-left">
                   FTTR - Fiber to The Room
                 </Link>
               </li>
               <li>
-                <Link href="/services#smart-home" className="text-gray-400 hover:text-white transition-colors duration-300 text-lg text-left">
+                <Link href="/services#smart-home" className="text-gray-300 hover:text-primary-light transition-colors duration-300 text-lg text-left">
                   Smart Home
                 </Link>
               </li>
               <li>
-                <Link href="/services#security" className="text-gray-400 hover:text-white transition-colors duration-300 text-lg text-left">
+                <Link href="/services#security" className="text-gray-300 hover:text-primary-light transition-colors duration-300 text-lg text-left">
                   Caméras de Surveillance
                 </Link>
               </li>
               <li>
-                <Link href="/services#network" className="text-gray-400 hover:text-white transition-colors duration-300 text-lg text-left">
+                <Link href="/services#network" className="text-gray-300 hover:text-primary-light transition-colors duration-300 text-lg text-left">
                   Réseaux & IT
                 </Link>
               </li>
@@ -83,9 +85,9 @@ const Footer = () => {
             <div className="space-y-4">
               <a 
                 href="tel:+212808551720" 
-                className="flex items-center space-x-3 text-gray-400 hover:text-white transition-colors duration-300 group text-left"
+                className="flex items-center space-x-3 text-gray-300 hover:text-primary-light transition-colors duration-300 group text-left"
               >
-                <div className="bg-gray-800 group-hover:bg-blue-600 p-2 rounded-lg transition-colors duration-300">
+                <div className="bg-gray-700 group-hover:bg-primary p-2 rounded-lg transition-colors duration-300">
                   <Phone className="h-4 w-4" />
                 </div>
                 <span className="text-lg">+212 808 551 720</span>
@@ -94,24 +96,24 @@ const Footer = () => {
                 href="https://wa.me/212697342443" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center space-x-3 text-gray-400 hover:text-white transition-colors duration-300 group text-left"
+                className="flex items-center space-x-3 text-gray-300 hover:text-primary-light transition-colors duration-300 group text-left"
               >
-                <div className="bg-gray-800 group-hover:bg-blue-600 p-2 rounded-lg transition-colors duration-300">
+                <div className="bg-gray-700 group-hover:bg-primary p-2 rounded-lg transition-colors duration-300">
                   <Phone className="h-4 w-4" />
                 </div>
                 <span className="text-lg">WhatsApp</span>
               </a>
               <a 
                 href="mailto:contact@soustech.ma" 
-                className="flex items-center space-x-3 text-gray-400 hover:text-white transition-colors duration-300 group text-left"
+                className="flex items-center space-x-3 text-gray-300 hover:text-primary-light transition-colors duration-300 group text-left"
               >
-                <div className="bg-gray-800 group-hover:bg-blue-600 p-2 rounded-lg transition-colors duration-300">
+                <div className="bg-gray-700 group-hover:bg-primary p-2 rounded-lg transition-colors duration-300">
                   <Mail className="h-4 w-4" />
                 </div>
                 <span className="text-lg">contact@soustech.ma</span>
               </a>
-              <div className="flex items-start space-x-3 text-gray-400 text-left">
-                <div className="bg-gray-800 p-2 rounded-lg">
+              <div className="flex items-start space-x-3 text-gray-300 text-left">
+                <div className="bg-gray-700 p-2 rounded-lg">
                   <MapPin className="h-4 w-4" />
                 </div>
                 <div className="text-lg leading-relaxed">
@@ -123,20 +125,20 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-12 lg:mt-16 pt-8 lg:pt-12">
+        <div className="border-t border-gray-700 mt-12 lg:mt-16 pt-8 lg:pt-12">
           <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
             <div className="text-center lg:text-left">
-              <p className="text-gray-400 text-lg text-left">
+              <p className="text-gray-300 text-lg text-left">
                 Créé par <span className="text-white font-semibold">Elheroual Salah Eddine</span>
               </p>
             </div>
-            <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6 text-gray-400 text-lg">
+            <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6 text-gray-300 text-lg">
               <p className="text-center lg:text-right">© 2024 SoussTech. Tous droits réservés.</p>
               <div className="flex space-x-6">
-                <Link href="/privacy" className="hover:text-white transition-colors duration-300 text-center">
+                <Link href="/privacy" className="hover:text-primary-light transition-colors duration-300 text-center">
                   Confidentialité
                 </Link>
-                <Link href="/terms" className="hover:text-white transition-colors duration-300 text-center">
+                <Link href="/terms" className="hover:text-primary-light transition-colors duration-300 text-center">
                   Conditions
                 </Link>
               </div>

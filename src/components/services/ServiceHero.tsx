@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { Zap, Home, Shield, Network } from 'lucide-react';
 
 const ServiceHero = () => {
@@ -12,7 +13,15 @@ const ServiceHero = () => {
   ];
 
   return (
-    <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800">
+    <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-black">
+      {/* Background Image */}
+      <Image
+        src="/images/service.png"
+        alt="Service Background"
+        layout="fill"
+        objectFit="cover"
+        className="absolute inset-0 opacity-30 h-full w-full"
+      />
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>

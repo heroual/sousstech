@@ -168,7 +168,7 @@ const ProjectsGallery = () => {
               {/* Project Image/Icon */}
               <div className={`bg-gradient-to-r ${project.color} p-8 text-center relative overflow-hidden`}>
                 <div className="absolute top-0 right-0 w-24 h-24 bg-white/10 rounded-full transform translate-x-12 -translate-y-12"></div>
-                <div className="text-6xl mb-4">{project.image}</div>
+                <div className="text-6xl mb-4"><project.icon className="h-16 w-16 text-white mx-auto" /></div>
                 <div className="bg-white/20 backdrop-blur-sm w-12 h-12 rounded-full flex items-center justify-center mx-auto">
                   <project.icon className="h-6 w-6 text-white" />
                 </div>
@@ -177,7 +177,7 @@ const ProjectsGallery = () => {
               {/* Project Info */}
               <div className="p-6">
                 <div className="flex justify-between items-start mb-3">
-                  <span className={`bg-gradient-to-r ${project.color} text-white px-3 py-1 rounded-full text-xs font-semibold`}>
+                  <span className={`bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-semibold`}>
                     {project.category}
                   </span>
                   <span className="text-gray-500 text-sm">{project.date}</span>
@@ -189,15 +189,15 @@ const ProjectsGallery = () => {
 
                 <div className="space-y-2 mb-4">
                   <div className="flex items-center text-gray-600 text-sm">
-                    <MapPin className="h-4 w-4 mr-2" />
+                    <MapPin className="h-4 w-4 mr-2 text-gray-400" />
                     {project.location}
                   </div>
                   <div className="flex items-center text-gray-600 text-sm">
-                    <Calendar className="h-4 w-4 mr-2" />
+                    <Calendar className="h-4 w-4 mr-2 text-gray-400" />
                     Installation en {project.duration}
                   </div>
                   <div className="flex items-center text-gray-600 text-sm">
-                    <Users className="h-4 w-4 mr-2" />
+                    <Users className="h-4 w-4 mr-2 text-gray-400" />
                     {project.client}
                   </div>
                 </div>
@@ -212,7 +212,7 @@ const ProjectsGallery = () => {
                   <div className="grid grid-cols-2 gap-1">
                     {project.features.slice(0, 2).map((feature, index) => (
                       <div key={index} className="text-xs text-gray-600 flex items-center">
-                        <div className={`w-1.5 h-1.5 bg-gradient-to-r ${project.color} rounded-full mr-2`}></div>
+                        <div className={`w-1.5 h-1.5 bg-blue-500 rounded-full mr-2`}></div>
                         {feature}
                       </div>
                     ))}
@@ -257,19 +257,20 @@ const ProjectsGallery = () => {
                 <h3 className="text-2xl font-bold text-gray-900">{selectedProject.title}</h3>
                 <button
                   onClick={() => setSelectedProject(null)}
-                  className="text-gray-400 hover:text-gray-600"
+                  className="btn ml-2 text-base font-poppins focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+                  aria-label="Fermer le projet"
                 >
                   ✕
                 </button>
               </div>
               
               <div className={`bg-gradient-to-r ${selectedProject.color} rounded-2xl p-6 text-white mb-6`}>
-                <div className="text-4xl mb-4 text-center">{selectedProject.image}</div>
+                <div className="text-4xl mb-4 text-center"><selectedProject.icon className="h-12 w-12 text-white mx-auto" /></div>
                 <div className="grid grid-cols-2 gap-4 text-sm">
-                  <div>📍 {selectedProject.location}</div>
-                  <div>📅 {selectedProject.date}</div>
-                  <div>⏱️ {selectedProject.duration}</div>
-                  <div>👥 {selectedProject.client}</div>
+                  <div><MapPin className="h-4 w-4 inline-block mr-2" />{selectedProject.location}</div>
+                  <div><Calendar className="h-4 w-4 inline-block mr-2" />{selectedProject.date}</div>
+                  <div><Users className="h-4 w-4 inline-block mr-2" />{selectedProject.duration}</div>
+                  <div><Users className="h-4 w-4 inline-block mr-2" />{selectedProject.client}</div>
                 </div>
               </div>
 
@@ -280,7 +281,7 @@ const ProjectsGallery = () => {
                 <div className="grid grid-cols-1 gap-2">
                   {selectedProject.features.map((feature: string, index: number) => (
                     <div key={index} className="flex items-center">
-                      <div className={`w-2 h-2 bg-gradient-to-r ${selectedProject.color} rounded-full mr-3`}></div>
+                      <div className={`w-2 h-2 bg-blue-500 rounded-full mr-3`}></div>
                       <span className="text-gray-700">{feature}</span>
                     </div>
                   ))}

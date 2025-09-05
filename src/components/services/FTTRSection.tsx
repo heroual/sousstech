@@ -59,11 +59,11 @@ const FTTRSection = () => {
           className="text-center mb-16"
         >
           <div className="flex justify-center mb-6">
-            <div className="bg-blue-500 p-4 rounded-2xl">
+            <div className="bg-primary p-4 rounded-2xl">
               <Zap className="h-12 w-12 text-white" />
             </div>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-800 mb-6 text-center">
             FTTR - Fiber to The Room
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed text-center">
@@ -108,7 +108,7 @@ const FTTRSection = () => {
                 "Installation propre et rapide"
               ].map((item, index) => (
                 <li key={index} className="flex items-center text-gray-700 text-center">
-                  <CheckCircle className="w-5 h-5 text-blue-500 mr-3" />
+                  <CheckCircle className="w-5 h-5 text-primary mr-3" />
                   {item}
                 </li>
               ))}
@@ -125,11 +125,11 @@ const FTTRSection = () => {
         >
           {advantages.map((advantage, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 text-center group">
-              <div className="bg-blue-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+              <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                 <advantage.icon className="h-8 w-8 text-white" />
               </div>
-              <div className="text-3xl font-bold text-gray-900 mb-2">{advantage.stat}</div>
-              <h4 className="text-lg font-semibold text-gray-900 mb-2 text-center">{advantage.title}</h4>
+              <div className="text-3xl font-bold text-gray-800 mb-2">{advantage.stat}</div>
+              <h4 className="text-lg font-semibold text-gray-800 mb-2 text-center">{advantage.title}</h4>
               <p className="text-gray-600 text-sm text-center">{advantage.description}</p>
             </div>
           ))}
@@ -140,11 +140,11 @@ const FTTRSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="bg-blue-500 rounded-3xl p-8 md:p-12 text-white"
+          className="bg-gradient-to-r from-blue-600 to-blue-500 rounded-3xl p-8 md:p-12"
         >
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-3xl font-bold mb-6 font-poppins text-center">
+              <h3 className="text-3xl font-bold mb-6 font-poppins text-center text-white">
                 Pourquoi Choisir Notre FTTR ?
               </h3>
               <p className="text-blue-100 mb-6 leading-relaxed text-center">
@@ -154,7 +154,7 @@ const FTTRSection = () => {
               <div className="text-center">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors duration-300"
+                  className="inline-flex items-center bg-white text-primary px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300"
                 >
                   Demander un Devis
                 </Link>

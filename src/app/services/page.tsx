@@ -11,12 +11,14 @@ import ServicesCTA from '@/components/services/ServicesCTA';
 export default function ServicesPage() {
   return (
     <Layout>
-      <ServiceHero />
-      <FTTRSection />
-      <SmartHomeSection />
-      <SecuritySection />
-      <NetworkSection />
-      <ServicesCTA />
+      <div className="mt-20">
+        <ServiceHero />
+        <FTTRSection />
+        <SmartHomeSection />
+        <SecuritySection />
+        <NetworkSection />
+        <ServicesCTA />
+      </div>
     </Layout>
   );
 }

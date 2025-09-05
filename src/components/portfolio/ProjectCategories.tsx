@@ -103,74 +103,35 @@ const ProjectCategories = () => {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               onClick={() => setActiveFilter(category.id)}
-              className={`p-6 rounded-2xl transition-all duration-300 text-center group ${
+              className={`btn font-poppins text-base transition-all duration-300 text-center group p-4 rounded-2xl ${ 
                 activeFilter === category.id
-                  ? 'bg-white shadow-xl scale-105'
-                  : 'bg-white shadow-md hover:shadow-lg'
+                  ? 'bg-blue-600 text-white shadow-lg'
+                  : 'bg-white text-gray-800 shadow-md hover:shadow-lg hover:bg-gray-100'
               }`}
+              aria-pressed={activeFilter === category.id}
+              aria-label={`Filtrer par ${category.name}`}
             >
-              <div className={`bg-gradient-to-r ${category.color} w-16 h-16 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 ${
-                activeFilter === category.id ? 'shadow-lg' : ''
+              <div className={`w-16 h-16 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 ${ 
+                activeFilter === category.id ? 'bg-white/20' : 'bg-blue-100'
               }`}>
-                <category.icon className="h-8 w-8 text-white" />
+                <category.icon className={`h-8 w-8 ${ 
+                  activeFilter === category.id ? 'text-white' : 'text-blue-600'
+                }`} />
               </div>
               
-              <h3 className={`text-lg font-bold mb-2 ${
-                activeFilter === category.id ? 'text-gray-900' : 'text-gray-700'
+              <h3 className={`text-lg font-bold mb-1 ${ 
+                activeFilter === category.id ? 'text-white' : 'text-gray-900'
               }`}>
                 {category.name}
               </h3>
               
-              <div className={`text-2xl font-bold mb-1 ${
-                activeFilter === category.id ? 'text-blue-600' : 'text-gray-600'
+              <p className={`text-sm ${ 
+                activeFilter === category.id ? 'text-blue-200' : 'text-gray-500'
               }`}>
-                {category.count}
-              </div>
-              
-              <p className="text-gray-500 text-sm">
-                projet{category.count > 1 ? 's' : ''}
+                {category.count} projet{category.count > 1 ? 's' : ''}
               </p>
-              
-              {activeFilter === category.id && (
-                <motion.div
-                  initial={{ scaleX: 0 }}
-                  animate={{ scaleX: 1 }}
-                  className={`h-1 bg-gradient-to-r ${category.color} rounded-full mt-4`}
-                />
-              )}
             </motion.button>
           ))}
-        </motion.div>
-
-        {/* Active Category Info */}
-        <motion.div
-          key={activeFilter}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-center"
-        >
-          {activeFilter === 'all' ? (
-            <div className="bg-gradient-to-r from-blue-500 to-blue-500 rounded-2xl p-8 text-white">
-              <h3 className="text-2xl font-bold mb-4">Tous nos Projets</h3>
-              <p className="text-gray-300 max-w-3xl mx-auto">
-                Découvrez l'ensemble de nos réalisations across tous nos domaines d'expertise : 
-                FTTR, Smart Home, Sécurité et Réseaux IT.
-              </p>
-            </div>
-          ) : (
-            <div className={`bg-gradient-to-r ${categories.find(c => c.id === activeFilter)?.color} rounded-2xl p-8 text-white`}>
-              <h3 className="text-2xl font-bold mb-4">
-                Projets {categories.find(c => c.id === activeFilter)?.name}
-              </h3>
-              <p className="max-w-3xl mx-auto opacity-90">
-                {activeFilter === 'fttr' && "Installations FTTR avec câblage invisible pour une connectivité ultra-rapide dans chaque pièce."}
-                {activeFilter === 'smart-home' && "Solutions domotiques complètes pour l'automatisation et le contrôle intelligent de votre habitat."}
-                {activeFilter === 'security' && "Systèmes de surveillance et sécurité intelligents avec accès distant et détection avancée."}
-                {activeFilter === 'network' && "Infrastructures réseau professionnelles et solutions IoT pour entreprises et particuliers."}
-              </p>
-            </div>
-          )}
         </motion.div>
       </div>
     </section>

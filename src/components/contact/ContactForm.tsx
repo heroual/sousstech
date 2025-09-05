@@ -21,11 +21,11 @@ const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const services = [
-    { id: 'fttr', name: 'FTTR - Fiber to The Room', icon: Zap, color: 'text-blue-500' },
-    { id: 'smart-home', name: 'Smart Home & Domotique', icon: Home, color: 'text-blue-500' },
-    { id: 'security', name: 'Caméras & Sécurité', icon: Shield, color: 'text-blue-500' },
-    { id: 'network', name: 'Réseaux & IT', icon: Network, color: 'text-blue-500' },
-    { id: 'multiple', name: 'Projet Multiple', icon: CheckCircle, color: 'text-blue-500' }
+    { id: 'fttr', name: 'FTTR - Fiber to The Room', icon: Zap, color: 'text-primary' },
+    { id: 'smart-home', name: 'Smart Home & Domotique', icon: Home, color: 'text-primary' },
+    { id: 'security', name: 'Caméras & Sécurité', icon: Shield, color: 'text-primary' },
+    { id: 'network', name: 'Réseaux & IT', icon: Network, color: 'text-primary' },
+    { id: 'multiple', name: 'Projet Multiple', icon: CheckCircle, color: 'text-primary' }
   ];
 
   const projectTypes = [
@@ -96,9 +96,9 @@ const ContactForm = () => {
           transition={{ duration: 0.8 }}
           className="text-center section-title-spacing"
         >
-          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-800 mb-6">
             Demande de
-            <span className="block text-blue-500">
+            <span className="block gradient-text">
               Devis Gratuit
             </span>
           </h2>
@@ -130,7 +130,7 @@ const ContactForm = () => {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200"
                     placeholder="Votre nom"
                   />
                 </motion.div>
@@ -146,7 +146,7 @@ const ContactForm = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200"
                     placeholder="votre@email.com"
                   />
                 </motion.div>
@@ -164,7 +164,7 @@ const ContactForm = () => {
                     value={formData.phone}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200"
                     placeholder="+33 1 23 45 67 89"
                   />
                 </motion.div>
@@ -180,7 +180,7 @@ const ContactForm = () => {
                     value={formData.address}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200"
                     placeholder="Paris, 75001"
                   />
                 </motion.div>
@@ -197,7 +197,7 @@ const ContactForm = () => {
                       key={service.id}
                       className={`flex items-center p-4 border-2 rounded-xl cursor-pointer transition-all duration-200 ${
                         formData.service === service.id
-                          ? 'border-blue-500 bg-blue-50'
+                          ? 'border-primary bg-primary/5'
                           : 'border-gray-200 hover:border-gray-300'
                       }`}
                     >
@@ -226,7 +226,7 @@ const ContactForm = () => {
                   value={formData.projectType}
                   onChange={handleInputChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200"
                 >
                   <option value="">Sélectionnez le type de projet</option>
                   {projectTypes.map((type) => (
@@ -244,7 +244,7 @@ const ContactForm = () => {
                   name="urgency"
                   value={formData.urgency}
                   onChange={handleInputChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200"
                 >
                   <option value="normal">Normal (sous 1 semaine)</option>
                   <option value="urgent">Urgent (sous 48h)</option>
@@ -263,7 +263,7 @@ const ContactForm = () => {
                   value={formData.message}
                   onChange={handleInputChange}
                   rows={5}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200"
                   placeholder="Décrivez-nous votre projet, vos besoins spécifiques, la surface concernée, le nombre de pièces, etc."
                 />
               </motion.div>
@@ -273,7 +273,7 @@ const ContactForm = () => {
                 variants={itemVariants}
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-gradient-to-r from-blue-600 to-blue-500 text-white px-8 py-4 rounded-xl font-bold text-lg hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-blue-500/25 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
+                className="btn w-full font-poppins text-base flex items-center justify-center disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? (
                   <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-white"></div>
@@ -295,7 +295,7 @@ const ContactForm = () => {
             className="space-y-8"
           >
             {/* Process */}
-            <div className="bg-gradient-to-r from-blue-500 to-blue-500 rounded-3xl p-8 text-white">
+            <div className="bg-gradient-to-r from-blue-600 to-blue-500 rounded-3xl p-8 text-white">
               <h3 className="text-2xl font-bold mb-6">Notre Processus</h3>
               <div className="space-y-4">
                 {[
@@ -319,7 +319,7 @@ const ContactForm = () => {
 
             {/* Guarantees */}
             <div className="bg-white rounded-3xl shadow-lg p-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Nos Garanties</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-6">Nos Garanties</h3>
               <div className="space-y-4">
                 {[
                   "Devis gratuit et sans engagement",
@@ -330,7 +330,7 @@ const ContactForm = () => {
                   "Garantie satisfaction client"
                 ].map((guarantee, index) => (
                   <div key={index} className="flex items-center">
-                    <CheckCircle className="h-5 w-5 text-blue-500 mr-3" />
+                    <CheckCircle className="h-5 w-5 text-primary mr-3" />
                     <span className="text-gray-700">{guarantee}</span>
                   </div>
                 ))}

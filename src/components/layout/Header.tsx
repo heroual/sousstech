@@ -18,12 +18,12 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 w-full glass-effect z-50 border-b border-gray-100 shadow-soft">
+    <header className="fixed top-0 w-full bg-black/60 backdrop-blur-lg z-50 border-b border-gray-800/50 shadow-lg">
       <div className="container-padding max-w-7xl mx-auto">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 flex-shrink-0 group">
-            <div className="relative w-12 h-12 rounded-xl overflow-hidden group-hover:shadow-primary transition-all duration-300">
+            <div className="relative w-12 h-12 rounded-xl overflow-hidden">
               <Image
                 src="/images/logo.png"
                 alt="SoussTech Logo"
@@ -32,9 +32,7 @@ const Header = () => {
                 className="w-full h-full object-contain"
               />
             </div>
-            <span className="text-2xl font-bold text-gray-900 font-poppins text-left">
-              SoussTech
-            </span>
+            <span className="text-2xl font-bold text-white font-poppins">SoussTech</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -43,10 +41,10 @@ const Header = () => {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-300 relative group py-2 px-1 text-center"
+                className="text-gray-300 hover:text-white font-medium transition-colors duration-300 relative group py-2 px-1"
               >
                 {link.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-300"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300"></span>
               </Link>
             ))}
           </nav>
@@ -55,7 +53,7 @@ const Header = () => {
           <div className="hidden lg:flex items-center">
             <Link
               href="/contact"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 shadow-primary hover:-translate-y-0.5 text-center"
+              className="btn-futuristic"
             >
               Devis Gratuit
             </Link>
@@ -63,14 +61,14 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200"
+            className="lg:hidden p-2 rounded-lg hover:bg-white/10 transition-colors duration-200"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
             {isMenuOpen ? (
-              <X className="h-6 w-6 text-gray-700" />
+              <X className="h-6 w-6 text-white" />
             ) : (
-              <Menu className="h-6 w-6 text-gray-700" />
+              <Menu className="h-6 w-6 text-white" />
             )}
           </button>
         </div>
@@ -81,14 +79,14 @@ const Header = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="lg:hidden py-6 border-t border-gray-100 bg-white"
+            className="lg:hidden py-6 bg-black/80 backdrop-blur-lg border-t border-gray-800"
           >
             <nav className="flex flex-col space-y-2">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-gray-700 hover:text-blue-600 hover:bg-gray-50 font-medium py-4 px-4 rounded-lg transition-all duration-200 text-center"
+                  className="text-gray-300 hover:text-white hover:bg-white/10 font-medium py-4 px-4 rounded-lg transition-all duration-200 text-center"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.label}
@@ -97,7 +95,7 @@ const Header = () => {
               <div className="pt-4">
                 <Link
                   href="/contact"
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-4 rounded-lg font-semibold text-center w-full block transition-all duration-300"
+                  className="btn-futuristic w-full block text-center"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Devis Gratuit

@@ -1,18 +1,27 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { Camera, Home, Zap, Shield } from 'lucide-react';
 
 const PortfolioHero = () => {
   const achievements = [
-    { icon: Zap, label: 'FTTR', count: '150+', color: 'text-blue-400' },
-    { icon: Home, label: 'Smart Home', count: '200+', color: 'text-blue-400' },
-    { icon: Shield, label: 'Sécurité', count: '100+', color: 'text-blue-400' },
-    { icon: Camera, label: 'Surveillance', count: '75+', color: 'text-blue-400' },
+    { icon: Zap, label: 'FTTR', count: '150+', color: 'text-primary-light' },
+    { icon: Home, label: 'Smart Home', count: '200+', color: 'text-primary-light' },
+    { icon: Shield, label: 'Sécurité', count: '100+', color: 'text-primary-light' },
+    { icon: Camera, label: 'Surveillance', count: '75+', color: 'text-primary-light' },
   ];
 
   return (
-    <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800">
+    <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-black pt-20">
+      {/* Background Image */}
+      <Image
+        src="/images/portfolio.png"
+        alt="Portfolio Background"
+        layout="fill"
+        objectFit="cover"
+        className="absolute inset-0 opacity-30 h-full w-full"
+      />
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
@@ -57,7 +66,7 @@ const PortfolioHero = () => {
               whileHover={{ scale: 1.05, y: -5 }}
               className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 text-center group"
             >
-              <achievement.icon className={`h-8 w-8 mx-auto mb-3 ${achievement.color} group-hover:scale-110 transition-transform duration-300`} />
+              <achievement.icon className={`h-8 w-8 mx-auto mb-3 text-blue-400 group-hover:scale-110 transition-transform duration-300`} />
               <div className="text-3xl font-bold mb-2">{achievement.count}</div>
               <p className="text-gray-300 text-sm">{achievement.label}</p>
             </motion.div>

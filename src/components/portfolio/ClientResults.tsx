@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { TrendingUp, Clock, Star, Award, Zap, Users, CheckCircle, Target } from 'lucide-react';
+import { TrendingUp, Clock, Star, Award, Zap, Users, CheckCircle, Target, ArrowUpRight, Shield, Eye, ThumbsUp } from 'lucide-react';
 
 const ClientResults = () => {
   const ref = useRef(null);
@@ -45,42 +45,42 @@ const ClientResults = () => {
       client: "Villa Smart Home",
       result: "30% d'économie d'énergie",
       detail: "Réduction facture électrique mensuelle",
-      icon: "⚡",
+      icon: Zap,
       color: "bg-blue-100 text-blue-800"
     },
     {
       client: "Bureau FTTR",
       result: "10x plus rapide",
       detail: "Vitesse internet multipliée",
-      icon: "🚀",
+      icon: ArrowUpRight,
       color: "bg-blue-100 text-blue-800"
     },
     {
       client: "Restaurant Sécurisé",
       result: "0 incident",
       detail: "Depuis l'installation",
-      icon: "🛡️",
+      icon: Shield,
       color: "bg-blue-100 text-blue-800"
     },
     {
       client: "Café Connecté",
       result: "+40% satisfaction",
       detail: "Amélioration expérience client",
-      icon: "😊",
+      icon: ThumbsUp,
       color: "bg-blue-100 text-blue-800"
     },
     {
       client: "Appartement FTTR",
       result: "100% invisible",
       detail: "Installation sans perçage",
-      icon: "👁️",
+      icon: Eye,
       color: "bg-blue-100 text-blue-800"
     },
     {
       client: "Maison Complète",
       result: "Autonomie totale",
       detail: "Gestion énergétique optimisée",
-      icon: "🌟",
+      icon: Star,
       color: "bg-blue-100 text-blue-800"
     }
   ];
@@ -172,7 +172,7 @@ const ClientResults = () => {
               whileHover={{ scale: 1.05 }}
               className="bg-gray-50 rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300 group"
             >
-              <div className={`bg-gradient-to-r ${metric.color} w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
+              <div className={`bg-gradient-to-r from-blue-600 to-blue-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
                 <metric.icon className="h-8 w-8 text-white" />
               </div>
               <div className="text-3xl font-bold text-gray-900 mb-2">{metric.value}</div>
@@ -197,12 +197,12 @@ const ClientResults = () => {
               className="bg-white border-2 border-gray-100 rounded-2xl p-6 hover:shadow-lg transition-all duration-300"
             >
               <div className="flex items-center mb-4">
-                <span className="text-2xl mr-3">{stat.icon}</span>
+                <span className="text-2xl mr-3"><stat.icon className="h-6 w-6 text-blue-500" /></span>
                 <h4 className="font-bold text-gray-900">{stat.client}</h4>
               </div>
               <div className="text-2xl font-bold text-gray-900 mb-2">{stat.result}</div>
               <p className="text-gray-600">{stat.detail}</p>
-              <span className={`inline-block mt-3 px-3 py-1 rounded-full text-sm font-semibold ${stat.color}`}>
+              <span className={`inline-block mt-3 px-3 py-1 rounded-full text-sm font-semibold bg-blue-100 text-blue-800`}>
                 Résultat vérifié
               </span>
             </motion.div>
@@ -214,7 +214,7 @@ const ClientResults = () => {
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="bg-gradient-to-r from-gray-900 to-gray-800 rounded-3xl p-8 md:p-12 text-white"
+          className="bg-gradient-to-r from-gray-900 to-black rounded-3xl p-8 md:p-12 text-white"
         >
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold mb-4 font-poppins">

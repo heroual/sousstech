@@ -11,12 +11,14 @@ import AboutCTA from '@/components/about/AboutCTA';
 export default function AboutPage() {
   return (
     <Layout>
-      <AboutHero />
-      <WhyChooseUs />
-      <Testimonials />
-      <Certifications />
-      <TeamSection />
-      <AboutCTA />
+      <div className="mt-20">
+        <AboutHero />
+        <WhyChooseUs />
+        <Testimonials />
+        <Certifications />
+        <TeamSection />
+        <AboutCTA />
+      </div>
     </Layout>
   );
 }

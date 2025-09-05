@@ -11,12 +11,14 @@ import PortfolioCTA from '@/components/portfolio/PortfolioCTA';
 export default function PortfolioPage() {
   return (
     <Layout>
-      <PortfolioHero />
-      <ProjectCategories />
-      <ProjectsGallery />
-      <BeforeAfter />
-      <ClientResults />
-      <PortfolioCTA />
+      <div className="mt-20">
+        <PortfolioHero />
+        <ProjectCategories />
+        <ProjectsGallery />
+        <BeforeAfter />
+        <ClientResults />
+        <PortfolioCTA />
+      </div>
     </Layout>
   );
 }

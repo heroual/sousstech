@@ -144,7 +144,9 @@ const FAQSection = () => {
                     >
                       <button
                         onClick={() => setOpenFAQ(isOpen ? null : globalIndex)}
-                        className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
+                        className="btn w-full text-left flex items-center justify-between font-poppins text-base bg-white text-primary hover:bg-primary/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+                        aria-expanded={isOpen}
+                        aria-controls={`faq-panel-${globalIndex}`}
                       >
                         <span className="font-semibold text-gray-900 pr-4 text-center">{faq.question}</span>
                         {isOpen ? (

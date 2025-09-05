@@ -18,12 +18,12 @@ const ServicesCTA = () => {
   ];
 
   return (
-    <section ref={ref} className="section-padding bg-gradient-to-br from-gray-900 to-gray-800 relative overflow-hidden">
+    <section ref={ref} className="section-padding bg-gradient-to-br from-gray-900 to-black relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-10 left-10 w-40 h-40 bg-blue-500/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-10 right-10 w-60 h-60 bg-blue-400/5 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-blue-600/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-10 right-10 w-60 h-60 bg-blue-500/5 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-blue-500/5 rounded-full blur-3xl"></div>
       </div>
 
       <div className="relative z-10 container-padding max-w-7xl mx-auto">
@@ -77,7 +77,7 @@ const ServicesCTA = () => {
                 </div>
                 <div className="text-center">
                   <h4 className="text-white font-semibold">Appelez-nous</h4>
-                  <p className="text-gray-300 text-sm">+212 808 551 720</p>
+                  <p className="text-gray-400 text-sm">+212 808 551 720</p>
                 </div>
               </div>
             </motion.a>
@@ -93,7 +93,7 @@ const ServicesCTA = () => {
                 </div>
                 <div className="text-center">
                   <h4 className="text-white font-semibold">WhatsApp</h4>
-                  <p className="text-gray-300 text-sm">Réponse immédiate</p>
+                  <p className="text-gray-400 text-sm">Réponse immédiate</p>
                 </div>
               </div>
             </motion.a>
@@ -109,7 +109,7 @@ const ServicesCTA = () => {
                 </div>
                 <div className="text-center">
                   <h4 className="text-white font-semibold">Email</h4>
-                  <p className="text-gray-300 text-sm">contact@soustech.ma</p>
+                  <p className="text-gray-400 text-sm">contact@soustech.ma</p>
                 </div>
               </div>
             </motion.a>
@@ -125,7 +125,7 @@ const ServicesCTA = () => {
         >
           <Link
             href="/contact"
-            className="inline-flex items-center bg-blue-500 text-white px-10 py-5 rounded-full font-bold text-xl hover:scale-105 transition-all duration-300 shadow-xl group text-center"
+            className="inline-flex items-center bg-gradient-to-r from-blue-600 to-blue-500 text-white px-10 py-5 rounded-full font-bold text-xl hover:scale-105 transition-all duration-300 shadow-xl group text-center"
           >
             Demander un Devis Détaillé
             <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-2 transition-transform" />

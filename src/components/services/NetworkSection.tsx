@@ -198,7 +198,7 @@ const NetworkSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.8 }}
-          className="bg-blue-500 rounded-3xl p-6 sm:p-8 md:p-12 text-white text-center"
+          className="bg-blue-600 rounded-3xl p-6 sm:p-8 md:p-12 text-white text-center"
         >
           <h3 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 font-poppins">
             Optimisez Votre Infrastructure IT

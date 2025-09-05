@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { Phone, Mail, MessageCircle, Clock } from 'lucide-react';
 
 const ContactHero = () => {
@@ -10,31 +11,39 @@ const ContactHero = () => {
       title: 'Appel Direct',
       description: 'Conseil immédiat',
       action: 'tel:+212808551720',
-      color: 'from-blue-600 to-blue-500'
+      color: 'from-blue-400 to-blue-600'
     },
     {
       icon: MessageCircle,
       title: 'WhatsApp',
       description: 'Chat en direct',
       action: 'https://wa.me/212697342443',
-      color: 'from-blue-600 to-blue-500'
+      color: 'from-blue-400 to-blue-600'
     },
     {
       icon: Mail,
       title: 'Email',
       description: 'Devis détaillé',
       action: 'mailto:contact@soustech.ma',
-      color: 'from-blue-600 to-blue-500'
+      color: 'from-blue-400 to-blue-600'
     }
   ];
 
   return (
-    <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-900 to-gray-800 pt-20">
+    <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-black pt-20">
+      {/* Background Image */}
+      <Image
+        src="/images/contact.png"
+        alt="Contact Us Background"
+        layout="fill"
+        objectFit="cover"
+        className="absolute inset-0 opacity-30 h-full w-full"
+      />
       {/* Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-20 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl animate-pulse delay-500"></div>
+        <div className="absolute top-20 left-20 w-72 h-72 bg-blue-600/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-20 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl animate-pulse"></div>
       </div>
 
       <div className="relative z-10 container-padding max-w-7xl mx-auto text-center text-white">
@@ -92,17 +101,17 @@ const ContactHero = () => {
           className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 max-w-2xl mx-auto"
         >
           <div className="flex items-center justify-center mb-6">
-            <Clock className="h-6 w-6 text-blue-500 mr-3" />
+            <Clock className="h-6 w-6 text-blue-400 mr-3" />
             <h3 className="text-xl font-bold text-center text-white">Disponibilité</h3>
           </div>
           <div className="grid md:grid-cols-2 gap-4 text-sm">
             <div className="text-center">
-              <h4 className="font-semibold text-blue-500 mb-2">Horaires Bureau</h4>
+              <h4 className="font-semibold text-blue-400 mb-2">Horaires Bureau</h4>
               <p className="text-gray-300">Lun - Ven : 9h - 18h</p>
               <p className="text-gray-300">Sam : 9h - 12h</p>
             </div>
             <div className="text-center">
-              <h4 className="font-semibold text-blue-500 mb-2">Support Urgence</h4>
+              <h4 className="font-semibold text-blue-400 mb-2">Support Urgence</h4>
               <p className="text-gray-300">7j/7 - 24h/24</p>
               <p className="text-gray-300">WhatsApp privilégié</p>
             </div>

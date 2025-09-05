@@ -4,13 +4,20 @@
   --font-inter: 'Inter', sans-serif;
   --font-poppins: 'Poppins', sans-serif;
   
-  /* Simplified color palette - Only 3 main colors */
+  /* Extended color palette with proper blue variations */
   --color-primary: #2563eb; /* Blue - Main accent */
+  --color-primary-light: #60a5fa; /* Light primary */
+  --color-primary-dark: #1e40af; /* Dark primary */
+  --color-blue-light: #60a5fa; /* Light blue */
+  --color-blue-vivid: #3b82f6; /* Vivid blue */
+  --color-blue-dark: #1e40af; /* Dark blue */
   --color-white: #ffffff;
   --color-gray-50: #f9fafb;
   --color-gray-100: #f3f4f6;
   --color-gray-200: #e5e7eb;
   --color-gray-300: #d1d5db;
+  --color-gray-soft: #9ca3af; /* Soft gray */
+  --color-gray-light: #d1d5db; /* Light gray */
   --color-gray-600: #4b5563;
   --color-gray-700: #374151;
   --color-gray-800: #1f2937;
@@ -40,6 +47,12 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-inter);
   --font-poppins: var(--font-poppins);
+  
+  /* Custom color utilities */
+  --color-blue-light: #60a5fa;
+  --color-blue-vivid: #3b82f6;
+  --color-blue-dark: #1e40af;
+  --color-gray-soft: #9ca3af;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -87,6 +100,231 @@ img {
 /* Custom utility classes */
 .font-poppins {
   font-family: var(--font-poppins), sans-serif;
+}
+
+/* Custom color utilities */
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-primary-light {
+  color: var(--color-primary-light);
+}
+
+.text-primary-dark {
+  color: var(--color-primary-dark);
+}
+
+.text-blue-light {
+  color: var(--color-blue-light);
+}
+
+.text-blue-vivid {
+  color: var(--color-blue-vivid);
+}
+
+.text-blue-dark {
+  color: var(--color-blue-dark);
+}
+
+.text-gray-soft {
+  color: var(--color-gray-soft);
+}
+
+.text-gray-light {
+  color: var(--color-gray-light);
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-primary-light {
+  background-color: var(--color-primary-light);
+}
+
+.bg-primary-dark {
+  background-color: var(--color-primary-dark);
+}
+
+.bg-blue-light {
+  background-color: var(--color-blue-light);
+}
+
+.bg-blue-vivid {
+  background-color: var(--color-blue-vivid);
+}
+
+.bg-blue-dark {
+  background-color: var(--color-blue-dark);
+}
+
+.bg-gray-soft {
+  background-color: var(--color-gray-soft);
+}
+
+.bg-gray-light {
+  background-color: var(--color-gray-light);
+}
+
+.from-primary {
+  --tw-gradient-from: var(--color-primary) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(37 99 235 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-primary {
+  --tw-gradient-to: var(--color-primary) var(--tw-gradient-to-position);
+}
+
+.from-primary-light {
+  --tw-gradient-from: var(--color-primary-light) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(96 165 250 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-primary-light {
+  --tw-gradient-to: var(--color-primary-light) var(--tw-gradient-to-position);
+}
+
+.from-primary-dark {
+  --tw-gradient-from: var(--color-primary-dark) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(30 64 175 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-primary-dark {
+  --tw-gradient-to: var(--color-primary-dark) var(--tw-gradient-to-position);
+}
+
+.from-blue-light {
+  --tw-gradient-from: var(--color-blue-light) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(96 165 250 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-blue-light {
+  --tw-gradient-to: var(--color-blue-light) var(--tw-gradient-to-position);
+}
+
+.from-blue-vivid {
+  --tw-gradient-from: var(--color-blue-vivid) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(59 130 246 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-blue-vivid {
+  --tw-gradient-to: var(--color-blue-vivid) var(--tw-gradient-to-position);
+}
+
+.from-blue-dark {
+  --tw-gradient-from: var(--color-blue-dark) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(30 64 175 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-blue-dark {
+  --tw-gradient-to: var(--color-blue-dark) var(--tw-gradient-to-position);
+}
+
+.from-gray-soft {
+  --tw-gradient-from: var(--color-gray-soft) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(156 163 175 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-gray-soft {
+  --tw-gradient-to: var(--color-gray-soft) var(--tw-gradient-to-position);
+}
+
+.from-gray-light {
+  --tw-gradient-from: var(--color-gray-light) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(209 213 219 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-gray-light {
+  --tw-gradient-to: var(--color-gray-light) var(--tw-gradient-to-position);
+}
+
+/* Animation utilities */
+.animate-pulse-glow {
+  animation: pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.05);
+  }
+}
+
+.animate-text-pulse {
+  animation: text-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes text-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+/* Text contrast utilities */
+.text-contrast-white {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.text-contrast-white-strong {
+  color: rgba(255, 255, 255, 1);
+}
+
+/* Interactive effects */
+.card-hover-effect {
+  transition: all 0.3s ease;
+}
+
+.card-hover-effect:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.btn-text-visible-light {
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.hover\:lift:hover {
+  transform: translateY(-2px);
+}
+
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.ripple:hover::before {
+  width: 200px;
+  height: 200px;
 }
 /* Consistent utility classes */
 .gradient-text {
@@ -317,4 +555,88 @@ textarea:focus-visible {
   .min-h-screen {
     min-height: 100dvh;
   }
+}
+
+/* Futuristic Button Styles */
+.btn-futuristic {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #4f46e5;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  color: #e0e7ff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-futuristic::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(79, 70, 229, 0.5),
+    transparent
+  );
+  transition: all 0.6s ease;
+}
+
+.btn-futuristic:hover {
+  background-color: #4f46e5;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(79, 70, 229, 0.5);
+}
+
+.btn-futuristic:hover::before {
+  left: 100%;
+}
+
+.btn-futuristic-primary {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(79, 70, 229, 0.6);
+}
+
+.btn-futuristic-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 40px rgba(79, 70, 229, 0.9);
+}
+
+.btn-futuristic-secondary {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 2px solid #a78bfa;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  color: #a78bfa;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+}
+
+.btn-futuristic-secondary:hover {
+  background-color: #a78bfa;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(167, 139, 250, 0.5);
 }

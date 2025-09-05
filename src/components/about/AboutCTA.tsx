@@ -11,7 +11,7 @@ const AboutCTA = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section ref={ref} className="py-20 bg-gradient-to-br from-gray-900 to-gray-800 relative overflow-hidden">
+    <section ref={ref} className="py-20 bg-gradient-to-br from-gray-900 to-black relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-10 left-10 w-40 h-40 bg-blue-500/10 rounded-full blur-3xl"></div>
@@ -92,14 +92,14 @@ const AboutCTA = () => {
         >
           <Link
             href="/contact"
-            className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-500 text-white px-10 py-5 rounded-full font-bold text-xl hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-blue-500/25 group"
+            className="inline-flex items-center bg-gradient-to-r from-blue-600 to-blue-500 text-white px-10 py-5 rounded-full font-bold text-xl hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-blue-500/25 group"
           >
             Demander un Devis Gratuit
             <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-2 transition-transform" />
           </Link>
           
           <div className="mt-8 text-center">
-            <p className="text-gray-300 text-sm">
+            <p className="text-gray-400 text-sm">
               ✓ Devis gratuit en 24h • ✓ Installation professionnelle • ✓ Garantie satisfaction
             </p>
           </div>
