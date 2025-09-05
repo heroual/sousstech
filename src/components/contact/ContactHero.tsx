@@ -40,6 +40,8 @@ const ContactHero = () => {
         className="absolute inset-0 opacity-30 h-full w-full"
         priority
       />
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black/60"></div>
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-20 w-72 h-72 bg-blue-600/10 rounded-full blur-3xl animate-pulse"></div>

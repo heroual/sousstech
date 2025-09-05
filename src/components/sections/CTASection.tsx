@@ -58,7 +58,7 @@ const CTASection = () => {
   };
 
   return (
-    <section ref={ref} className="section-padding bg-gradient-to-br from-blue-900 via-blue-600 to-blue-900 relative overflow-hidden" aria-labelledby="cta-heading">
+    <section ref={ref} className="section-padding relative overflow-hidden" style={{ backgroundColor: '#010409' }} aria-labelledby="cta-heading">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-10 left-10 w-40 h-40 bg-blue-400/20 rounded-full blur-3xl animate-pulse"></div>
@@ -146,12 +146,12 @@ const CTASection = () => {
         >
           <Link
             href="/contact"
-            className="relative inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-700 text-white px-10 py-5 rounded-full font-bold text-xl hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-blue-500/30 group overflow-hidden"
+            className="relative inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-700 text-white px-10 py-5 rounded-full font-bold text-xl shadow-2xl overflow-hidden"
           >
-            <span className="absolute inset-0 bg-blue-800 opacity-0 group-hover:opacity-90 transition-opacity duration-500 rounded-full"></span>
+            <span className="absolute inset-0 bg-blue-800 opacity-0 rounded-full"></span>
             <span className="relative z-10 flex items-center">
               Demander un Devis Gratuit
-              <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-2 transition-transform" />
+              <ArrowRight className="ml-3 h-6 w-6" />
             </span>
           </Link>
         </motion.div>

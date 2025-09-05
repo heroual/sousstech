@@ -1,6 +1,6 @@
 'use client';
 
-import Header from '@/components/layout/Header';
+import Layout from '@/components/layout/Layout';
 import HeroSection from '@/components/sections/HeroSection';
 import ServicesSection from '@/components/sections/ServicesSection';
 import AboutSection from '@/components/sections/AboutSection';
@@ -8,12 +8,11 @@ import CTASection from '@/components/sections/CTASection';
 
 export default function HomePage() {
   return (
-    <>
-      <Header />
+    <Layout>
       <HeroSection />
       <ServicesSection />
       <AboutSection />
       <CTASection />
-    </>
+    </Layout>
   );
 }

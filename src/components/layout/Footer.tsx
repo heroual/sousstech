@@ -6,7 +6,7 @@ import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from 'lucide-react
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white">
+    <footer className="text-white" style={{ backgroundColor: '#070908' }}>
       <div className="container-padding max-w-7xl mx-auto section-padding">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Company Info */}

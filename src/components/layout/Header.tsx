@@ -18,7 +18,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 w-full bg-black/60 backdrop-blur-lg z-50 border-b border-gray-800/50 shadow-lg">
+    <header className="fixed top-0 w-full z-50" style={{ backgroundColor: '#070908' }}>
       <div className="container-padding max-w-7xl mx-auto">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
