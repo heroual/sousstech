@@ -40,24 +40,37 @@ const ContactForm = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    alert('Merci ! Votre demande a été envoyée. Nous vous recontacterons sous 24h.');
-    setIsSubmitting(false);
-    
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      service: '',
-      projectType: '',
-      message: '',
-      address: '',
-      urgency: 'normal'
-    });
+
+    try {
+      const response = await fetch('/api/demandes', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        alert('Merci ! Votre demande a été envoyée. Nous vous recontacterons sous 24h.');
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          service: '',
+          projectType: '',
+          message: '',
+          address: '',
+          urgency: 'normal'
+        });
+      } else {
+        alert('Une erreur s\'est produite. Veuillez réessayer.');
+      }
+    } catch (error) {
+      console.error(error);
+      alert('Une erreur s\'est produite. Veuillez réessayer.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
