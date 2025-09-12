@@ -18,7 +18,7 @@ const HeroSection = () => {
         priority
       />
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/60"></div>
+      <div className="absolute inset-0 bg-black/55"></div>
 
       {/* Hero Content */}
       <div className="relative z-10 text-center text-white">
