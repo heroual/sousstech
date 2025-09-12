@@ -21,7 +21,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-black/55"></div>
 
       {/* Hero Content */}
-      <div className="relative z-10 text-center text-white pt-24">
+      <div className="relative z-10 text-center text-white">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

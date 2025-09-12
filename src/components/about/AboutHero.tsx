@@ -2,15 +2,11 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { Zap, Shield, Users, Award } from 'lucide-react';
+import Link from 'next/link';
+import { } from 'lucide-react';
 
 const AboutHero = () => {
-  const values = [
-    { icon: Zap, name: 'Rapidité' },
-    { icon: Shield, name: 'Sécurité' },
-    { icon: Users, name: 'Service' },
-    { icon: Award, name: 'Excellence' },
-  ];
+  
 
   return (
     <section className="relative bg-black text-white min-h-screen flex items-center justify-center overflow-hidden">
@@ -31,13 +27,13 @@ const AboutHero = () => {
         <div className="absolute bottom-20 right-20 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
       </div>
 
-      <div className="relative z-10 container-padding max-w-7xl mx-auto text-center text-white pt-24">
+      <div className="relative z-10 container-padding max-w-7xl mx-auto text-center text-white">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-5xl md:text-6xl font-bold font-poppins mb-6 text-center">
+          <h1 className="text-5xl md:text-7xl font-bold mb-9 font-poppins">
             Pourquoi Choisir
             <span className="block gradient-text">
               SoussTech ?
@@ -49,32 +45,20 @@ const AboutHero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed text-center"
+          className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-12"
         >
-          Découvrez ce qui fait de SoussTech le partenaire idéal pour vos projets 
-          de technologies intelligentes. Innovation, expertise et satisfaction client 
-          sont au cœur de notre mission.
+          Découvrez pourquoi SoussTech est le partenaire idéal pour vos projets de technologies intelligentes et connectées.
         </motion.p>
 
-        {/* Value Icons */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="flex justify-center items-center gap-8 flex-wrap"
+          className="flex justify-center"
         >
-          {values.map((value, index) => (
-            <motion.div
-              key={index}
-              whileHover={{ scale: 1.1, y: -5 }}
-              className="flex flex-col items-center group cursor-pointer"
-            >
-              <div className="bg-white/10 backdrop-blur-md border border-white/20 p-4 rounded-2xl mb-2 group-hover:bg-blue-600 transition-all duration-300">
-                <value.icon className="h-8 w-8 text-blue-300 group-hover:text-white" />
-              </div>
-              <span className="text-sm text-gray-300 text-center">{value.name}</span>
-            </motion.div>
-          ))}
+          <Link href="/about" className="btn-futuristic-primary">
+            En Savoir Plus
+          </Link>
         </motion.div>
       </div>
     </section>

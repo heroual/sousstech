@@ -32,7 +32,7 @@ const PortfolioHero = () => {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl animate-pulse delay-500"></div>
       </div>
 
-      <div className="relative z-10 container-padding max-w-7xl mx-auto text-center text-white pt-24">
+      <div className="relative z-10 container-padding max-w-7xl mx-auto text-center text-white">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -50,7 +50,7 @@ const PortfolioHero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed text-center"
+          className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-12"
         >
           Découvrez nos projets les plus marquants et les transformations 
           technologiques que nous avons réalisées pour nos clients.

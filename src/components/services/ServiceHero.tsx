@@ -20,7 +20,7 @@ const ServiceHero = () => {
         alt="Service Background"
         layout="fill"
         objectFit="cover"
-        className="absolute inset-0 opacity-30 h-full w-full"
+        className="absolute inset-0 opacity-30 h-[600px] w-full"
         priority
       />
       {/* Dark Overlay */}
@@ -31,13 +31,13 @@ const ServiceHero = () => {
         <div className="absolute bottom-20 right-20 w-96 h-96 bg-blue-400/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white pt-24">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-5xl md:text-6xl font-bold font-poppins mb-6">
+          <h1 className="text-5xl md:text-7xl font-bold mb-9 font-poppins">
             Nos Solutions
             <span className="block text-blue-400">
               Technologiques
@@ -49,7 +49,7 @@ const ServiceHero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed"
+          className="text-xl md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed"
         >
           Des technologies de pointe pour transformer votre espace en environnement 
           intelligent, connecté et sécurisé.
