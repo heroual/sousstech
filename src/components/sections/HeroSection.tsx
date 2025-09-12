@@ -36,19 +36,16 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-12"
         >
-          Découvrez nos solutions de pointe pour une maison plus intelligente, plus sûre et plus efficace.
+          Transformez votre maison grâce à nos solutions intelligentes pour un quotidien plus sûr, plus efficace et plus confortable.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="flex justify-center gap-4"
+          className="flex justify-center"
         >
           <Link href="/services" className="btn-futuristic-primary">
-            Nos Services
-          </Link>
-          <Link href="/portfolio" className="btn-futuristic-secondary">
-            Voir nos projets
+            Découvrir nos Service
           </Link>
         </motion.div>
       </div>
