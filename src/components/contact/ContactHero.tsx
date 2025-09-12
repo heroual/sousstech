@@ -30,7 +30,7 @@ const ContactHero = () => {
   ];
 
   return (
-    <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-black pt-20">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black pt-24">
       {/* Background Image */}
       <Image
         src="/images/contact.png"

@@ -13,7 +13,7 @@ const PortfolioHero = () => {
   ];
 
   return (
-    <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden bg-black pt-20">
+        <section className="relative bg-black text-white min-h-screen flex items-center justify-center text-center overflow-hidden pt-24">
       {/* Background Image */}
       <Image
         src="/images/portfolio.png"

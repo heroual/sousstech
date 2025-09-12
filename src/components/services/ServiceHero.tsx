@@ -13,7 +13,7 @@ const ServiceHero = () => {
   ];
 
   return (
-    <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-black">
+    <section className="relative bg-gray-900 text-white min-h-screen flex items-center justify-center text-center overflow-hidden pt-24">
       {/* Background Image */}
       <Image
         src="/images/service.png"
