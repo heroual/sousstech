@@ -13,7 +13,7 @@ const AboutHero = () => {
   ];
 
   return (
-    <section className="relative bg-black text-white min-h-screen flex items-center justify-center overflow-hidden pt-24">
+    <section className="relative bg-black text-white min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <Image
         src="/images/Apropos.png"
@@ -31,7 +31,7 @@ const AboutHero = () => {
         <div className="absolute bottom-20 right-20 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
       </div>
 
-      <div className="relative z-10 container-padding max-w-7xl mx-auto text-center text-white">
+      <div className="relative z-10 container-padding max-w-7xl mx-auto text-center text-white pt-24">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

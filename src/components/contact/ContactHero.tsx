@@ -30,7 +30,7 @@ const ContactHero = () => {
   ];
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black pt-24">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
       {/* Background Image */}
       <Image
         src="/images/contact.png"
@@ -49,7 +49,7 @@ const ContactHero = () => {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl animate-pulse"></div>
       </div>
 
-      <div className="relative z-10 container-padding max-w-7xl mx-auto text-center text-white">
+      <div className="relative z-10 container-padding max-w-7xl mx-auto text-center text-white pt-24">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

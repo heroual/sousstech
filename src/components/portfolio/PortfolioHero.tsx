@@ -13,7 +13,7 @@ const PortfolioHero = () => {
   ];
 
   return (
-        <section className="relative bg-black text-white min-h-screen flex items-center justify-center text-center overflow-hidden pt-24">
+        <section className="relative bg-black text-white min-h-screen flex items-center justify-center text-center overflow-hidden">
       {/* Background Image */}
       <Image
         src="/images/portfolio.png"
@@ -32,7 +32,7 @@ const PortfolioHero = () => {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl animate-pulse delay-500"></div>
       </div>
 
-      <div className="relative z-10 container-padding max-w-7xl mx-auto text-center text-white">
+      <div className="relative z-10 container-padding max-w-7xl mx-auto text-center text-white pt-24">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
