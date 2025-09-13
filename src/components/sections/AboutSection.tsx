@@ -49,7 +49,7 @@ const AboutSection = () => {
             variants={itemVariants}
             className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6"
           >
-            Votre Partenaire en Maison Intelligente et Domotique au Maroc
+            Votre partenaire en domotique et sécurité
           </motion.h2>
           <motion.p
             variants={itemVariants}

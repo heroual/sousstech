@@ -99,12 +99,9 @@ const ServicesSection = () => {
         >
           <motion.h2
             variants={itemVariants}
-            className="text-4xl lg:text-5xl font-bold text-gray-900 mb-8 font-poppins"
+            className="text-5xl lg:text-6xl font-bold text-[#2B3A8A] mb-8 font-poppins"
           >
-            Nos Solutions
-            <span className="block gradient-text-enhanced text-5xl lg:text-6xl mt-2" data-text="Intelligentes">
-              Intelligentes
-            </span>
+            Nos Solutions Intelligentes
           </motion.h2>
           <motion.p
             variants={itemVariants}
