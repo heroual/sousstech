@@ -123,7 +123,7 @@ const AboutSection = () => {
               variants={itemVariants}
               className="relative order-1 lg:order-2"
             >
-              <div className="rounded-lg overflow-hidden shadow-lg h-[452px]">
+              <div className="rounded-lg overflow-hidden shadow-lg h-[390px]">
                 <Image
                   src="/images/technican-install-smart.jpg"
                   alt="Technicien installant un système de maison intelligente"

@@ -79,10 +79,7 @@ const CTASection = () => {
             className="text-4xl md:text-6xl font-bold font-poppins text-white mb-8"
             id="cta-heading"
           >
-            Prêt à Transformer
-            <span className="block gradient-text-enhanced text-5xl md:text-7xl mt-2" data-text="Votre Espace ?">
-              Votre Espace ?
-            </span>
+            Prêt à transformer votre maison ou votre entreprise au Maroc ?
           </motion.h2>
           <motion.p
             variants={itemVariants}
