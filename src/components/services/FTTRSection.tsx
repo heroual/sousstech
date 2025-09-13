@@ -49,7 +49,7 @@ const FTTRSection = () => {
   ];
 
   return (
-    <section id="fttr" ref={ref} className="section-padding bg-gray-50">
+    <section id="fttr" ref={ref} className="section-padding bg-gray-50 min-h-screen">
       <div className="container-padding max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
@@ -67,9 +67,12 @@ const FTTRSection = () => {
             FTTR - Fiber to The Room
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed text-center">
-            La révolution de la fibre optique ! Contrairement au câblage classique, 
-            notre solution FTTR apporte la fibre optique directement dans chaque pièce 
-            pour une performance inégalée.
+            Connexion ultra-rapide sans perçage, invisible et esthétique. La fibre optique directement dans chaque pièce pour des performances maximales.
+
+            Débit jusqu'à 10 Gbit/s
+            Installation sans perçage
+            Design totalement invisible
+            Latence ultra-faible.
           </p>
         </motion.div>
 

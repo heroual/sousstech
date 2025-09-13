@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 import { Camera, Home, Zap, Shield } from 'lucide-react';
 
 const PortfolioHero = () => {
@@ -56,34 +57,16 @@ const PortfolioHero = () => {
           technologiques que nous avons réalisées pour nos clients.
         </motion.p>
 
-        {/* Achievement Stats */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto"
+          className="flex justify-center"
         >
-          {achievements.map((achievement, index) => (
-            <motion.div
-              key={index}
-              whileHover={{ scale: 1.05, y: -5 }}
-              className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 text-center group"
-            >
-              <achievement.icon className={`h-8 w-8 mx-auto mb-3 text-blue-400 group-hover:scale-110 transition-transform duration-300`} />
-              <div className="text-3xl font-bold mb-2">{achievement.count}</div>
-              <p className="text-gray-300 text-sm">{achievement.label}</p>
-            </motion.div>
-          ))}
+          <Link href="/portfolio" className="btn-futuristic-primary">
+            Nos Projets
+          </Link>
         </motion.div>
-
-        <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-8 text-gray-300 text-center"
-        >
-          Plus de 500 projets réalisés avec succès depuis 2019
-        </motion.p>
       </div>
     </section>
   );

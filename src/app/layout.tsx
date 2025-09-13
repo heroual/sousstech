@@ -3,6 +3,7 @@ import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import type { Viewport } from "next";
 import { AuthProvider } from "@/context/AuthContext";
+import WhatsAppButton from "@/components/layout/WhatsAppButton";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -42,6 +43,7 @@ export default function RootLayout({
         className={`${inter.variable} ${poppins.variable} antialiased font-sans`}
       >
         <AuthProvider>{children}</AuthProvider>
+        <WhatsAppButton />
       </body>
     </html>
   );

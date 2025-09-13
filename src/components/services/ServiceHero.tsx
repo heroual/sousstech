@@ -2,15 +2,11 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { Zap, Home, Shield, Network } from 'lucide-react';
+import Link from 'next/link';
+import { } from 'lucide-react';
 
 const ServiceHero = () => {
-  const services = [
-    { icon: Zap, name: 'FTTR', color: 'text-blue-400' },
-    { icon: Home, name: 'Smart Home', color: 'text-blue-300' },
-    { icon: Shield, name: 'Sécurité', color: 'text-blue-200' },
-    { icon: Network, name: 'Réseaux IT', color: 'text-gray-300' },
-  ];
+  
 
   return (
     <section className="relative bg-gray-900 text-white min-h-screen flex items-center justify-center text-center overflow-hidden">
@@ -49,31 +45,21 @@ const ServiceHero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-xl md:text-2xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed"
+          className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8"
         >
           Des technologies de pointe pour transformer votre espace en environnement 
           intelligent, connecté et sécurisé.
         </motion.p>
 
-        {/* Service Icons */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="flex justify-center items-center gap-8 flex-wrap"
+          className="flex justify-center"
         >
-          {services.map((service, index) => (
-            <motion.div
-              key={index}
-              whileHover={{ scale: 1.1, y: -5 }}
-              className="flex flex-col items-center group cursor-pointer"
-            >
-              <div className="bg-gray-800/50 backdrop-blur-md border border-gray-700 p-4 rounded-2xl mb-2 group-hover:bg-gray-700/50 transition-all duration-300">
-                <service.icon className={`h-8 w-8 ${service.color}`} />
-              </div>
-              <span className="text-sm text-gray-300">{service.name}</span>
-            </motion.div>
-          ))}
+          <Link href="/services" className="btn-futuristic-primary">
+            Nos Services
+          </Link>
         </motion.div>
       </div>
     </section>

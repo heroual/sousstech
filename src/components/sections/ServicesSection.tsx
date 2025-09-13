@@ -21,52 +21,48 @@ const ServicesSection = () => {
   const services = [
     {
       id: 'fttr',
-      title: 'FTTR - Fiber to The Room',
-      description: 'Connexion ultra-rapide sans perçage, invisible et esthétique. La fibre optique directement dans chaque pièce pour des performances maximales.',
+      title: '⚡ FTTR – Fiber to The Room',
+      description: 'Connexion ultra-rapide et invisible, directement dans chaque pièce.',
       icon: Zap,
       image: '/images/technican-install-smart.jpg',
       features: [
-        'Débit jusqu\'à 10 Gbit/s',
+        'Débit jusqu’à 10 Gbit/s',
         'Installation sans perçage',
-        'Design totalement invisible',
-        'Latence ultra-faible'
+        'Latence minimale'
       ]
     },
     {
       id: 'smart-home',
-      title: 'Smart Home',
-      description: 'Automatisation intelligente complète : éclairage, chauffage, volets, sécurité. Contrôlez tout depuis votre smartphone.',
+      title: 'Smart Home – Domotique',
+      description: 'Contrôlez toute votre maison depuis votre smartphone ou par la voix.',
       icon: Home,
       image: '/images/tablet-control.jpg',
       features: [
-        'Application mobile intuitive',
-        'Contrôle vocal intégré',
-        'Automatisation avancée',
-        'Économies d\'énergie garanties'
+        'Éclairage, volets, chauffage automatisés',
+        'Application intuitive',
+        'Économies d’énergie garanties'
       ]
     },
     {
       id: 'security',
       title: 'Caméras & Sécurité',
-      description: 'Surveillance intelligente 24/7 avec détection IA, accès distant sécurisé et alertes en temps réel pour une protection optimale.',
+      description: 'Surveillance intelligente 24/7 avec alertes instantanées.',
       icon: Shield,
       image: '/images/camera-outside.jpg',
       features: [
-        'Accès distant sécurisé',
         'Détection IA avancée',
-        'Alertes temps réel',
-        'Stockage cloud sécurisé'
+        'Accès sécurisé à distance',
+        'Stockage cloud protégé'
       ]
     },
     {
       id: 'network',
       title: 'Réseaux & IT',
-      description: 'Conception et optimisation de réseaux professionnels. Solutions IoT personnalisées et support technique 24/7.',
+      description: 'Réseaux fiables et performants pour particuliers & entreprises.',
       icon: Network,
       image: '/images/technican-install-control-panel.jpg',
       features: [
-        'Réseau haute performance',
-        'Solutions IoT complètes',
+        'Solutions IoT personnalisées',
         'Support technique 24/7',
         'Maintenance préventive'
       ]
@@ -143,8 +139,8 @@ const ServicesSection = () => {
                   <Image
                     src={service.image}
                     alt={service.title}
-                    width={400}
-                    height={200}
+                    width={600}
+                    height={300}
                     className="image-service"
                   />
                   <div className="absolute top-4 left-4">
