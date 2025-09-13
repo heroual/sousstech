@@ -21,7 +21,7 @@ const ServicesSection = () => {
   const services = [
     {
       id: 'fttr',
-      title: '⚡ FTTR – Fiber to The Room',
+      title: 'FTTR – Fiber to The Room',
       description: 'Connexion ultra-rapide et invisible, directement dans chaque pièce.',
       icon: Zap,
       image: '/images/technican-install-smart.jpg',
@@ -193,7 +193,7 @@ const ServicesSection = () => {
           variants={itemVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="text-center mt-16 lg:mt-20 bg-gradient-to-br from-gray-900 to-black rounded-2xl overflow-hidden shadow-2xl relative border border-white/10 group card-hover-effect"
+          className="text-center mt-16 lg:mt-20 bg-[#070908] rounded-2xl overflow-hidden shadow-2xl relative border border-white/10 group card-hover-effect"
         >
           <div className="absolute inset-0 bg-gradient-to-tr from-black/40 via-black/20 to-transparent z-0"></div>
           <div className="absolute -right-16 -top-16 w-32 h-32 bg-blue-500/20 rounded-full blur-xl animate-pulse-glow"></div>
@@ -209,18 +209,12 @@ const ServicesSection = () => {
               Nos experts vous accompagnent de la conception à l'installation. 
               Demandez votre devis gratuit et personnalisé.
             </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <Link
               href="/contact"
               className="btn-futuristic-primary"
             >
               Demander un devis gratuit
-            </Link>
-            <Link
-              href="/services"
-              className="btn-futuristic-secondary"
-            >
-              Voir tous nos services
             </Link>
           </div>
         </div>
