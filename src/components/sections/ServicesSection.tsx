@@ -46,7 +46,7 @@ const ServicesSection = () => {
     {
       id: 'security',
       title: 'Caméras & Sécurité',
-      description: 'Surveillance intelligente 24/7 avec alertes instantanées.',
+      description: 'Surveillance intelligente 24/7 avec alertes instantanées et notifications en temps réel.',
       icon: Shield,
       image: '/images/camera-outside.jpg',
       features: [
@@ -187,28 +187,29 @@ const ServicesSection = () => {
             </motion.div>
           ))}
         </motion.div>
+      </div>
 
-        {/* CTA Section */}
-        <motion.div
-          variants={itemVariants}
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
-          className="text-center mt-16 lg:mt-20 bg-[#070908] rounded-2xl overflow-hidden shadow-2xl relative border border-white/10 group card-hover-effect"
-        >
-          <div className="absolute inset-0 bg-gradient-to-tr from-black/40 via-black/20 to-transparent z-0"></div>
-          <div className="absolute -right-16 -top-16 w-32 h-32 bg-blue-500/20 rounded-full blur-xl animate-pulse-glow"></div>
-          <div className="absolute -left-16 -bottom-16 w-32 h-32 bg-blue-400/20 rounded-full blur-xl animate-pulse-glow delay-700"></div>
-          <div className="absolute inset-0 bg-[url('/images/circuit-pattern.png')] bg-cover opacity-10 mix-blend-overlay"></div>
-          
-          <div className="relative z-10 p-8 lg:p-12">
-            <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4 font-poppins text-center drop-shadow-md">
-              Prêt à transformer votre espace ?
-              <div className="h-1 w-24 bg-gradient-to-r from-blue-500 to-blue-400 rounded-full mt-4 mx-auto group-hover:w-48 transition-all duration-500 opacity-80"></div>
-            </h3>
-            <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto text-center font-medium drop-shadow-sm">
-              Nos experts vous accompagnent de la conception à l'installation. 
-              Demandez votre devis gratuit et personnalisé.
-            </p>
+      {/* CTA Section */}
+      <motion.div
+        variants={itemVariants}
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
+        className="text-center mt-16 lg:mt-20 bg-[#070908] rounded-none overflow-hidden shadow-2xl relative border-y border-white/10 group card-hover-effect"
+      >
+        <div className="absolute inset-0 bg-gradient-to-tr from-black/40 via-black/20 to-transparent z-0"></div>
+        <div className="absolute -right-16 -top-16 w-32 h-32 bg-blue-500/20 rounded-full blur-xl animate-pulse-glow"></div>
+        <div className="absolute -left-16 -bottom-16 w-32 h-32 bg-blue-400/20 rounded-full blur-xl animate-pulse-glow delay-700"></div>
+        <div className="absolute inset-0 bg-[url('/images/circuit-pattern.png')] bg-cover opacity-10 mix-blend-overlay"></div>
+        
+        <div className="relative z-10 p-8 lg:p-12">
+          <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4 font-poppins text-center drop-shadow-md">
+            Prêt à transformer votre espace ?
+            <div className="h-1 w-24 bg-gradient-to-r from-blue-500 to-blue-400 rounded-full mt-4 mx-auto group-hover:w-48 transition-all duration-500 opacity-80"></div>
+          </h3>
+          <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto text-center font-medium drop-shadow-sm">
+            Nos experts vous accompagnent de la conception à l'installation. 
+            Demandez votre devis gratuit et personnalisé.
+          </p>
           <div className="flex justify-center">
             <Link
               href="/contact"
@@ -218,8 +219,7 @@ const ServicesSection = () => {
             </Link>
           </div>
         </div>
-        </motion.div>
-      </div>
+      </motion.div>
     </section>
   );
 };

@@ -49,18 +49,13 @@ const AboutSection = () => {
             variants={itemVariants}
             className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6"
           >
-            Votre Partenaire en
-            <span className="block gradient-text">
-              Innovation Technologique
-            </span>
+            Votre Partenaire en Maison Intelligente et Domotique au Maroc
           </motion.h2>
           <motion.p
             variants={itemVariants}
             className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
           >
-            Depuis plus de 5 ans, SoussTech accompagne particuliers et entreprises 
-            dans leur transformation numérique. Notre expertise en FTTR, domotique 
-            et sécurité intelligente fait de nous le leader des solutions connectées.
+            Depuis plus de 5 ans, SoussTech accompagne particuliers et entreprises dans leur transformation numérique et l’installation de solutions connectées. Notre expertise en FTTR, domotique et sécurité intelligente fait de nous un leader des solutions connectées au Maroc.
           </motion.p>
         </motion.div>
 
@@ -92,23 +87,25 @@ const AboutSection = () => {
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-start"
         >
           <motion.div variants={itemVariants} className="order-2 lg:order-1">
             <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6 font-poppins">
-              Notre Mission
+              Notre Mission et Expertise
             </h3>
             <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
-              Démocratiser l'accès aux technologies intelligentes en proposant 
-              des solutions sur-mesure, performantes et évolutives. Nous croyons 
-              que chaque espace mérite d'être connecté, sécurisé et optimisé.
+              Chez SoussTech, nous rendons les technologies intelligentes accessibles et fiables pour tous au Maroc.
+              Chaque espace mérite d’être connecté, sécurisé et optimisé. Nous accompagnons nos clients de la conception à l’installation, pour des solutions sur mesure, performantes et durables, partout au Maroc.
+            </p>
+            <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
+              Notre équipe d’experts met son savoir-faire et son expérience au service de chaque projet pour vous offrir :
             </p>
             <div className="space-y-3 sm:space-y-4">
               {[
                 "Expertise technique certifiée",
                 "Solutions personnalisées",
-                "Support client réactif",
-                "Garantie satisfaction"
+                "Installation professionnelle",
+                "Garantie satisfaction et support inclus."
               ].map((item, index) => (
                 <div key={index} className="flex items-center">
                   <div className="w-2 h-2 bg-blue-600 rounded-full mr-3 flex-shrink-0"></div>
@@ -122,63 +119,14 @@ const AboutSection = () => {
             variants={itemVariants}
             className="relative order-1 lg:order-2"
           >
-            {/* Standardized Professional Work Gallery */}
-            <div className="grid grid-cols-2 gap-4 mb-6">
-              <div className="space-y-4">
-                <div className="rounded-lg overflow-hidden shadow-medium">
-                  <Image
-                    src="/images/technican-install-camera.jpg"
-                    alt="Installation caméra de sécurité"
-                    width={250}
-                    height={120}
-                    className="image-about"
-                  />
-                </div>
-                <div className="rounded-lg overflow-hidden shadow-medium">
-                  <Image
-                    src="/images/technican-install-control-panel.jpg"
-                    alt="Installation panneau de contrôle"
-                    width={250}
-                    height={120}
-                    className="image-about"
-                  />
-                </div>
-              </div>
-              <div className="space-y-4 pt-8">
-                <div className="rounded-lg overflow-hidden shadow-medium">
-                  <Image
-                    src="/images/technican-install-camera2.jpg"
-                    alt="Installation système de surveillance"
-                    width={250}
-                    height={120}
-                    className="image-about"
-                  />
-                </div>
-                <div className="rounded-lg overflow-hidden shadow-medium">
-                  <Image
-                    src="/images/control-panel-on-a-wall.jpeg"
-                    alt="Panneau de contrôle installé"
-                    width={250}
-                    height={120}
-                    className="image-about"
-                  />
-                </div>
-              </div>
-            </div>
-            
-            <div className="bg-blue-600 rounded-2xl p-6 sm:p-8 text-white relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-24 sm:w-32 h-24 sm:h-32 bg-white/10 rounded-full transform translate-x-12 sm:translate-x-16 -translate-y-12 sm:-translate-y-16"></div>
-              <div className="absolute bottom-0 left-0 w-16 sm:w-24 h-16 sm:h-24 bg-white/10 rounded-full transform -translate-x-8 sm:-translate-x-12 translate-y-8 sm:translate-y-12"></div>
-              <div className="relative z-10">
-                <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 font-poppins">
-                  Innovation & Qualité
-                </h3>
-                <p className="text-blue-100 leading-relaxed text-sm sm:text-base">
-                  Nos équipes d'experts utilisent les dernières technologies 
-                  pour vous offrir des installations durables et performantes. 
-                  Chaque projet est unique et bénéficie d'un suivi personnalisé.
-                </p>
-              </div>
+            <div className="rounded-lg overflow-hidden shadow-lg h-[452px]">
+              <Image
+                src="/images/technican-install-smart.jpg"
+                alt="Technicien installant un système de maison intelligente"
+                width={800}
+                height={600}
+                className="w-full h-full object-cover"
+              />
             </div>
           </motion.div>
         </motion.div>
