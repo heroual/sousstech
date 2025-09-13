@@ -102,16 +102,15 @@ const ServicesSection = () => {
             className="text-4xl lg:text-5xl font-bold text-gray-900 mb-8 font-poppins"
           >
             Nos Solutions
-            <span className="block gradient-text-enhanced text-5xl lg:text-6xl mt-2" data-text="Technologiques">
-              Technologiques
+            <span className="block gradient-text-enhanced text-5xl lg:text-6xl mt-2" data-text="Intelligentes">
+              Intelligentes
             </span>
           </motion.h2>
           <motion.p
             variants={itemVariants}
             className="text-xl text-gray-800 max-w-3xl mx-auto leading-relaxed font-medium"
           >
-            Découvrez notre gamme complète de services pour transformer 
-            votre espace en environnement intelligent, sécurisé et connecté.
+            Des technologies de pointe, adaptées&nbsp;à&nbsp;vos&nbsp;besoins.
           </motion.p>
         </motion.div>
 
