@@ -54,7 +54,7 @@ const Footer = () => {
 
           {/* Services */}
           <div className="space-y-6">
-            <h3 className="text-xl font-bold mb-6 font-poppins text-left">Nos Services</h3>
+            <h3 className="text-white mb-6">Nos Services</h3>
             <ul className="space-y-4">
               <li>
                 <Link href="/services#fttr" className="text-gray-300 hover:text-primary-light transition-colors duration-300 text-lg text-left">
@@ -81,7 +81,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div className="space-y-6">
-            <h3 className="text-xl font-bold mb-6 font-poppins text-left">Contact</h3>
+            <h3 className="text-white mb-6">Contact</h3>
             <div className="space-y-4">
               <a 
                 href="tel:+212808551720" 

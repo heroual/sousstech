@@ -597,3 +597,15 @@ textarea:focus-visible {
   letter-spacing: 0.05em;
   box-shadow: 0 0 20px rgba(167, 139, 250, 0.5); /* Static shadow */
 }
+
+@layer base {
+  h1 {
+    @apply text-5xl font-bold font-poppins text-gray-900 md:text-7xl;
+  }
+  h2 {
+    @apply text-4xl font-bold font-poppins text-gray-900 md:text-5xl;
+  }
+  h3 {
+    @apply text-2xl font-bold font-poppins text-gray-900 md:text-3xl;
+  }
+}

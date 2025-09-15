@@ -5,6 +5,7 @@ import HeroSection from '@/components/sections/HeroSection';
 import ServicesSection from '@/components/sections/ServicesSection';
 import AboutSection from '@/components/sections/AboutSection';
 import CTASection from '@/components/sections/CTASection';
+import ContactCTASection from '@/components/sections/ContactCTASection';
 
 export default function HomePage() {
   return (
@@ -13,6 +14,7 @@ export default function HomePage() {
       <ServicesSection />
       <AboutSection />
       <CTASection />
+      <ContactCTASection />
     </Layout>
   );
 }

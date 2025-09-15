@@ -26,7 +26,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-5xl md:text-7xl font-bold mb-9 font-poppins"
+          className="text-white mb-9"
         >
           Le Futur de la Maison Connectée
         </motion.h1>
@@ -34,7 +34,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-12"
+          className="text-xl text-gray-200 font-medium max-w-3xl mx-auto mb-12"
         >
           Transformez votre maison grâce à nos solutions intelligentes pour un quotidien plus sûr, plus efficace et plus confortable.
         </motion.p>
