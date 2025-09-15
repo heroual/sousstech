@@ -37,7 +37,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section ref={ref} className="section-padding bg-gray-50">
+    <section ref={ref} className="section-padding-bottom bg-gray-50">
       <div className="container-padding max-w-7xl mx-auto">
         <motion.div
           variants={containerVariants}
@@ -47,7 +47,7 @@ const AboutSection = () => {
         >
           <motion.h2
             variants={itemVariants}
-            className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6"
+            className="mt-[100px] text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6"
           >
             Votre partenaire en domotique et sécurité
           </motion.h2>

@@ -89,7 +89,7 @@ const ServicesSection = () => {
   };
 
   return (
-    <section ref={ref} className="section-padding bg-white">
+    <section ref={ref} className="section-padding-top bg-white">
       <div className="container-padding max-w-7xl mx-auto">
         <motion.div
           variants={containerVariants}
