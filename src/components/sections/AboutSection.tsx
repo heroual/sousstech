@@ -82,59 +82,7 @@ const AboutSection = () => {
           ))}
         </motion.div>
 
-        {/* Company Values */}
-        <div>
-          <motion.h3
-            variants={itemVariants}
-            className="text-center text-2xl sm:text-3xl font-bold text-gray-900 mb-8 sm:mb-12 font-poppins"
-          >
-            Notre Mission et Expertise
-          </motion.h3>
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            animate={isInView ? "visible" : "hidden"}
-            className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-start"
-          >
-            <motion.div variants={itemVariants} className="order-2 lg:order-1">
-              <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
-                Chez SoussTech, nous rendons les technologies intelligentes accessibles et fiables pour tous au Maroc.
-                Chaque espace mérite d’être connecté, sécurisé et optimisé. Nous accompagnons nos clients de la conception à l’installation, pour des solutions sur mesure, performantes et durables, partout au Maroc.
-              </p>
-              <p className="text-gray-600 text-base sm:text-lg leading-relaxed mb-4 sm:mb-6">
-                Notre équipe d’experts met son savoir-faire et son expérience au service de chaque projet pour vous offrir :
-              </p>
-              <div className="space-y-3 sm:space-y-4">
-                {[
-                  "Expertise technique certifiée",
-                  "Solutions personnalisées",
-                  "Installation professionnelle",
-                  "Garantie satisfaction et support inclus."
-                ].map((item, index) => (
-                  <div key={index} className="flex items-center">
-                    <div className="w-2 h-2 bg-blue-600 rounded-full mr-3 flex-shrink-0"></div>
-                    <span className="text-gray-700 text-sm sm:text-base">{item}</span>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
-
-            <motion.div
-              variants={itemVariants}
-              className="relative order-1 lg:order-2"
-            >
-              <div className="rounded-lg overflow-hidden shadow-lg h-[390px]">
-                <Image
-                  src="/images/technican-install-smart.jpg"
-                  alt="Technicien installant un système de maison intelligente"
-                  width={800}
-                  height={600}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </motion.div>
-          </motion.div>
-        </div>
+        
       </div>
     </section>
   );

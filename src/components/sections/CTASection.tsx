@@ -79,14 +79,13 @@ const CTASection = () => {
             className="text-4xl md:text-6xl font-bold font-poppins text-white mb-8"
             id="cta-heading"
           >
-            Prêt à transformer votre maison ou votre entreprise au Maroc ?
+            Notre Mission et Expertise
           </motion.h2>
           <motion.p
             variants={itemVariants}
-            className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-12 font-medium"
+            className="text-xl md:text-2xl text-gray-200 max-w-7xl mx-auto mb-12 font-medium text-center"
           >
-            Obtenez un devis gratuit et personnalisé pour vos projets de 
-            technologies intelligentes. Nos experts vous accompagnent de A à Z.
+            Chez SoussTech, nous rendons les technologies intelligentes accessibles et fiables pour tous au Maroc. Chaque espace mérite d’être connecté, sécurisé et optimisé, c’est pourquoi nous accompagnons nos clients de la conception à l’installation avec des solutions sur mesure, performantes et durables. Notre équipe d’experts met son savoir-faire au service de chaque projet en garantissant une expertise technique certifiée, des solutions personnalisées, une installation professionnelle ainsi qu’un support client réactif et inclus.
           </motion.p>
         </motion.div>
 
@@ -99,7 +98,7 @@ const CTASection = () => {
         >
           {[
             {
-              src: '/images/connected-smart-home-.jpg',
+              src: '/images/technican-install-smart.jpg',
               alt: 'Maison connectée'
             },
             {
