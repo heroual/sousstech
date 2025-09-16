@@ -99,7 +99,7 @@ const ServicesSection = () => {
         >
           <motion.h2
             variants={itemVariants}
-            className="text-5xl lg:text-6xl font-bold text-[#2B3A8A] mb-8 font-poppins"
+            className="text-4xl md:text-5xl font-bold text-[#2B3A8A] mb-8 font-poppins"
           >
             Nos Solutions Intelligentes
           </motion.h2>
@@ -199,7 +199,7 @@ const ServicesSection = () => {
         <div className="absolute inset-0 bg-[url('/images/circuit-pattern.png')] bg-cover opacity-10 mix-blend-overlay"></div>
         
         <div className="relative z-10 p-8 lg:p-12">
-          <h3 className="text-white mb-4 mt-8">
+          <h3 className="text-4xl md:text-5xl text-white mb-4 mt-8">
             Prêt à transformer votre maison ou votre entreprise au Maroc ?
           </h3>
           <p className="text-xl text-gray-200 font-medium mb-12 max-w-2xl mx-auto text-center">
@@ -209,7 +209,7 @@ const ServicesSection = () => {
           <div className="flex justify-center mb-12">
             <Link
               href="/contact"
-              className="btn-futuristic-primary"
+              className="relative inline-flex items-center bg-gray-200 text-gray-900 px-10 py-5 rounded-full font-bold text-xl shadow-2xl overflow-hidden"
             >
               Demander un devis gratuit
             </Link>

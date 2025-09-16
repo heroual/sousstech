@@ -212,7 +212,7 @@ const NetworkSection = () => {
           <h3 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 font-poppins">
             Optimisez Votre Infrastructure IT
           </h3>
-          <p className="text-blue-100 mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed text-sm sm:text-base">
+          <p className="text-xl text-blue-100 font-medium mb-6 sm:mb-8 max-w-3xl mx-auto">
             Faites confiance à nos experts pour concevoir, déployer et maintenir 
             votre infrastructure réseau. Solutions sur-mesure et support technique de qualité.
           </p>

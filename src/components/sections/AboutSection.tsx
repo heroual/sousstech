@@ -4,7 +4,8 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import Image from 'next/image';
-import { Award, Users, Zap, Target } from 'lucide-react';
+import Link from 'next/link';
+import { Award, Users, Zap, Target, ArrowRight } from 'lucide-react';
 
 const AboutSection = () => {
   const ref = useRef(null);
@@ -37,7 +38,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section ref={ref} className="section-padding-bottom bg-gray-50">
+    <section ref={ref} className="section-padding-bottom bg-white">
       <div className="container-padding max-w-7xl mx-auto">
         <motion.div
           variants={containerVariants}
@@ -63,8 +64,7 @@ const AboutSection = () => {
         <motion.div
           variants={containerVariants}
           initial="hidden"
-          animate={isInView ? "visible" : "hidden"
-}
+          animate={isInView ? "visible" : "hidden"}
           className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 section-spacing"
         >
           {stats.map((stat, index) => (
@@ -81,9 +81,91 @@ const AboutSection = () => {
             </motion.div>
           ))}
         </motion.div>
-
-        
       </div>
+
+      {/* Notre Mission et Expertise Section */}
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        animate={isInView ? "visible" : "hidden"}
+        className="text-center mt-16 lg:mt-20 bg-[#070908] rounded-none overflow-hidden shadow-2xl relative border-y border-white/10 group card-hover-effect"
+      >
+        <div className="absolute inset-0 bg-gradient-to-tr from-black/40 via-black/20 to-transparent z-0"></div>
+        <div className="absolute -right-16 -top-16 w-32 h-32 bg-blue-500/20 rounded-full blur-xl animate-pulse-glow"></div>
+        <div className="absolute -left-16 -bottom-16 w-32 h-32 bg-blue-400/20 rounded-full blur-xl animate-pulse-glow delay-700"></div>
+        <div className="absolute inset-0 bg-[url('/images/circuit-pattern.png')] bg-cover opacity-10 mix-blend-overlay"></div>
+        
+        <div className="relative z-10 p-8 lg:p-12">
+          <h3 className="text-4xl md:text-5xl text-white mb-4 mt-8">
+            Notre Mission et Expertise
+          </h3>
+          <p className="text-xl text-gray-200 font-medium mb-12 text-center">
+            Chez SoussTech, nous rendons les technologies intelligentes accessibles et fiables pour tous au Maroc. Chaque espace mérite d’être connecté, sécurisé et optimisé, c’est pourquoi nous accompagnons nos clients de la conception à l’installation avec des solutions sur mesure, performantes et durables. Notre équipe d’experts met son savoir-faire au service de chaque projet en garantissant une expertise technique certifiée, des solutions personnalisées, une installation professionnelle ainsi qu’un support client réactif et inclus.
+          </p>
+          {/* Standardized Image Gallery */}
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            animate={isInView ? "visible" : "hidden"}
+            className="grid grid-cols-2 md:grid-cols-4 gap-4 section-spacing"
+          >
+            {[
+              {
+                src: '/images/technican-install-smart.jpg',
+                alt: 'Maison connectée'
+              },
+              {
+                src: '/images/phone-control-sound.jpg',
+                alt: 'Contrôle mobile'
+              },
+              {
+                src: '/images/modern-smart-home-management-systems.jpg',
+                alt: 'Systèmes de gestion'
+              },
+              {
+                src: '/images/wireless-automation-control.jpg',
+                alt: 'Automatisation sans fil'
+              }
+            ].map((image, index) => (
+              <motion.div
+                key={index}
+                variants={itemVariants}
+                whileHover={{ scale: 1.05 }}
+                className="relative rounded-xl overflow-hidden shadow-large group cursor-pointer"
+              >
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  width={250}
+                  height={160}
+                  className="image-gallery"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </motion.div>
+            ))}
+          </motion.div>
+
+          {/* Main CTA */}
+          <motion.div
+            variants={itemVariants}
+            initial="hidden"
+            animate={isInView ? "visible" : "hidden"}
+            className="text-center section-spacing"
+          >
+            <Link
+              href="/contact"
+              className="relative inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-700 text-white px-10 py-5 rounded-full font-bold text-xl shadow-2xl overflow-hidden"
+            >
+              <span className="absolute inset-0 bg-blue-800 opacity-0 rounded-full"></span>
+              <span className="relative z-10 flex items-center">
+                Demander un Devis Gratuit
+                <ArrowRight className="ml-3 h-6 w-6" />
+              </span>
+            </Link>
+          </motion.div>
+        </div>
+      </motion.div>
     </section>
   );
 };

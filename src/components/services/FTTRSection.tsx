@@ -150,7 +150,7 @@ const FTTRSection = () => {
               <h3 className="text-3xl font-bold mb-6 font-poppins text-center text-white">
                 Pourquoi Choisir Notre FTTR ?
               </h3>
-              <p className="text-blue-100 mb-6 leading-relaxed text-center">
+              <p className="text-xl text-blue-100 font-medium mb-6 text-center">
                 Notre technologie FTTR représente l'avenir de la connectivité résidentielle. 
                 Plus besoin de compromis entre esthétique et performance !
               </p>

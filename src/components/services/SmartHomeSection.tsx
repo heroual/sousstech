@@ -190,7 +190,7 @@ const SmartHomeSection = () => {
           <h3 className="text-3xl font-bold mb-6 font-poppins text-center">
             Prêt pour une Maison Intelligente ?
           </h3>
-          <p className="text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed text-center">
+          <p className="text-xl text-gray-200 font-medium mb-8 max-w-3xl mx-auto text-center">
             Nos experts vous accompagnent dans la conception et l'installation 
             de votre solution domotique sur-mesure. Installation professionnelle 
             et formation incluses.

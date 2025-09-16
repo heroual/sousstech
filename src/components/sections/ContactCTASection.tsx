@@ -81,8 +81,6 @@ const ContactCTASection = () => {
           </motion.p>
         </motion.div>
 
-        
-
         {/* Contact Methods */}
         <motion.div
           variants={containerVariants}
@@ -135,6 +133,8 @@ const ContactCTASection = () => {
             ))}
           </div>
         </motion.div>
+
+        
       </div>
     </section>
   );

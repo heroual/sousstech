@@ -203,7 +203,7 @@ const SecuritySection = () => {
               <h3 className="text-3xl font-bold mb-6 font-poppins text-center">
                 Sécurité Professionnelle
               </h3>
-              <p className="text-blue-100 mb-6 leading-relaxed text-center">
+              <p className="text-xl text-blue-100 font-medium mb-6 text-center">
                 Nos solutions de surveillance combinent haute technologie et facilité d'utilisation. 
                 Installation professionnelle et support technique inclus.
               </p>
