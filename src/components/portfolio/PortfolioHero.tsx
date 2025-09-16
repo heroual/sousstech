@@ -39,9 +39,9 @@ const PortfolioHero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-5xl md:text-6xl font-bold font-poppins mb-6 text-center">
+          <h1 className="text-5xl md:text-6xl font-bold font-poppins mb-6 text-center" style={{ color: 'white' }}>
             Nos Réalisations
-            <span className="block text-blue-400">
+            <span className="block">
               & Projets
             </span>
           </h1>
@@ -51,7 +51,8 @@ const PortfolioHero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-xl text-gray-300 font-medium max-w-3xl mx-auto mb-12"
+          className="text-xl font-medium max-w-3xl mx-auto mb-12"
+          style={{ color: 'white' }}
         >
           Découvrez nos projets les plus marquants et les transformations 
           technologiques que nous avons réalisées pour nos clients.

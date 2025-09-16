@@ -33,9 +33,9 @@ const AboutHero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-5xl md:text-7xl font-bold mb-9 font-poppins">
+          <h1 className="text-5xl md:text-7xl font-bold mb-9 font-poppins" style={{ color: 'white' }}>
             Pourquoi Choisir
-            <span className="block gradient-text">
+            <span className="block">
               SoussTech ?
             </span>
           </h1>
@@ -45,7 +45,8 @@ const AboutHero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-xl text-gray-300 font-medium max-w-3xl mx-auto mb-12"
+          className="text-xl text-white font-medium max-w-3xl mx-auto mb-12"
+          style={{ color: 'white' }}
         >
           Découvrez pourquoi SoussTech est le partenaire idéal pour vos projets de technologies intelligentes et connectées.
         </motion.p>

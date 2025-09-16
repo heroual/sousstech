@@ -34,9 +34,9 @@ const ContactHero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-4xl md:text-5xl font-bold font-poppins mb-6 text-center">
+          <h1 className="text-5xl md:text-7xl font-bold font-poppins mb-9" style={{ color: 'white' }}>
             Contactez
-            <span className="block gradient-text">
+            <span className="block">
               Nos Experts
             </span>
           </h1>
@@ -46,7 +46,8 @@ const ContactHero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-xl text-gray-300 font-medium max-w-3xl mx-auto mb-12"
+          className="text-xl font-medium max-w-3xl mx-auto mb-12"
+          style={{ color: 'white' }}
         >
           Contactez nos experts pour des conseils personnalisés et un devis gratuit pour votre projet.
         </motion.p>
