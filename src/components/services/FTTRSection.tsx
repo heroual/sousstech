@@ -64,15 +64,12 @@ const FTTRSection = () => {
             </div>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-800 mb-6 text-center">
-            FTTR - Fiber to The Room
+            Internet Ultra-Rapide – FTTR (Fiber to The Room)
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed text-center">
-            Connexion ultra-rapide sans perçage, invisible et esthétique. La fibre optique directement dans chaque pièce pour des performances maximales.
+            La nouvelle génération de connectivité au Maroc : la fibre optique dans chaque pièce, sans perçage et sans câbles visibles.
 
-            Débit jusqu'à 10 Gbit/s
-            Installation sans perçage
-            Design totalement invisible
-            Latence ultra-faible.
+Pourquoi choisir FTTR plutôt qu’un câblage classique ?Pourquoi Choisir FTTR plutôt qu’un câblage classique ?
           </p>
         </motion.div>
 
@@ -81,41 +78,57 @@ const FTTRSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="grid md:grid-cols-2 gap-8 mb-16"
+          className="mb-16"
         >
-          {/* Traditional vs FTTR */}
-          <div className="bg-gray-100 border-2 border-gray-200 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-gray-800 mb-4 text-center">Câblage Traditionnel</h3>
-            <ul className="space-y-3">
-              {[
-                "Perçage et goulotte visibles",
-                "Débit limité par le cuivre",
-                "Perte de signal sur distance",
-                "Installation complexe et salissante"
-              ].map((item, index) => (
-                <li key={index} className="flex items-center text-gray-700 text-center">
-                  <span className="w-2 h-2 bg-gray-500 rounded-full mr-3"></span>
-                  {item}
-                </li>
-              ))}
-            </ul>
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Traditional vs FTTR */}
+            <div className="bg-gray-100 border-2 border-gray-200 rounded-2xl p-8">
+              <h3 className="text-2xl font-bold text-gray-800 mb-4 text-center">Câblage Traditionnel</h3>
+              <ul className="space-y-3">
+                {
+                  [
+                    "Perçage et goulotte visibles",
+                    "Débit limité par le cuivre",
+                    "Perte de signal sur distance",
+                    "Installation complexe et salissante"
+                  ].map((item, index) => (
+                    <li key={index} className="flex items-center text-gray-700 text-center">
+                      <span className="w-2 h-2 bg-gray-500 rounded-full mr-3"></span>
+                      {item}
+                    </li>
+                  ))
+                }
+              </ul>
+            </div>
+
+            <div className="bg-white border-2 border-gray-200 rounded-2xl p-8">
+              <h3 className="text-2xl font-bold text-gray-800 mb-4 text-center">Notre Solution FTTR</h3>
+              <ul className="space-y-3">
+                {
+                  [
+                    "Installation invisible et sans perçage",
+                    "Débit fibre jusqu’à 10 Gbit/s symétriques",
+                    "Signal parfait dans chaque pièce",
+                    "Installation propre et rapide",
+                    "Garantie 10 ans + support inclus"
+                  ].map((item, index) => (
+                    <li key={index} className="flex items-center text-gray-700 text-center">
+                      <CheckCircle className="w-5 h-5 text-primary mr-3" />
+                      {item}
+                    </li>
+                  ))
+                }
+              </ul>
+            </div>
           </div>
 
-          <div className="bg-white border-2 border-gray-200 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-gray-800 mb-4 text-center">Notre Solution FTTR</h3>
-            <ul className="space-y-3">
-              {[
-                "Installation invisible sans perçage",
-                "Débit full fibre dans chaque pièce",
-                "Signal parfait partout",
-                "Installation propre et rapide"
-              ].map((item, index) => (
-                <li key={index} className="flex items-center text-gray-700 text-center">
-                  <CheckCircle className="w-5 h-5 text-primary mr-3" />
-                  {item}
-                </li>
-              ))}
-            </ul>
+          <div className="text-center mt-8 flex justify-center">
+            <Link
+              href="/contact"
+              className="block mx-auto bg-primary text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-primary-dark transition-colors duration-300 shadow-lg"
+            >
+              Demander un devis gratuit
+            </Link>
           </div>
         </motion.div>
 

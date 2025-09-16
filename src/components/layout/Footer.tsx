@@ -24,8 +24,8 @@ const Footer = () => {
               <span className="text-2xl font-bold font-poppins text-left">SoussTech</span>
             </div>
             <p className="text-gray-300 text-lg leading-relaxed max-w-md text-left">
-              Votre partenaire en solutions technologiques intelligentes. 
-              Nous transformons votre espace en environnement connecté, sécurisé et optimisé.
+              Expert en technologies intelligentes au Maroc.
+Nous transformons vos maisons et entreprises en espaces connectés, sécurisés et performants.
             </p>
             <div className="flex space-x-4">
               <a 
@@ -58,7 +58,7 @@ const Footer = () => {
             <ul className="space-y-4">
               <li>
                 <Link href="/services#fttr" className="text-gray-300 hover:text-primary-light transition-colors duration-300 text-lg text-left">
-                  FTTR - Fiber to The Room
+                  Internet Ultra-Rapide – FTTR (Fiber to The Room)
                 </Link>
               </li>
               <li>

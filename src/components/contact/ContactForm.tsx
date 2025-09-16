@@ -21,7 +21,7 @@ const ContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const services = [
-    { id: 'fttr', name: 'FTTR - Fiber to The Room', icon: Zap, color: 'text-primary' },
+    { id: 'fttr', name: 'Internet Ultra-Rapide – FTTR (Fiber to The Room)', icon: Zap, color: 'text-primary' },
     { id: 'smart-home', name: 'Smart Home & Domotique', icon: Home, color: 'text-primary' },
     { id: 'security', name: 'Caméras & Sécurité', icon: Shield, color: 'text-primary' },
     { id: 'network', name: 'Réseaux & IT', icon: Network, color: 'text-primary' },
