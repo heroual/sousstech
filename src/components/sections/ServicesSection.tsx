@@ -176,6 +176,7 @@ const ServicesSection = () => {
                   <Link
                     href={`/services#${service.id}`}
                     className="btn-futuristic"
+                    style={{ backgroundColor: '#514ae6', borderColor: '#514ae6' }}
                   >
                     En savoir plus
                   </Link>
@@ -202,7 +203,7 @@ const ServicesSection = () => {
           <h3 className="text-4xl md:text-5xl text-white mb-4 mt-8">
             Prêt à transformer votre maison ou votre entreprise au Maroc ?
           </h3>
-          <p className="text-xl text-gray-200 font-medium mb-12 max-w-2xl mx-auto text-center">
+          <p className="text-xl text-gray-200 font-medium mb-12 mx-auto text-center" style={{ maxWidth: '1230px' }}>
             Nos experts vous accompagnent de la conception à l’installation de vos solutions connectées : FTTR, domotique, caméras de sécurité et réseaux intelligents.
             Demandez dès maintenant votre devis gratuit et personnalisé.
           </p>
@@ -210,6 +211,7 @@ const ServicesSection = () => {
             <Link
               href="/contact"
               className="relative inline-flex items-center bg-gray-200 text-gray-900 px-10 py-5 rounded-full font-bold text-xl shadow-2xl overflow-hidden"
+              style={{ backgroundColor: '#514ae6', color: 'white' }}
             >
               Demander un devis gratuit
             </Link>

@@ -44,7 +44,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="flex justify-center"
         >
-          <Link href="/services" className="btn-futuristic-primary">
+          <Link href="/services" className="btn-futuristic-primary" style={{ backgroundColor: '#514ae6' }}>
             Découvrir nos Service
           </Link>
         </motion.div>

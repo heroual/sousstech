@@ -598,6 +598,8 @@ textarea:focus-visible {
   box-shadow: 0 0 20px rgba(167, 139, 250, 0.5); /* Static shadow */
 }
 
+
+
 @layer base {
   h1 {
     @apply text-5xl font-bold font-poppins text-gray-900 md:text-7xl;

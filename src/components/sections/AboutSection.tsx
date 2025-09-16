@@ -155,9 +155,10 @@ const AboutSection = () => {
           >
             <Link
               href="/contact"
-              className="relative inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-700 text-white px-10 py-5 rounded-full font-bold text-xl shadow-2xl overflow-hidden"
+              className="relative inline-flex items-center text-white px-10 py-5 rounded-full font-bold text-xl shadow-2xl overflow-hidden"
+              style={{ backgroundColor: '#514ae6' }}
             >
-              <span className="absolute inset-0 bg-blue-800 opacity-0 rounded-full"></span>
+              <span className="absolute inset-0 opacity-0 rounded-full"></span>
               <span className="relative z-10 flex items-center">
                 Demander un Devis Gratuit
                 <ArrowRight className="ml-3 h-6 w-6" />
