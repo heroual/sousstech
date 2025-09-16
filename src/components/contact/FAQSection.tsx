@@ -184,7 +184,7 @@ const FAQSection = () => {
         >
           <div className="bg-gradient-to-r from-blue-500 to-blue-400 rounded-3xl p-8 text-white">
             <h3 className="text-2xl font-bold mb-4 text-center">Vous avez d'autres questions ?</h3>
-            <p className="text-gray-300 mb-6 text-center">
+            <p className="text-xl text-gray-200 font-medium mb-6 text-center">
               Notre équipe d'experts est là pour répondre à toutes vos interrogations spécifiques.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

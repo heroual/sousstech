@@ -135,7 +135,7 @@ const TeamSection = () => {
           </motion.h2>
           <motion.p
             variants={itemVariants}
-            className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
+            className="text-xl text-gray-800 font-medium max-w-3xl mx-auto"
           >
             Une équipe passionnée de professionnels expérimentés, 
             dédiée à vous offrir les meilleures solutions technologiques.

@@ -45,7 +45,7 @@ const AboutHero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-12"
+          className="text-xl text-gray-300 font-medium max-w-3xl mx-auto mb-12"
         >
           Découvrez pourquoi SoussTech est le partenaire idéal pour vos projets de technologies intelligentes et connectées.
         </motion.p>

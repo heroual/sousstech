@@ -46,7 +46,7 @@ const PortfolioCTA = () => {
         >
           {/* Left: Call to Action */}
           <div>
-            <h3 className="text-2xl font-bold text-white mb-6">
+            <h3 className="text-white mb-6">
               Étapes Simples pour Votre Projet
             </h3>
             <div className="space-y-4 mb-8">

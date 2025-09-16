@@ -125,7 +125,7 @@ const ProjectCategories = () => {
                 {category.name}
               </h3>
               
-              <p className={`text-sm ${ 
+              <p className={`text-xl font-medium ${
                 activeFilter === category.id ? 'text-blue-200' : 'text-gray-500'
               }`}>
                 {category.count} projet{category.count > 1 ? 's' : ''}

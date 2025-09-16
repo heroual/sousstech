@@ -106,7 +106,7 @@ const Testimonials = () => {
           </motion.h2>
           <motion.p
             variants={itemVariants}
-            className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
+            className="text-xl text-gray-800 font-medium max-w-3xl mx-auto"
           >
             Découvrez ce que nos clients pensent de nos services. 
             Leur satisfaction est notre plus belle récompense.

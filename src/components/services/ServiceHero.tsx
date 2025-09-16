@@ -33,9 +33,9 @@ const ServiceHero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-5xl md:text-7xl font-bold mb-9 font-poppins">
+          <h1 className="text-5xl md:text-7xl font-bold mb-9 font-poppins text-white">
             Nos Solutions
-            <span className="block text-blue-400">
+            <span className="block text-white">
               Technologiques
             </span>
           </h1>

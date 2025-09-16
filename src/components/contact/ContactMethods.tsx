@@ -142,7 +142,7 @@ const ContactMethods = () => {
                   </div>
                 </div>
                 
-                <div className="text-gray-300 text-sm">
+                <div className="text-xl text-gray-200 font-medium">
                   <p>🌍 {officeInfo.region}</p>
                   <p>🅿️ {officeInfo.parking}</p>
                 </div>
@@ -168,7 +168,7 @@ const ContactMethods = () => {
               
               <div className="mt-6 p-4 bg-white/10 rounded-xl">
                 <h5 className="font-semibold mb-2">💡 Conseil</h5>
-                <p className="text-sm text-gray-300">
+                <p className="text-xl text-gray-200 font-medium">
                   Pour les visites sur site, nous nous déplaçons dans toute la région Souss-Massa. 
                   Contactez-nous pour planifier un rendez-vous.
                 </p>

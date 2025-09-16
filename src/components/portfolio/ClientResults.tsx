@@ -151,7 +151,7 @@ const ClientResults = () => {
           </motion.h2>
           <motion.p
             variants={itemVariants}
-            className="text-xl text-gray-600 max-w-3xl mx-auto"
+            className="text-xl text-gray-800 font-medium max-w-3xl mx-auto"
           >
             Des chiffres qui parlent : découvrez l'impact concret de nos solutions 
             sur la performance et le quotidien de nos clients.

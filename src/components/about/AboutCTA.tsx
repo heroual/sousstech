@@ -78,7 +78,7 @@ const AboutCTA = () => {
             <div className="bg-gradient-to-r from-blue-500 to-blue-400 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
               <Mail className="h-8 w-8 text-white" />
             </div>
-            <h3 className="text-xl font-bold text-white mb-2">Email</h3>
+            <h3 className="text-white mb-2">Email</h3>
             <p className="text-gray-300 text-sm mb-3">Devis détaillé par email</p>
             <span className="text-blue-300 font-semibold">contact@soustech.ma</span>
           </motion.a>

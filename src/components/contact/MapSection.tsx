@@ -89,7 +89,7 @@ const MapSection = () => {
                 <h3 className="text-xl font-bold text-gray-900">Zone d'Intervention</h3>
               </div>
               <div className="text-gray-700">
-                <p className="mb-3">Nous intervenons dans toute la région Souss-Massa :</p>
+                <p className="text-xl text-gray-800 font-medium mb-3">Nous intervenons dans toute la région Souss-Massa :</p>
                 <div className="grid grid-cols-2 gap-2 text-sm">
                   <div>• Taroudant (83000)</div>
                   <div>• Agadir (80000)</div>

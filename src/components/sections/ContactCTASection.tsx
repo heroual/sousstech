@@ -68,7 +68,7 @@ const ContactCTASection = () => {
         >
           <motion.h2
             variants={itemVariants}
-            className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6"
+            className="text-4xl md:text-5xl font-bold font-poppins text-[#293786] mb-6"
           >
             Contactez-nous
           </motion.h2>

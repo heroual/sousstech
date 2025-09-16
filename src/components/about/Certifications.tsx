@@ -131,15 +131,12 @@ const Certifications = () => {
           animate={isInView ? "visible" : "hidden"}
           className="text-center mb-16"
         >
-          <motion.h2
-            variants={itemVariants}
-            className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6"
-          >
+          <h2 className="mb-6">
             Certifications
             <span className="block text-blue-500">
               & Partenariats
             </span>
-          </motion.h2>
+          </h2>
           <motion.p
             variants={itemVariants}
             className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"

@@ -254,7 +254,7 @@ const ProjectsGallery = () => {
               onClick={(e) => e.stopPropagation()}
             >
               <div className="flex justify-between items-start mb-6">
-                <h3 className="text-2xl font-bold text-gray-900">{selectedProject.title}</h3>
+                <h3 className="text-gray-900">{selectedProject.title}</h3>
                 <button
                   onClick={() => setSelectedProject(null)}
                   className="btn ml-2 text-base font-poppins focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"

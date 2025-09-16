@@ -332,7 +332,7 @@ const ContactForm = () => {
 
             {/* Guarantees */}
             <div className="bg-white rounded-3xl shadow-lg p-8">
-              <h3 className="text-2xl font-bold text-gray-800 mb-6">Nos Garanties</h3>
+              <h3 className="mb-6">Nos Garanties</h3>
               <div className="space-y-4">
                 {[
                   "Devis gratuit et sans engagement",

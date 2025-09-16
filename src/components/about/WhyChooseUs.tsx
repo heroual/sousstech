@@ -106,15 +106,12 @@ const WhyChooseUs = () => {
           animate={isInView ? "visible" : "hidden"}
           className="text-center mb-16"
         >
-          <motion.h2
-            variants={itemVariants}
-            className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6 text-center"
-          >
+          <h2 className="mb-6 text-center">
             Nos Valeurs
             <span className="block gradient-text">
               & Engagements
             </span>
-          </motion.h2>
+          </h2>
           <motion.p
             variants={itemVariants}
             className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed text-center"
@@ -158,7 +155,7 @@ const WhyChooseUs = () => {
                   {feature.title}
                 </h3>
                 
-                <p className="text-gray-600 mb-4 leading-relaxed text-center">
+                <p className="text-xl text-gray-800 font-medium mb-4 text-center">
                   {feature.description}
                 </p>
 

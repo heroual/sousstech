@@ -146,7 +146,7 @@ const BeforeAfter = () => {
           </motion.h2>
           <motion.p
             variants={itemVariants}
-            className="text-xl text-gray-600 max-w-3xl mx-auto"
+            className="text-xl text-gray-800 font-medium max-w-3xl mx-auto"
           >
             Découvrez les transformations spectaculaires réalisées chez nos clients. 
             Des solutions qui changent vraiment la donne.
