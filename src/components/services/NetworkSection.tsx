@@ -118,11 +118,10 @@ const NetworkSection = () => {
             </div>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6 text-center">
-            Réseaux & IT Services
+            Réseaux & IT – Solutions Professionnelles
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed text-center">
-            Conception, optimisation et maintenance de votre infrastructure réseau. 
-            Solutions IoT et domotique avec support technique professionnel.
+            Conception, optimisation et maintenance de réseaux hautes performances pour particuliers et entreprises au Maroc.
           </p>
         </motion.div>
 
@@ -158,6 +157,75 @@ const NetworkSection = () => {
               </ul>
             </div>
           ))}
+        </motion.div>
+
+        {/* New Section: Nos services Réseaux & IT (Moved and Modified) */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 0.8 }}
+          className="bg-white rounded-3xl p-8 md:p-12 text-gray-900 mb-12 sm:mb-16"
+        >
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Card 1: Nos services Réseaux & IT */}
+            <div className="bg-gray-50 rounded-2xl p-6 shadow-md">
+              <h3 className="text-3xl font-bold mb-6 font-poppins text-center">
+                Nos services Réseaux & IT :
+              </h3>
+              <ul className="space-y-4 text-lg leading-relaxed">
+                <li className="flex items-start">
+                  <CheckCircle className="h-6 w-6 text-blue-600 mr-3 flex-shrink-0 mt-1" />
+                  <span>Conception & audit réseau (architecture optimisée, évolutive)</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="h-6 w-6 text-blue-600 mr-3 flex-shrink-0 mt-1" />
+                  <span>Wi-Fi professionnel (Wi-Fi 6E/7, couverture complète, roaming fluide)</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="h-6 w-6 text-blue-600 mr-3 flex-shrink-0 mt-1" />
+                  <span>Solutions IoT (capteurs, automatisation, gestion énergétique)</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="h-6 w-6 text-blue-600 mr-3 flex-shrink-0 mt-1" />
+                  <span>Maintenance IT & support 24/7 (surveillance proactive, intervention rapide)</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Card 2: Engagement qualité */}
+            <div className="bg-gray-50 rounded-2xl p-6 shadow-md">
+              <h3 className="text-3xl font-bold mb-6 font-poppins text-center">
+                Engagement qualité :
+              </h3>
+              <ul className="space-y-4 text-lg leading-relaxed">
+                <li className="flex items-start">
+                  <CheckCircle className="h-6 w-6 text-blue-600 mr-3 flex-shrink-0 mt-1" />
+                  <span>Support technique disponible 24/7</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="h-6 w-6 text-blue-600 mr-3 flex-shrink-0 mt-1" />
+                  <span>Maintenance préventive (99,9% disponibilité)</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="h-6 w-6 text-blue-600 mr-3 flex-shrink-0 mt-1" />
+                  <span>Intervention en moins de 4h en cas de problème</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="h-6 w-6 text-blue-600 mr-3 flex-shrink-0 mt-1" />
+                  <span>Solutions sécurisées et conformes aux normes</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="text-center mt-8">
+            <Link
+              href="/contact"
+              className="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-700 transition-colors duration-300 shadow-lg"
+            >
+              Demander un audit gratuit
+            </Link>
+          </div>
         </motion.div>
 
         {/* IoT Solutions */}
@@ -231,6 +299,7 @@ const NetworkSection = () => {
             </Link>
           </div>
         </motion.div>
+      
       </div>
     </section>
   );

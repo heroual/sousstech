@@ -102,11 +102,10 @@ const SecuritySection = () => {
             </div>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6 text-center">
-            Caméras de Surveillance & Sécurité
+            Caméras & Sécurité Intelligente
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed text-center">
-            Protégez vos biens avec nos solutions de surveillance intelligente. 
-            Caméras haute définition, détection IA et accès distant pour une sécurité optimale.
+            Protégez vos proches, vos biens et votre entreprise grâce à nos systèmes de vidéosurveillance avancés.
           </p>
         </motion.div>
 

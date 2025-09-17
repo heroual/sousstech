@@ -68,7 +68,7 @@ Nous transformons vos maisons et entreprises en espaces connectés, sécurisés 
               </li>
               <li>
                 <Link href="/services#security" className="text-gray-300 hover:text-primary-light transition-colors duration-300 text-lg text-left">
-                  Caméras de Surveillance
+                  Caméras & Sécurité Intelligente
                 </Link>
               </li>
               <li>

@@ -93,8 +93,8 @@ const SmartHomeSection = () => {
             Smart Home - Maison Intelligente
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed text-center">
-            Transformez votre maison en espace intelligent avec notre solution domotique complète. 
-            Contrôlez lumières, chauffage, sécurité et bien plus depuis votre smartphone.
+            Automatisez et contrôlez votre maison depuis votre smartphone.
+            Avec nos solutions domotiques, transformez votre quotidien : confort, sécurité et économies d’énergie au bout des doigts.
           </p>
         </motion.div>
 
