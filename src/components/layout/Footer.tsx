@@ -126,23 +126,11 @@ Nous transformons vos maisons et entreprises en espaces connectés, sécurisés 
         </div>
 
         <div className="border-t border-gray-700 mt-12 lg:mt-16 pt-8 lg:pt-12">
-          <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
-            <div className="text-center lg:text-left">
-              <p className="text-gray-300 text-lg text-left">
-                Créé par <span className="text-white font-semibold">Elheroual Salah Eddine</span>
-              </p>
-            </div>
-            <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6 text-gray-300 text-lg">
-              <p className="text-center lg:text-right">© 2024 SoussTech. Tous droits réservés.</p>
-              <div className="flex space-x-6">
-                <Link href="/privacy" className="hover:text-primary-light transition-colors duration-300 text-center">
-                  Confidentialité
-                </Link>
-                <Link href="/terms" className="hover:text-primary-light transition-colors duration-300 text-center">
-                  Conditions
-                </Link>
-              </div>
-            </div>
+          <div className="flex flex-col items-center space-y-4 lg:space-y-0">
+            <p className="text-gray-300 text-lg text-center">
+              Créé par <span className="text-white font-semibold">Elheroual Salah Eddine</span>
+              <span className="ml-4">© 2025 SoussTech. Tous droits réservés.</span>
+            </p>
           </div>
         </div>
       </div>

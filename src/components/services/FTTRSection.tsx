@@ -125,7 +125,7 @@ Pourquoi choisir FTTR plutôt qu’un câblage classique ?Pourquoi Choisir FTTR 
           <div className="text-center mt-8 flex justify-center">
             <Link
               href="/contact"
-              className="block mx-auto bg-primary text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-primary-dark transition-colors duration-300 shadow-lg"
+              className="btn-futuristic-primary" style={{ backgroundColor: '#514ae6' }}
             >
               Demander un devis gratuit
             </Link>
@@ -170,7 +170,7 @@ Pourquoi choisir FTTR plutôt qu’un câblage classique ?Pourquoi Choisir FTTR 
               <div className="text-center">
                 <Link
                   href="/contact"
-                  className="inline-flex items-center bg-white text-primary px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-300"
+                  className="btn-futuristic-primary" style={{ backgroundColor: '#514ae6' }}
                 >
                   Demander un Devis
                 </Link>

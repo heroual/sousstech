@@ -175,8 +175,7 @@ const ServicesSection = () => {
                 <div className="text-center">
                   <Link
                     href={`/services#${service.id}`}
-                    className="btn-futuristic"
-                    style={{ backgroundColor: '#514ae6', borderColor: '#514ae6' }}
+                    className="btn-futuristic-primary" style={{ backgroundColor: '#514ae6' }}
                   >
                     En savoir plus
                   </Link>
@@ -210,8 +209,7 @@ const ServicesSection = () => {
           <div className="flex justify-center mb-12">
             <Link
               href="/contact"
-              className="relative inline-flex items-center bg-gray-200 text-gray-900 px-10 py-5 rounded-full font-bold text-xl shadow-2xl overflow-hidden"
-              style={{ backgroundColor: '#514ae6', color: 'white' }}
+              className="btn-futuristic-primary" style={{ backgroundColor: '#514ae6' }}
             >
               Demander un devis gratuit
             </Link>

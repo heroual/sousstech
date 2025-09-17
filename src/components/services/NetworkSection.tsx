@@ -221,7 +221,7 @@ const NetworkSection = () => {
           <div className="text-center mt-8">
             <Link
               href="/contact"
-              className="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-blue-700 transition-colors duration-300 shadow-lg"
+              className="btn-futuristic-primary" style={{ backgroundColor: '#514ae6' }}
             >
               Demander un audit gratuit
             </Link>
@@ -287,13 +287,13 @@ const NetworkSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md sm:max-w-none mx-auto">
             <Link
               href="/contact"
-              className="bg-white text-blue-600 px-6 sm:px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors duration-300 min-h-[48px] flex items-center justify-center text-sm sm:text-base text-center"
+              className="btn-futuristic-primary" style={{ backgroundColor: '#514ae6' }}
             >
               Audit Gratuit
             </Link>
             <Link
               href="/portfolio"
-              className="border-2 border-white text-white px-6 sm:px-8 py-3 rounded-full font-semibold hover:bg-white/10 transition-colors duration-300 min-h-[48px] flex items-center justify-center text-sm sm:text-base text-center"
+              className="btn-futuristic-primary" style={{ backgroundColor: '#514ae6' }}
             >
               Nos Références
             </Link>

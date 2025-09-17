@@ -57,7 +57,7 @@ const AboutHero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="flex justify-center"
         >
-          <Link href="/about" className="btn-futuristic-primary">
+          <Link href="/about" className="btn-futuristic-primary" style={{ backgroundColor: '#514ae6' }}>
             En Savoir Plus
           </Link>
         </motion.div>

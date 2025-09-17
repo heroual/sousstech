@@ -64,7 +64,7 @@ const PortfolioHero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="flex justify-center"
         >
-          <Link href="/portfolio" className="btn-futuristic-primary">
+          <Link href="/portfolio" className="btn-futuristic-primary" style={{ backgroundColor: '#514ae6' }}>
             Nos Projets
           </Link>
         </motion.div>

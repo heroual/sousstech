@@ -209,13 +209,13 @@ const SecuritySection = () => {
               <div className="flex gap-4 justify-center">
                 <Link
                   href="/contact"
-                  className="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-blue-50 transition-colors duration-300 text-center"
+                  className="btn-futuristic-primary" style={{ backgroundColor: '#514ae6' }}
                 >
                   Devis Gratuit
                 </Link>
                 <Link
                   href="/portfolio"
-                  className="border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white/10 transition-colors duration-300 text-center"
+                  className="btn-futuristic-primary" style={{ backgroundColor: '#514ae6' }}
                 >
                   Voir Projets
                 </Link>

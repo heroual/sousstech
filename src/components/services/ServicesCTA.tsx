@@ -125,10 +125,9 @@ const ServicesCTA = () => {
         >
           <Link
             href="/contact"
-            className="inline-flex items-center bg-gradient-to-r from-blue-600 to-blue-500 text-white px-10 py-5 rounded-full font-bold text-xl hover:scale-105 transition-all duration-300 shadow-xl group text-center"
+            className="btn-futuristic-primary" style={{ backgroundColor: '#514ae6' }}
           >
             Demander un Devis Détaillé
-            <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-2 transition-transform" />
           </Link>
         </motion.div>
       </div>

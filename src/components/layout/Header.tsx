@@ -53,7 +53,7 @@ const Header = () => {
           <div className="hidden lg:flex items-center">
             <Link
               href="/contact"
-              className="btn-futuristic"
+              className="btn-futuristic-primary" style={{ backgroundColor: '#514ae6' }}
             >
               Devis Gratuit
             </Link>
@@ -95,7 +95,7 @@ const Header = () => {
               <div className="pt-4">
                 <Link
                   href="/contact"
-                  className="btn-futuristic w-full block text-center"
+                  className="btn-futuristic-primary w-full block text-center" style={{ backgroundColor: '#514ae6' }}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Devis Gratuit

@@ -155,14 +155,9 @@ const AboutSection = () => {
           >
             <Link
               href="/contact"
-              className="relative inline-flex items-center text-white px-10 py-5 rounded-full font-bold text-xl shadow-2xl overflow-hidden"
-              style={{ backgroundColor: '#514ae6' }}
+              className="btn-futuristic-primary" style={{ backgroundColor: '#514ae6' }}
             >
-              <span className="absolute inset-0 opacity-0 rounded-full"></span>
-              <span className="relative z-10 flex items-center">
-                Demander un Devis Gratuit
-                <ArrowRight className="ml-3 h-6 w-6" />
-              </span>
+              Demander un Devis Gratuit
             </Link>
           </motion.div>
         </div>

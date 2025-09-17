@@ -198,13 +198,13 @@ const SmartHomeSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="bg-white text-primary px-8 py-3 rounded-full font-semibold hover:bg-gray-50 transition-colors duration-300 text-center"
+              className="btn-futuristic-primary" style={{ backgroundColor: '#514ae6' }}
             >
               Demander un Devis
             </Link>
             <Link
               href="/portfolio"
-              className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white/10 transition-colors duration-300 text-center"
+              className="btn-futuristic-primary" style={{ backgroundColor: '#514ae6' }}
             >
               Voir nos Réalisations
             </Link>

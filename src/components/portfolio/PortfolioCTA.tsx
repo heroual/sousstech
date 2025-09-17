@@ -68,16 +68,17 @@ const PortfolioCTA = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="/contact"
-                className="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-all duration-300 shadow-2xl hover:shadow-blue-500/25 group"
+                className="btn-futuristic-primary" style={{ backgroundColor: '#514ae6' }}
               >
                 Demander un Devis
-                <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-2 transition-transform" />
               </Link>
               
-              <button className="inline-flex items-center bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-full font-semibold hover:bg-white/20 transition-all duration-300">
-                <Download className="mr-2 h-5 w-5" />
-                <span className="btn font-poppins text-base">Portfolio PDF</span>
-              </button>
+              <Link
+                href="#" // Assuming no specific link for PDF, or user can provide one
+                className="btn-futuristic-primary" style={{ backgroundColor: '#514ae6' }}
+              >
+                Portfolio PDF
+              </Link>
             </div>
           </div>
 
