@@ -49,8 +49,8 @@ const FTTRSection = () => {
   ];
 
   return (
-    <section id="fttr" ref={ref} className="section-padding bg-gray-50 min-h-screen">
-      <div className="container-padding max-w-7xl mx-auto">
+    <section id="fttr" ref={ref} className="bg-gray-50 min-h-screen">
+      <div className="container-padding max-w-7xl mx-auto section-padding">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -125,7 +125,7 @@ Pourquoi choisir FTTR plutôt qu’un câblage classique ?Pourquoi Choisir FTTR 
           <div className="text-center mt-8 flex justify-center">
             <Link
               href="/contact"
-              className="btn-futuristic-primary" style={{ backgroundColor: '#514ae6' }}
+              className="btn-futuristic-primary" style={{ backgroundColor: 'white', color: 'black' }}
             >
               Demander un devis gratuit
             </Link>
@@ -150,43 +150,42 @@ Pourquoi choisir FTTR plutôt qu’un câblage classique ?Pourquoi Choisir FTTR 
             </div>
           ))}
         </motion.div>
-
-        {/* Features */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="bg-gradient-to-r from-blue-600 to-blue-500 rounded-3xl p-8 md:p-12"
-        >
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h3 className="text-3xl font-bold mb-6 font-poppins text-center text-white">
-                Pourquoi Choisir Notre FTTR ?
-              </h3>
-              <p className="text-xl text-blue-100 font-medium mb-6 text-center">
-                Notre technologie FTTR représente l'avenir de la connectivité résidentielle. 
-                Plus besoin de compromis entre esthétique et performance !
-              </p>
-              <div className="text-center">
-                <Link
-                  href="/contact"
-                  className="btn-futuristic-primary" style={{ backgroundColor: '#514ae6' }}
-                >
-                  Demander un Devis
-                </Link>
-              </div>
-            </div>
-            <div className="grid grid-cols-1 gap-3">
-              {features.map((feature, index) => (
-                <div key={index} className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-blue-200 mr-3 flex-shrink-0" />
-                  <span className="text-blue-100">{feature}</span>
-                </div>
-              ))}
+      </div>
+      {/* Features */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.8, delay: 0.6 }}
+        className="bg-[#070908] p-8 md:p-12"
+      >
+        <div className="grid md:grid-cols-2 gap-8 items-center max-w-7xl mx-auto">
+          <div>
+            <h3 className="text-3xl font-bold mb-6 font-poppins text-center text-white">
+              Pourquoi Choisir Notre FTTR ?
+            </h3>
+            <p className="text-xl text-gray-200 font-medium mb-6 text-center">
+              Notre technologie FTTR représente l'avenir de la connectivité résidentielle. 
+              Plus besoin de compromis entre esthétique et performance !
+            </p>
+            <div className="text-center">
+              <Link
+                href="/contact"
+                className="btn-futuristic-primary" style={{ background: 'white', color: '#070908' }}
+              >
+                Demander un Devis
+              </Link>
             </div>
           </div>
-        </motion.div>
-      </div>
+          <div className="grid grid-cols-1 gap-3">
+            {features.map((feature, index) => (
+              <div key={index} className="flex items-center">
+                <CheckCircle className="h-5 w-5 text-blue-200 mr-3 flex-shrink-0" />
+                <span className="text-blue-100">{feature}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </motion.div>
     </section>
   );
 };

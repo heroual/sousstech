@@ -1,8 +1,7 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
-import { useRef } from 'react';
+import { motion, useInView, AnimatePresence } from 'framer-motion';
+import { useRef, useState, useEffect } from 'react';
 import { 
   Home, 
   Lightbulb, 
@@ -11,7 +10,9 @@ import {
   Smartphone, 
   CheckCircle,
   Zap,
-  Clock
+  Clock,
+  ChevronLeft,
+  ChevronRight
 } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -20,31 +21,88 @@ const SmartHomeSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
+  const carouselImages = [
+    '/images/jiji/smart-home-tech.jpg',
+    '/images/jiji/control-smart-home.jpg',
+    '/images/jiji/smart-home-device.jpg',
+    '/images/jiji/smart-home-gadget.jpg',
+    '/images/jiji/smart-home-phone.jpg',
+    '/images/jiji/smart-home-tab.jpg',
+  ];
+  const [imageIndex, setImageIndex] = useState(0);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
+
+  const startSlider = () => {
+    stopSlider();
+    intervalRef.current = setInterval(() => {
+      setImageIndex((prevIndex) => (prevIndex + 1) % carouselImages.length);
+    }, 3000);
+  };
+
+  const stopSlider = () => {
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+    }
+  };
+
+  useEffect(() => {
+    startSlider();
+    return () => stopSlider();
+  }, [carouselImages.length]);
+
+  const nextImage = () => {
+    setImageIndex((prevIndex) => (prevIndex + 1) % carouselImages.length);
+  };
+
+  const prevImage = () => {
+    setImageIndex((prevIndex) => (prevIndex - 1 + carouselImages.length) % carouselImages.length);
+  };
+
   const smartFeatures = [
     {
       icon: Lightbulb,
-      title: "Éclairage Intelligent",
-      description: "Contrôle et programmation de tous vos éclairages",
-      features: ["Variation d'intensité", "Programmation horaire", "Contrôle vocal", "Économie d'énergie"]
+      title: "Éclairage intelligent",
+      description: "Contrôle et programmation de vos éclairages grâce à la domotique.",
+      features: [
+        "Variation d’intensité pour créer l’ambiance idéale",
+        "Programmation horaire intelligente",
+        "Contrôle vocal intégré (Google, Alexa…)",
+        "Économies d’énergie garanties",
+      ],
     },
     {
       icon: Thermometer,
-      title: "Climatisation",
-      description: "Gestion automatique de la température",
-      features: ["Température optimale", "Programmation zones", "Détection présence", "Économies jusqu'à 30%"]
+      title: "Climatisation connectée",
+      description: "Gestion automatique de la température pour un confort optimal.",
+      features: [
+        "Réglage intelligent selon vos habitudes",
+        "Programmation par zones",
+        "Détection de présence",
+        "Réduction de la consommation jusqu’à 30%",
+      ],
     },
     {
       icon: Shield,
-      title: "Sécurité Intégrée",
-      description: "Capteurs et alarmes intelligents",
-      features: ["Détection intrusion", "Alertes temps réel", "Caméras connectées", "Accès sécurisé"]
+      title: "Sécurité intégrée",
+      description: "Des capteurs et alarmes intelligents pour une maison plus sûre.",
+      features: [
+        "Détection d’intrusion en temps réel",
+        "Alertes instantanées sur mobile",
+        "Caméras connectées et accessibles partout",
+        "Accès sécurisé pour toute la famille",
+      ],
     },
     {
       icon: Smartphone,
-      title: "App Mobile",
-      description: "Contrôle total depuis votre smartphone",
-      features: ["Interface intuitive", "Contrôle à distance", "Notifications push", "Multi-utilisateurs"]
-    }
+      title: "Application mobile",
+      description: "Contrôlez votre maison connectée depuis votre smartphone.",
+      features: [
+        "Interface intuitive et simple d’utilisation",
+        "Gestion complète à distance",
+        "Notifications push en temps réel",
+        "Accès multi-utilisateurs",
+      ],
+    },
   ];
 
   const scenarios = [
@@ -75,8 +133,8 @@ const SmartHomeSection = () => {
   ];
 
   return (
-    <section id="smart-home" ref={ref} className="section-padding bg-gray-50">
-      <div className="container-padding max-w-7xl mx-auto">
+    <section id="smart-home" ref={ref} className="bg-gray-50">
+      <div className="container-padding max-w-7xl mx-auto section-padding-top section-padding-bottom">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -98,24 +156,54 @@ const SmartHomeSection = () => {
           </p>
         </motion.div>
 
-        <Image
-          src="/images/jiji/smart-home-tech.jpg"
-          alt="Smart Home Technology"
-          width={1200}
-          height={675}
-          className="rounded-xl shadow-lg mb-16 w-full h-[400px] object-cover"
-        />
+        <div 
+          className="relative w-full h-[660px] rounded-xl shadow-lg mb-16 overflow-hidden"
+          onMouseEnter={stopSlider}
+          onMouseLeave={startSlider}
+        >
+          <AnimatePresence>
+            <motion.div
+              key={imageIndex}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1 }}
+              className="absolute w-full h-full"
+            >
+              <Image
+                src={carouselImages[imageIndex]}
+                alt="Smart Home Carousel Image"
+                layout="fill"
+                objectFit="cover"
+              />
+            </motion.div>
+          </AnimatePresence>
+          <div className="absolute inset-0 flex items-center justify-between p-4">
+            <button
+              onClick={prevImage}
+              className="bg-black/30 text-white p-2 rounded-full hover:bg-black/50 transition"
+            >
+              <ChevronLeft className="h-6 w-6" />
+            </button>
+            <button
+              onClick={nextImage}
+              className="bg-black/30 text-white p-2 rounded-full hover:bg-black/50 transition"
+            >
+              <ChevronRight className="h-6 w-6" />
+            </button>
+          </div>
+        </div>
 
         {/* Smart Features Grid */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16"
+          className="grid md:grid-cols-2 lg:grid-cols-2 gap-6 mb-16"
         >
           {smartFeatures.map((feature, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 group">
-              <div className="bg-primary w-16 h-16 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+              <div className="bg-primary w-16 h-16 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 mx-auto">
                 <feature.icon className="h-8 w-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-2 text-center">{feature.title}</h3>
@@ -179,38 +267,41 @@ const SmartHomeSection = () => {
             </div>
           ))}
         </motion.div>
+      </div>
 
-        {/* CTA Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="bg-gradient-to-r from-blue-600 to-blue-500 rounded-3xl p-8 md:p-12 text-white text-center"
-        >
-          <h3 className="text-3xl font-bold mb-6 font-poppins text-center">
-            Prêt pour une Maison Intelligente ?
+      {/* CTA Section */}
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.8, delay: 0.6 }}
+        className="bg-[#070908] p-8 md:p-12 text-white text-center"
+      >
+        <div className="max-w-7xl mx-auto">
+          <h3 className="text-3xl font-bold mb-6 font-poppins text-center text-white">
+            Prêt pour une maison intelligente au Maroc ?
           </h3>
-          <p className="text-xl text-gray-200 font-medium mb-8 max-w-3xl mx-auto text-center">
-            Nos experts vous accompagnent dans la conception et l'installation 
-            de votre solution domotique sur-mesure. Installation professionnelle 
-            et formation incluses.
-          </p>
+          <div className="text-xl text-gray-200 font-medium mb-8 max-w-[1300px] mx-auto text-center">
+            <p className="mb-4">Transformez votre quotidien avec une solution domotique sur-mesure.</p>
+            <p className="mb-4">Nos experts vous accompagnent de la conception à l’installation pour créer une maison connectée, sécurisée et confortable.</p>
+            <p className="mb-4">Profitez d’une installation professionnelle, d’une formation complète à l’utilisation et d’un support technique réactif.</p>
+            <p>Avec SoussTech, vous bénéficiez de technologies fiables, adaptées à vos besoins et garanties pour durer.</p>
+          </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="btn-futuristic-primary" style={{ backgroundColor: '#514ae6' }}
+              className="btn-futuristic-primary" style={{ background: 'white', color: '#070908' }}
             >
-              Demander un Devis
+              Demander un devis gratuit
             </Link>
             <Link
               href="/portfolio"
-              className="btn-futuristic-primary" style={{ backgroundColor: '#514ae6' }}
+              className="btn-futuristic-primary" style={{ background: 'white', color: '#070908' }}
             >
-              Voir nos Réalisations
+              Voir nos réalisations
             </Link>
           </div>
-        </motion.div>
-      </div>
+        </div>
+      </motion.div>
     </section>
   );
 };
