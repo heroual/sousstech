@@ -74,8 +74,16 @@ const ContactMethods = () => {
           transition={{ duration: 0.8 }}
           className="text-center section-title-spacing"
         >
+<<<<<<< HEAD
           <h2 className="text-4xl md:text-5xl font-bold text-[#2B3A8A] mb-8 font-poppins">
             Plusieurs Moyens de nous Contacter
+=======
+          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6">
+            Plusieurs Moyens
+            <span className="block text-blue-500">
+              de nous Contacter
+            </span>
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Choisissez le canal de communication qui vous convient le mieux. 
@@ -95,7 +103,11 @@ const ContactMethods = () => {
               key={index}
               href={option.action}
               whileHover={{ y: -5, scale: 1.02 }}
+<<<<<<< HEAD
               className="bg-white rounded-3xl p-6 text-center hover:shadow-xl transition-all duration-300 group block"
+=======
+              className="bg-gray-50 rounded-3xl p-6 text-center hover:shadow-xl transition-all duration-300 group block"
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
             >
               <div className={`bg-gradient-to-r ${option.color} w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
                 <option.icon className="h-8 w-8 text-white" />

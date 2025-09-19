@@ -68,7 +68,11 @@ const ContactCTASection = () => {
         >
           <motion.h2
             variants={itemVariants}
+<<<<<<< HEAD
             className="text-4xl md:text-5xl font-bold font-poppins text-[#2B3A8A] mb-6"
+=======
+            className="text-4xl md:text-5xl font-bold font-poppins text-[#293786] mb-6"
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
           >
             Contactez-nous
           </motion.h2>
@@ -125,7 +129,11 @@ const ContactCTASection = () => {
               { text: "Support technique inclus", icon: "✓" }
             ].map((benefit, index) => (
               <div key={index} className="text-gray-800 text-center group hover:-translate-y-1 transition-transform duration-300 animate-text-pulse" style={{transitionDelay: `${index * 50}ms`}}>
+<<<<<<< HEAD
                 <div className="bg-white border border-gray-200 p-3 rounded-lg shadow-md hover:bg-gray-50 transition-all duration-300">
+=======
+                <div className="bg-gray-100 border border-gray-200 p-3 rounded-lg shadow-md hover:bg-gray-200 transition-all duration-300">
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
                   <span className="text-blue-600 font-bold mr-2" aria-hidden="true">{benefit.icon}</span>
                   <span className="font-semibold text-base sm:text-lg text-gray-800">{benefit.text}</span>
                 </div>

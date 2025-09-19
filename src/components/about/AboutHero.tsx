@@ -33,8 +33,16 @@ const AboutHero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
+<<<<<<< HEAD
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 font-poppins whitespace-nowrap">
             Pourquoi Choisir SoussTech ?
+=======
+          <h1 className="text-5xl md:text-7xl font-bold mb-9 font-poppins" style={{ color: 'white' }}>
+            Pourquoi Choisir
+            <span className="block">
+              SoussTech ?
+            </span>
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
           </h1>
         </motion.div>
 

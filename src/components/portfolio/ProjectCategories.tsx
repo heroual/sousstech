@@ -77,8 +77,16 @@ const ProjectCategories = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
+<<<<<<< HEAD
           <h2 className="text-4xl md:text-5xl font-bold text-[#2B3A8A] mb-8 font-poppins">
             Explorez Nos Domaines d'Expertise
+=======
+          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6">
+            Explorez Nos
+            <span className="block text-blue-500">
+              Domaines d'Expertise
+            </span>
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Filtrez nos réalisations par catégorie pour découvrir 
@@ -103,7 +111,11 @@ const ProjectCategories = () => {
               className={`btn font-poppins text-base transition-all duration-300 text-center group p-4 rounded-2xl ${ 
                 activeFilter === category.id
                   ? 'bg-blue-600 text-white shadow-lg'
+<<<<<<< HEAD
                   : 'bg-white text-gray-800 shadow-md hover:shadow-lg hover:bg-gray-50'
+=======
+                  : 'bg-white text-gray-800 shadow-md hover:shadow-lg hover:bg-gray-100'
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
               }`}
               aria-pressed={activeFilter === category.id}
               aria-label={`Filtrer par ${category.name}`}

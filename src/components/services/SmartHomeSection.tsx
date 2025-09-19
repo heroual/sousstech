@@ -133,7 +133,11 @@ const SmartHomeSection = () => {
   ];
 
   return (
+<<<<<<< HEAD
     <section id="smart-home" ref={ref} className="bg-white">
+=======
+    <section id="smart-home" ref={ref} className="bg-gray-50">
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
       <div className="container-padding max-w-7xl mx-auto section-padding-top section-padding-bottom">
         {/* Header */}
         <motion.div
@@ -147,7 +151,11 @@ const SmartHomeSection = () => {
               <Home className="h-12 w-12 text-white" />
             </div>
           </div>
+<<<<<<< HEAD
           <h2 className="text-4xl md:text-5xl font-bold font-poppins text-[#2B3A8A] mb-6 text-center">
+=======
+          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-800 mb-6 text-center">
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
             Smart Home - Maison Intelligente
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed text-center">
@@ -227,7 +235,11 @@ const SmartHomeSection = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="mb-16"
         >
+<<<<<<< HEAD
           <h3 className="text-4xl md:text-5xl font-bold text-center text-[#2B3A8A] mb-12 font-poppins">
+=======
+          <h3 className="text-3xl font-bold text-center text-gray-800 mb-12 font-poppins">
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
             Scénarios Intelligents
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -289,13 +301,21 @@ const SmartHomeSection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
+<<<<<<< HEAD
               className="btn-futuristic-primary" style={{ background: 'white', color: 'black' }}
+=======
+              className="btn-futuristic-primary" style={{ background: 'white', color: '#070908' }}
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
             >
               Demander un devis gratuit
             </Link>
             <Link
               href="/portfolio"
+<<<<<<< HEAD
               className="btn-futuristic-primary" style={{ background: 'white', color: 'black' }}
+=======
+              className="btn-futuristic-primary" style={{ background: 'white', color: '#070908' }}
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
             >
               Voir nos réalisations
             </Link>

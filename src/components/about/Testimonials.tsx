@@ -97,9 +97,18 @@ const Testimonials = () => {
         >
           <motion.h2
             variants={itemVariants}
+<<<<<<< HEAD
             className="text-4xl md:text-5xl font-bold text-[#2B3A8A] mb-8 font-poppins"
           >
             Témoignages de nos Clients
+=======
+            className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6"
+          >
+            Témoignages
+            <span className="block text-blue-500">
+              de nos Clients
+            </span>
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
           </motion.h2>
           <motion.p
             variants={itemVariants}
@@ -215,7 +224,11 @@ const Testimonials = () => {
             <motion.div
               key={index}
               variants={itemVariants}
+<<<<<<< HEAD
               className="bg-white rounded-2xl p-6 hover:shadow-lg transition-all duration-300"
+=======
+              className="bg-gray-50 rounded-2xl p-6 hover:shadow-lg transition-all duration-300"
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
             >
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-500 rounded-full flex items-center justify-center mr-4">

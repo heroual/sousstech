@@ -103,7 +103,11 @@ const NetworkSection = () => {
   ];
 
   return (
+<<<<<<< HEAD
     <section id="network" ref={ref} className="section-padding bg-white">
+=======
+    <section id="network" ref={ref} className="section-padding bg-gray-50">
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
       <div className="container-padding max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
@@ -117,7 +121,11 @@ const NetworkSection = () => {
               <Network className="h-12 w-12 text-white" />
             </div>
           </div>
+<<<<<<< HEAD
           <h2 className="text-4xl md:text-5xl font-bold font-poppins text-[#2B3A8A] mb-6 text-center">
+=======
+          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6 text-center">
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
             Réseaux & IT – Solutions Professionnelles
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed text-center">
@@ -168,7 +176,11 @@ const NetworkSection = () => {
         >
           <div className="grid md:grid-cols-2 gap-8">
             {/* Card 1: Nos services Réseaux & IT */}
+<<<<<<< HEAD
             <div className="bg-white rounded-2xl p-6 shadow-md">
+=======
+            <div className="bg-gray-50 rounded-2xl p-6 shadow-md">
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
               <h3 className="text-3xl font-bold mb-6 font-poppins text-center">
                 Nos services Réseaux & IT :
               </h3>
@@ -193,7 +205,11 @@ const NetworkSection = () => {
             </div>
 
             {/* Card 2: Engagement qualité */}
+<<<<<<< HEAD
             <div className="bg-white rounded-2xl p-6 shadow-md">
+=======
+            <div className="bg-gray-50 rounded-2xl p-6 shadow-md">
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
               <h3 className="text-3xl font-bold mb-6 font-poppins text-center">
                 Engagement qualité :
               </h3>
@@ -293,7 +309,11 @@ const NetworkSection = () => {
             </Link>
             <Link
               href="/portfolio"
+<<<<<<< HEAD
               className="btn-futuristic-primary"
+=======
+              className="btn-futuristic-primary" style={{ backgroundColor: '#514ae6' }}
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
             >
               Nos Références
             </Link>

@@ -87,7 +87,11 @@ const SecuritySection = () => {
   ];
 
   return (
+<<<<<<< HEAD
     <section id="security" ref={ref} className="section-padding bg-white">
+=======
+    <section id="security" ref={ref} className="section-padding bg-gray-50">
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
       <div className="container-padding max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
@@ -101,7 +105,11 @@ const SecuritySection = () => {
               <Shield className="h-12 w-12 text-white" />
             </div>
           </div>
+<<<<<<< HEAD
           <h2 className="text-4xl md:text-5xl font-bold font-poppins text-[#2B3A8A] mb-6 text-center">
+=======
+          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6 text-center">
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
             Caméras & Sécurité Intelligente
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed text-center">
@@ -150,7 +158,11 @@ const SecuritySection = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="mb-16"
         >
+<<<<<<< HEAD
           <h3 className="text-4xl md:text-5xl font-bold text-center text-[#2B3A8A] mb-12 font-poppins">
+=======
+          <h3 className="text-3xl font-bold text-center text-gray-900 mb-12 font-poppins">
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
             Applications & Secteurs
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -195,6 +207,7 @@ const SecuritySection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.6 }}
+<<<<<<< HEAD
           className="bg-black rounded-3xl p-8 md:p-12 text-white"
         >
           <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -203,19 +216,37 @@ const SecuritySection = () => {
                 Sécurité Professionnelle
               </h3>
               <p className="text-xl text-gray-200 font-medium mb-6 text-center">
+=======
+          className="bg-gradient-to-r from-blue-600 to-blue-500 rounded-3xl p-8 md:p-12 text-white"
+        >
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h3 className="text-3xl font-bold mb-6 font-poppins text-center">
+                Sécurité Professionnelle
+              </h3>
+              <p className="text-xl text-blue-100 font-medium mb-6 text-center">
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
                 Nos solutions de surveillance combinent haute technologie et facilité d'utilisation. 
                 Installation professionnelle et support technique inclus.
               </p>
               <div className="flex gap-4 justify-center">
                 <Link
                   href="/contact"
+<<<<<<< HEAD
                   className="btn-futuristic-primary" style={{ backgroundColor: 'white', color: 'black' }}
+=======
+                  className="btn-futuristic-primary" style={{ backgroundColor: '#514ae6' }}
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
                 >
                   Devis Gratuit
                 </Link>
                 <Link
                   href="/portfolio"
+<<<<<<< HEAD
                   className="btn-futuristic-primary" style={{ backgroundColor: 'white', color: 'black' }}
+=======
+                  className="btn-futuristic-primary" style={{ backgroundColor: '#514ae6' }}
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
                 >
                   Voir Projets
                 </Link>

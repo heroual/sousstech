@@ -100,7 +100,11 @@ const ContactForm = () => {
   };
 
   return (
+<<<<<<< HEAD
     <section ref={ref} className="section-padding bg-white">
+=======
+    <section ref={ref} className="section-padding bg-gray-50">
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
       <div className="container-padding max-w-7xl mx-auto">
         {/* Header */}
         <motion.div

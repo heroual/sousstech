@@ -10,7 +10,11 @@ const MapSection = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
+<<<<<<< HEAD
     <section ref={ref} className="section-padding bg-white">
+=======
+    <section ref={ref} className="section-padding bg-gray-50">
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
       <div className="container-padding max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -18,7 +22,11 @@ const MapSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center section-title-spacing"
         >
+<<<<<<< HEAD
           <h2 className="text-4xl md:text-5xl font-bold font-poppins text-[#2B3A8A] mb-6">
+=======
+          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6">
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
             Nous Trouver
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">

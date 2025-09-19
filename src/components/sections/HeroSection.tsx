@@ -26,7 +26,11 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
+<<<<<<< HEAD
           className="text-5xl md:text-7xl font-bold text-white mb-8 font-poppins whitespace-nowrap"
+=======
+          className="text-white mb-9"
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
         >
           Le Futur de la Maison Connectée
         </motion.h1>

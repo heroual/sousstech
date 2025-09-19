@@ -99,8 +99,16 @@ const FAQSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center section-title-spacing"
         >
+<<<<<<< HEAD
           <h2 className="text-4xl md:text-5xl font-bold text-[#2B3A8A] mb-8 font-poppins">
             Questions Fréquentes
+=======
+          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6">
+            Questions
+            <span className="block text-blue-500">
+              Fréquentes
+            </span>
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Trouvez rapidement les réponses à vos questions les plus courantes. 
@@ -116,7 +124,11 @@ const FAQSection = () => {
           className="grid lg:grid-cols-2 gap-8 section-spacing"
         >
           {faqCategories.map((category, categoryIndex) => (
+<<<<<<< HEAD
             <div key={categoryIndex} className="bg-white rounded-3xl p-6">
+=======
+            <div key={categoryIndex} className="bg-gray-50 rounded-3xl p-6">
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
               {/* Category Header */}
               <div className="flex items-center mb-6">
                 <div className={`bg-gradient-to-r ${category.color} w-12 h-12 rounded-xl flex items-center justify-center mr-4`}>

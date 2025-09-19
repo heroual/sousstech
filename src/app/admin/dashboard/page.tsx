@@ -152,7 +152,11 @@ const DashboardPage = () => {
                     </div>
                   )}
 
+<<<<<<< HEAD
                   <div className="p-4 bg-white text-right border-t border-gray-100">
+=======
+                  <div className="p-4 bg-gray-50 text-right border-t border-gray-100">
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
                     <div className="flex items-center justify-end text-xs text-gray-500">
                       <Clock className="h-3.5 w-3.5 mr-1.5" />
                       <span>{new Date(demande.createdAt?.toDate()).toLocaleString('fr-FR', { dateStyle: 'medium', timeStyle: 'short' })}</span>

@@ -33,7 +33,11 @@ const ServiceHero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
+<<<<<<< HEAD
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 font-poppins whitespace-nowrap">
+=======
+          <h1 className="text-5xl md:text-7xl font-bold mb-9 font-poppins text-white">
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
             Nos Solutions Technologiques.
           </h1>
         </motion.div>

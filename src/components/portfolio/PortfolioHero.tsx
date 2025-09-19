@@ -39,8 +39,16 @@ const PortfolioHero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
+<<<<<<< HEAD
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-8 font-poppins whitespace-nowrap">
             Nos Réalisations & Projets
+=======
+          <h1 className="text-5xl md:text-6xl font-bold font-poppins mb-6 text-center" style={{ color: 'white' }}>
+            Nos Réalisations
+            <span className="block">
+              & Projets
+            </span>
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
           </h1>
         </motion.div>
 

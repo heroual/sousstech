@@ -48,7 +48,11 @@ const AboutSection = () => {
         >
           <motion.h2
             variants={itemVariants}
+<<<<<<< HEAD
             className="mt-[100px] text-4xl md:text-5xl font-bold font-poppins text-[#2B3A8A] mb-6"
+=======
+            className="mt-[100px] text-4xl md:text-5xl font-bold font-poppins text-[#293786] mb-6"
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
           >
             Votre partenaire en domotique et sécurité
           </motion.h2>

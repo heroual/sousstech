@@ -137,9 +137,18 @@ const BeforeAfter = () => {
         >
           <motion.h2
             variants={itemVariants}
+<<<<<<< HEAD
             className="text-4xl md:text-5xl font-bold text-[#2B3A8A] mb-8 font-poppins"
           >
             Avant / Après Transformations
+=======
+            className="text-4xl md:text-5xl font-bold font-poppins text-gray-anthracite mb-6"
+          >
+            Avant / Après
+            <span className="block text-blue-500">
+              Transformations
+            </span>
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
           </motion.h2>
           <motion.p
             variants={itemVariants}
@@ -269,7 +278,11 @@ const BeforeAfter = () => {
                 key={index}
                 onClick={() => setActiveComparison(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${ 
+<<<<<<< HEAD
                   index === activeComparison ? 'bg-blue-600' : 'bg-gray-200'
+=======
+                  index === activeComparison ? 'bg-blue-600' : 'bg-gray-300'
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
                 }`}
               />
             ))}

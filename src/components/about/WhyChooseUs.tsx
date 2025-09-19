@@ -106,8 +106,16 @@ const WhyChooseUs = () => {
           animate={isInView ? "visible" : "hidden"}
           className="text-center mb-16"
         >
+<<<<<<< HEAD
           <h2 className="text-4xl md:text-5xl font-bold text-[#2B3A8A] mb-8 font-poppins">
             Nos Valeurs & Engagements
+=======
+          <h2 className="mb-6 text-center">
+            Nos Valeurs
+            <span className="block gradient-text">
+              & Engagements
+            </span>
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
           </h2>
           <motion.p
             variants={itemVariants}
@@ -141,7 +149,11 @@ const WhyChooseUs = () => {
               className="bg-white rounded-3xl p-8 shadow-medium hover:shadow-large transition-all duration-300 group relative overflow-hidden"
             >
               {/* Background Pattern */}
+<<<<<<< HEAD
               <div className="absolute top-0 right-0 w-32 h-32 bg-white rounded-full transform translate-x-16 -translate-y-16 group-hover:scale-110 transition-transform duration-300"></div>
+=======
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gray-100 rounded-full transform translate-x-16 -translate-y-16 group-hover:scale-110 transition-transform duration-300"></div>
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
               
               <div className="relative z-10">
                 <div className="bg-blue-600 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">

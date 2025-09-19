@@ -63,7 +63,11 @@ const FTTRSection = () => {
               <Zap className="h-12 w-12 text-white" />
             </div>
           </div>
+<<<<<<< HEAD
           <h2 className="text-4xl md:text-5xl font-bold font-poppins text-[#2B3A8A] mb-6 text-center">
+=======
+          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-800 mb-6 text-center">
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
             Internet Ultra-Rapide – FTTR (Fiber to The Room)
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed text-center">
@@ -82,7 +86,11 @@ Pourquoi choisir FTTR plutôt qu’un câblage classique ?Pourquoi Choisir FTTR 
         >
           <div className="grid md:grid-cols-2 gap-8">
             {/* Traditional vs FTTR */}
+<<<<<<< HEAD
             <div className="bg-white border-2 border-gray-200 rounded-2xl p-8">
+=======
+            <div className="bg-gray-100 border-2 border-gray-200 rounded-2xl p-8">
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
               <h3 className="text-2xl font-bold text-gray-800 mb-4 text-center">Câblage Traditionnel</h3>
               <ul className="space-y-3">
                 {
@@ -125,7 +133,11 @@ Pourquoi choisir FTTR plutôt qu’un câblage classique ?Pourquoi Choisir FTTR 
           <div className="text-center mt-8 flex justify-center">
             <Link
               href="/contact"
+<<<<<<< HEAD
               className="btn-futuristic-primary" style={{ backgroundColor: 'white', color: 'white' }}
+=======
+              className="btn-futuristic-primary" style={{ backgroundColor: 'white', color: 'black' }}
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
             >
               Demander un devis gratuit
             </Link>

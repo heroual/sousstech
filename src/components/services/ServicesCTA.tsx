@@ -33,8 +33,16 @@ const ServicesCTA = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
+<<<<<<< HEAD
           <h2 className="text-4xl md:text-5xl font-bold font-poppins text-white mb-6 text-center whitespace-nowrap">
             Prêt à Moderniser Votre Infrastructure ?
+=======
+          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-white mb-6 text-center">
+            Prêt à Moderniser
+            <span className="block text-blue-400">
+              Votre Infrastructure ?
+            </span>
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8 text-center">
             Nos experts vous accompagnent dans tous vos projets technologiques. 
@@ -122,7 +130,11 @@ const ServicesCTA = () => {
         >
           <Link
             href="/contact"
+<<<<<<< HEAD
             className="btn-futuristic-primary"
+=======
+            className="btn-futuristic-primary" style={{ backgroundColor: '#514ae6' }}
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
           >
             Demander un Devis Détaillé
           </Link>

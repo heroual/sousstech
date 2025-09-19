@@ -142,9 +142,18 @@ const ClientResults = () => {
         >
           <motion.h2
             variants={itemVariants}
+<<<<<<< HEAD
             className="text-4xl md:text-5xl font-bold text-[#2B3A8A] mb-8 font-poppins"
           >
             Résultats Clients & Impact Mesurable
+=======
+            className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6"
+          >
+            Résultats Clients
+            <span className="block text-blue-500">
+              & Impact Mesurable
+            </span>
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
           </motion.h2>
           <motion.p
             variants={itemVariants}
@@ -167,7 +176,11 @@ const ClientResults = () => {
               key={index}
               variants={itemVariants}
               whileHover={{ scale: 1.05 }}
+<<<<<<< HEAD
               className="bg-white rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300 group"
+=======
+              className="bg-gray-50 rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300 group"
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
             >
               <div className={`bg-gradient-to-r from-blue-600 to-blue-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
                 <metric.icon className="h-8 w-8 text-white" />

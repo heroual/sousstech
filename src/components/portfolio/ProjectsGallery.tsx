@@ -138,8 +138,16 @@ const ProjectsGallery = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
+<<<<<<< HEAD
           <h2 className="text-4xl md:text-5xl font-bold text-[#2B3A8A] mb-8 font-poppins">
             Projets Récents & Réalisations
+=======
+          <h2 className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6">
+            Projets Récents
+            <span className="block text-blue-500">
+              & Réalisations
+            </span>
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Découvrez nos projets les plus récents et les solutions innovantes 

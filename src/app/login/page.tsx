@@ -45,7 +45,11 @@ const LoginPage = () => {
   }
 
   return (
+<<<<<<< HEAD
     <div className="min-h-screen flex items-center justify-center bg-white font-poppins">
+=======
+    <div className="min-h-screen flex items-center justify-center bg-gray-50 font-poppins">
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
       <div className="max-w-md w-full bg-white rounded-2xl shadow-xl p-8">
         <div className="text-center mb-8">
             <h1 className="text-3xl md:text-4xl font-bold font-poppins text-gray-800 mb-6">

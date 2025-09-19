@@ -126,9 +126,18 @@ const TeamSection = () => {
         >
           <motion.h2
             variants={itemVariants}
+<<<<<<< HEAD
             className="text-4xl md:text-5xl font-bold text-[#2B3A8A] mb-8 font-poppins"
           >
             Notre Équipe d'Experts
+=======
+            className="text-4xl md:text-5xl font-bold font-poppins text-gray-900 mb-6"
+          >
+            Notre Équipe
+            <span className="block text-blue-500">
+              d'Experts
+            </span>
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
           </motion.h2>
           <motion.p
             variants={itemVariants}
@@ -150,7 +159,11 @@ const TeamSection = () => {
             <motion.div
               key={index}
               variants={itemVariants}
+<<<<<<< HEAD
               className="bg-white rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300 group"
+=======
+              className="bg-gray-50 rounded-2xl p-6 text-center hover:shadow-lg transition-all duration-300 group"
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
             >
               <div className="bg-gradient-to-r from-blue-500 to-blue-400 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                 <stat.icon className="h-8 w-8 text-white" />

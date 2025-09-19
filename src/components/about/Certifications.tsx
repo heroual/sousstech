@@ -122,7 +122,11 @@ const Certifications = () => {
   };
 
   return (
+<<<<<<< HEAD
     <section ref={ref} className="py-20 bg-white">
+=======
+    <section ref={ref} className="py-20 bg-gray-50">
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -179,7 +183,11 @@ const Certifications = () => {
           animate={isInView ? "visible" : "hidden"}
           className="mb-16"
         >
+<<<<<<< HEAD
           <h3 className="text-4xl md:text-5xl font-bold text-center text-[#2B3A8A] mb-12 font-poppins">
+=======
+          <h3 className="text-3xl font-bold text-center text-gray-900 mb-12 font-poppins">
+>>>>>>> 3f9202282155e4acf053ceb4a809f4efbafb7807
             Nos Partenaires Technologiques
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
